@@ -1,0 +1,88 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "extraction_schema.json",
+  "title": "Per-document signal extraction",
+  "description": "One file per report at extractions/<doc_id>.json. Written by an LLM agent (Claude Code) from cached page text; every claim carries page-level evidence that verify.py checks in code. No signal may rest on knowledge outside the cited pages.",
+  "type": "object",
+  "required": ["doc_id", "extracted_by", "extraction_date", "report_scope", "signals"],
+  "additionalProperties": false,
+  "properties": {
+    "doc_id": {"type": "string"},
+    "extracted_by": {"type": "string", "description": "Who/what produced this file. Must name the LLM agent honestly."},
+    "extraction_date": {"type": "string"},
+    "method_note": {"type": "string"},
+    "report_scope": {
+      "type": "object",
+      "description": "Which industry the report says it covers, so a code mismatch with the chosen NAICS is recorded rather than hidden.",
+      "required": ["stated_industry_code", "scope_summary", "naics_2022_listed", "evidence"],
+      "properties": {
+        "stated_industry_code": {"type": ["string", "null"]},
+        "scope_summary": {"type": "string"},
+        "naics_2022_listed": {"type": "array", "items": {"type": "string"}},
+        "relation_to_chosen_naics": {"type": "string"},
+        "evidence": {"type": "array", "items": {"$ref": "#/definitions/evidence"}}
+      }
+    },
+    "signals": {
+      "type": "array",
+      "minItems": 7,
+      "maxItems": 7,
+      "items": {"$ref": "#/definitions/signal"}
+    }
+  },
+  "definitions": {
+    "evidence": {
+      "type": "object",
+      "required": ["doc_id", "pdf_page", "section_heading", "quote"],
+      "additionalProperties": false,
+      "properties": {
+        "doc_id": {"type": "string"},
+        "pdf_page": {"type": "integer", "minimum": 1, "description": "1-based page index in the PDF file (not the printed page label; the printed label is looked up from the cache in code)."},
+        "section_heading": {"type": ["string", "null"], "description": "Nearest heading visible on or above the cited page, or null if none is detectable."},
+        "quote": {"type": "string", "description": "Verbatim text from the cited page, at most 25 words. Whitespace, case, hyphenation and smart quotes are normalised by the verifier; nothing else may differ."}
+      }
+    },
+    "signal": {
+      "type": "object",
+      "required": ["signal_id", "force_tag", "status", "value", "summary", "evidence", "confidence", "notes"],
+      "additionalProperties": false,
+      "properties": {
+        "signal_id": {"enum": ["S1", "S2", "S3", "S4", "S5", "S6", "S7"]},
+        "force_tag": {"type": "string", "description": "S1 context; S2 rivalry; S3 barriers to entry; S4 supplier power; S5 buyer power; S6 and S7 chosen by the extractor, with the reason in value.why_chosen."},
+        "status": {"enum": ["FOUND", "PARTIAL", "NOT_FOUND"]},
+        "value": {
+          "description": "null when NOT_FOUND. Otherwise an object. Every numeric leaf (and every string under a key ending in _range) must appear in an evidence quote of this signal; years and periods are therefore stored as strings, and derived numbers are forbidden.",
+          "oneOf": [{"type": "null"}, {"type": "object"}]
+        },
+        "summary": {"type": "string", "description": "1-2 sentences in the extractor's own words."},
+        "evidence": {"type": "array", "items": {"$ref": "#/definitions/evidence"}},
+        "confidence": {
+          "type": "object",
+          "required": ["level", "reason"],
+          "additionalProperties": false,
+          "properties": {"level": {"enum": ["high", "med", "low"]}, "reason": {"type": "string"}}
+        },
+        "notes": {"type": "string", "description": "Scope caveats: does the figure describe a broader or narrower industry than fractional CFO services? Internal inconsistencies in the source."}
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"status": {"enum": ["FOUND", "PARTIAL"]}}},
+          "then": {"properties": {"evidence": {"minItems": 1}, "value": {"type": "object"}}}
+        },
+        {
+          "if": {"properties": {"status": {"const": "NOT_FOUND"}}},
+          "then": {"properties": {"evidence": {"maxItems": 0}, "value": {"type": "null"}}}
+        }
+      ]
+    }
+  },
+  "signal_value_shapes": {
+    "S1": {"market_size": "number, as printed", "market_size_unit": "string e.g. 'USD billion'", "market_size_year": "string", "cagr_historical_pct": "number|null", "historical_period": "string", "cagr_forecast_pct": "number|null", "forecast_period": "string", "scope_note": "string"},
+    "S2": {"competitors": "[{name, share_pct: number|null, share_range: string|null, share_basis: string}]", "concentration_note": "string"},
+    "S3": {"regulation_level": "string as stated by the source", "pressures": "[string]"},
+    "S4": {"inputs": "[{input, finding}]", "supplier_power_rating": "string|null"},
+    "S5": {"customer_structure": "string", "segments": "[{segment, share_pct: number}]", "buyer_power_rating": "string|null"},
+    "S6": {"trend": "string", "why_chosen": "string"},
+    "S7": {"threat": "string", "why_chosen": "string"}
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "ibisworld_54121c": {
+    "filename": "54121C Accounting Services in the US.pdf",
+    "n_pages": 56,
+    "publisher": "IBISWorld",
+    "stated_industry_code": "54121c",
+    "title": "Accounting Services in the US",
+    "publication_date": "May 2026",
+    "sector_header": "Professional, Scientific, and Technical Services \u2022 54121c",
+    "how_to_find": "BYU Library > Business databases > IBISWorld > search the report title (US industry reports).",
+    "doc_id": "ibisworld_54121c",
+    "sha256": "7cb902d16dcbcdea",
+    "near_empty_pages": []
+  },
+  "ibisworld_54161": {
+    "filename": "54161 Management Consulting in the US.pdf",
+    "n_pages": 56,
+    "publisher": "IBISWorld",
+    "stated_industry_code": "54161",
+    "title": "Management Consulting in the US",
+    "publication_date": "August 2026",
+    "sector_header": "Professional, Scientific, and Technical Services \u2022 54161",
+    "how_to_find": "BYU Library > Business databases > IBISWorld > search the report title (US industry reports).",
+    "doc_id": "ibisworld_54161",
+    "sha256": "3116eefc7c6bc13e",
+    "near_empty_pages": []
+  },
+  "firstresearch_accounting-services": {
+    "filename": "First Research Report for Accounting Services.pdf",
+    "n_pages": 26,
+    "publisher": "First Research (Dun & Bradstreet), accessed via D&B Hoovers",
+    "title": "First Research Industry Profile: Accounting Services",
+    "publication_date": "July 2025",
+    "stated_industry_code": null,
+    "code_note": "The 'Associated Industry Codes' section (PDF p.26) is empty in the printout; no NAICS/SIC code is stated. Scope is inferred from the title only.",
+    "how_to_find": "BYU Library > Business databases > D&B Hoovers > Industries > First Research > 'Accounting Services' (Industry Overview).",
+    "doc_id": "firstresearch_accounting-services",
+    "sha256": "195941ed658c39cf",
+    "near_empty_pages": []
+  }
+}

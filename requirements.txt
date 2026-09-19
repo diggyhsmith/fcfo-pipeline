@@ -1,0 +1,11 @@
+# Python 3.9+. All free / local; no paid API and no API key is required.
+pdfplumber>=0.11
+pypdf>=4.0
+rapidfuzz>=3.0
+requests>=2.31
+jsonschema>=4.0
+nbformat>=5.9
+nbconvert>=7.0
+ipykernel>=6.0
+jupyter>=1.0
+reportlab>=4.0

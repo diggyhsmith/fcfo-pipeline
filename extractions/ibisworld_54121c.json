@@ -1,0 +1,181 @@
+{
+  "doc_id": "ibisworld_54121c",
+  "extracted_by": "Claude Code (an LLM agent, model claude-sonnet-5) during the build session; not a human, and not a paid API call. Quotes were then checked by verify.py.",
+  "extraction_date": "2026-09-19",
+  "method_note": "Fresh pass over this document's cached pages only. Pages read: 3-14, 20-22, 27-32, 38-42. Nothing carried over from the other reports.",
+  "report_scope": {
+    "stated_industry_code": "54121c",
+    "scope_summary": "IBISWorld US industry 'Accounting Services in the US': CPA firms that audit accounting records and provide auditing, accounting-system design, financial statements, budgets, tax and advice on accounting matters.",
+    "naics_2022_listed": ["541211", "541219"],
+    "relation_to_chosen_naics": "Mismatch: covers 541211 and 541219, the accounting neighbors rejected in Stage 1, not 541611. Audit is about half of its revenue, which fractional CFO work is not.",
+    "evidence": [
+      {"doc_id": "ibisworld_54121c", "pdf_page": 4, "section_heading": "About This Industry > Codes", "quote": "2022 541211 – Offices of Certified Public Accountants"},
+      {"doc_id": "ibisworld_54121c", "pdf_page": 4, "section_heading": "About This Industry > Codes", "quote": "2022 541219 – Other Accounting Services"},
+      {"doc_id": "ibisworld_54121c", "pdf_page": 4, "section_heading": "About This Industry > Definition", "quote": "Operators in the industry are certified to audit the accounting records of public and private organizations"},
+      {"doc_id": "ibisworld_54121c", "pdf_page": 6, "section_heading": "At a Glance > Products & Services", "quote": "Financial auditing 78,868.2 49.8"}
+    ]
+  },
+  "signals": [
+    {
+      "signal_id": "S1",
+      "force_tag": "context",
+      "status": "FOUND",
+      "value": {
+        "market_size": 158.4,
+        "market_size_unit": "USD billion (industry revenue)",
+        "market_size_year": "2026 (estimated)",
+        "cagr_historical_pct": 1.4,
+        "historical_period": "2021-2026",
+        "cagr_forecast_pct": 2.1,
+        "forecast_period": "2026-2031",
+        "internal_conflict": {
+          "where": "Executive Summary text (PDF pp.7-8) versus At a Glance and Performance Snapshot (PDF pp.6, 9) within the same report",
+          "market_size": 157.4,
+          "cagr_historical_pct": 1.3,
+          "cagr_forecast_pct": 2.3,
+          "forecast_market_size_usd_bn": 176.3
+        },
+        "scope_note": "All US accounting services (CPA firms), about half of it audit; broader than, and different in mix from, fractional CFO services."
+      },
+      "summary": "The report gives two different sets of headline numbers: $158.4bn, 1.4% past and 2.1% forecast CAGR in the At a Glance panel, and $157.4bn, 1.3% and 2.3% (to $176.3bn) in the executive-summary text. Both are recorded; the panel is used as primary because it repeats on two pages.",
+      "evidence": [
+        {"doc_id": "ibisworld_54121c", "pdf_page": 6, "section_heading": "At a Glance", "quote": "Revenue Employees 2021-26 1.4% $158.4bn 663.5k 2026-31 2.1%"},
+        {"doc_id": "ibisworld_54121c", "pdf_page": 7, "section_heading": "At a Glance > Executive Summary", "quote": "Accounting services revenue grew at a CAGR of 1.3% to an estimated $157.4 billion over the past five years"},
+        {"doc_id": "ibisworld_54121c", "pdf_page": 7, "section_heading": "At a Glance > Executive Summary", "quote": "Accounting services revenue is expected to grow at a CAGR of 2.3%"},
+        {"doc_id": "ibisworld_54121c", "pdf_page": 8, "section_heading": "At a Glance > Executive Summary", "quote": "to an estimated $176.3 billion over the next five years."}
+      ],
+      "confidence": {"level": "med", "reason": "Every figure is verbatim, but the report contradicts itself and the At a Glance quote maps figures to labels by table layout."},
+      "notes": "Broader and differently composed than our niche. The primary/alternate choice is arbitrary in that the source does not say which set is right; the reconciliation stage keeps both."
+    },
+    {
+      "signal_id": "S2",
+      "force_tag": "rivalry",
+      "status": "FOUND",
+      "value": {
+        "competitors": [
+          {"name": "PwC", "share_pct": 9.7, "share_range": null, "revenue_usd_bn": 15.4, "share_basis": "Share of total US Accounting Services (IBISWorld 54121c) industry revenue, 2026"},
+          {"name": "Deloitte", "share_pct": 9.5, "share_range": null, "revenue_usd_bn": 15.1, "share_basis": "Share of total US Accounting Services (IBISWorld 54121c) industry revenue, 2026"},
+          {"name": "EY", "share_pct": 9.4, "share_range": null, "revenue_usd_bn": 14.9, "share_basis": "Share of total US Accounting Services (IBISWorld 54121c) industry revenue, 2026"},
+          {"name": "KPMG", "share_pct": 5.8, "share_range": null, "revenue_usd_bn": 9.2, "share_basis": "Share of total US Accounting Services (IBISWorld 54121c) industry revenue, 2026"}
+        ],
+        "concentration_note": "Pyramid-shaped: Big Four on top, a long tail of small providers; 38.1% of establishments are nonemployers.",
+        "nonemployer_establishments_pct": 38.1
+      },
+      "summary": "The Big Four hold 5.8% to 9.7% each of accounting-services revenue, and no other firm is given a share. The rest of the industry is a long tail in which 38.1% of establishments have no employees.",
+      "evidence": [
+        {"doc_id": "ibisworld_54121c", "pdf_page": 32, "section_heading": "Companies > Market Share", "quote": "Industry-specific company revenue as a share of total industry revenue."},
+        {"doc_id": "ibisworld_54121c", "pdf_page": 32, "section_heading": "Companies > Market Share", "quote": "Pwc ($15.4bn) 9.7% Deloitte ($15.1bn) 9.5%"},
+        {"doc_id": "ibisworld_54121c", "pdf_page": 32, "section_heading": "Companies > Market Share", "quote": "Ey ($14.9bn) 9.4% Kpmg ($9.2bn) 5.8%"},
+        {"doc_id": "ibisworld_54121c", "pdf_page": 27, "section_heading": "Competitive Forces > Concentration", "quote": "Despite moderate concentration, the national industry's market structure is pyramid-shaped."},
+        {"doc_id": "ibisworld_54121c", "pdf_page": 27, "section_heading": "Competitive Forces > Concentration", "quote": "38.1% of all accounting establishments operating as nonemployers"}
+      ],
+      "confidence": {"level": "high", "reason": "Shares are printed verbatim with the share basis stated; relevance to the fractional niche is separate and low."},
+      "notes": "The Big Four sell audit and tax to large clients, not fractional CFO services to $2M-$20M firms. The report's own text says 'moderate concentration' while its structure table says concentration is Low."
+    },
+    {
+      "signal_id": "S3",
+      "force_tag": "barriers to entry",
+      "status": "FOUND",
+      "value": {
+        "regulation_level": "High, increasing (IBISWorld industry-structure rating)",
+        "barriers_to_entry_level": "Low, increasing (IBISWorld rating)",
+        "cpa_education_credits": 150,
+        "pressures": [
+          "CPA designation requires passing the Uniform CPA Examination and holding 150 credits",
+          "SEC oversight; the Sarbanes-Oxley Act barred accountants from providing certain consultancy services to clients"
+        ]
+      },
+      "summary": "IBISWorld rates regulation of accounting services as high and rising, anchored on the CPA licence (exam plus 150 credits) and SEC/Sarbanes-Oxley rules, yet still rates the barriers to entry as low.",
+      "evidence": [
+        {"doc_id": "ibisworld_54121c", "pdf_page": 7, "section_heading": "At a Glance > Industry Structure", "quote": "Barriers to Entry Low Increasing Regulation and Policy High Increasing"},
+        {"doc_id": "ibisworld_54121c", "pdf_page": 38, "section_heading": "External Environment > Key Takeaways", "quote": "Accountants face considerable regulatory oversight."},
+        {"doc_id": "ibisworld_54121c", "pdf_page": 39, "section_heading": "External Environment > Regulation & Policy > CPA requirement", "quote": "To be designated as a CPA, an individual must pass the Uniform CPA Examination and have 150 credits"},
+        {"doc_id": "ibisworld_54121c", "pdf_page": 40, "section_heading": "External Environment > Regulation & Policy > SEC", "quote": "barred accountants from providing certain consultancy services to clients under the Sarbanes-Oxley Act of 2002"}
+      ],
+      "confidence": {"level": "high", "reason": "Ratings and rules are quoted directly; applicability to a non-audit fractional CFO offering is not addressed by the source."},
+      "notes": "This is the regulation of CPA firms. The source does not say whether providing fractional CFO advice requires a CPA licence."
+    },
+    {
+      "signal_id": "S4",
+      "force_tag": "supplier power",
+      "status": "FOUND",
+      "value": {
+        "supplier_power_rating": null,
+        "inputs": [
+          {"input": "CPA-credentialed accountants (labour)", "finding": "Wages are the largest and most consistent cost; demand has outpaced new accountants entering practice.", "median_salary_2024_usd": 81680, "median_salary_2025_usd": 83680},
+          {"input": "Technology networks and software", "finding": "Digital service delivery depends on fast, reliable networks whose costs move with energy prices."}
+        ]
+      },
+      "summary": "The scarce input is credentialed accountants: wages are the largest cost, the median accountant salary rose from $81,680 to $83,680 in a year, and demand has outrun new entrants. Technology and network suppliers are the second input.",
+      "evidence": [
+        {"doc_id": "ibisworld_54121c", "pdf_page": 42, "section_heading": "Financial Benchmarks > Cost Structure", "quote": "Wages remain the largest and most consistent expenditure for accounting services"},
+        {"doc_id": "ibisworld_54121c", "pdf_page": 42, "section_heading": "Financial Benchmarks > Cost Structure", "quote": "median accountant salary, which rose from $81,680 in 2024 to $83,680 in 2025"},
+        {"doc_id": "ibisworld_54121c", "pdf_page": 7, "section_heading": "At a Glance > Executive Summary", "quote": "increased demand for accounting services has drastically outpaced the number of new accountants that have begun operating"},
+        {"doc_id": "ibisworld_54121c", "pdf_page": 30, "section_heading": "Competitive Forces > Buyer & Supplier Power > Suppliers", "quote": "The digitization of accounting services heavily depends on fast and reliable technological networks"}
+      ],
+      "confidence": {"level": "med", "reason": "Talent evidence is direct and quantified; software and data vendors are only described generically with no concentration measure."},
+      "notes": "The numeric supplier-power rating straddles a page break and is not quoted, so it is left null. The salary figures are for accountants generally, not CFO-level staff."
+    },
+    {
+      "signal_id": "S5",
+      "force_tag": "buyer power",
+      "status": "FOUND",
+      "value": {
+        "customer_structure": "Fragmented across customer classes; SWOT lists low customer-class concentration. Corporate clients (finance, retail, utilities, manufacturing) dominate; individuals are 12.4%.",
+        "segments": [
+          {"segment": "Finance sector", "share_pct": 24.9},
+          {"segment": "Retail sector", "share_pct": 13.2},
+          {"segment": "Individual", "share_pct": 12.4},
+          {"segment": "Public", "share_pct": 12.0},
+          {"segment": "Utilities and mining sector", "share_pct": 10.5},
+          {"segment": "Manufacturing and industrial sector", "share_pct": 10.1},
+          {"segment": "Nonprofit", "share_pct": 3.4},
+          {"segment": "Other businesses", "share_pct": 13.5}
+        ],
+        "buyer_power_rating": "Moderate; low switching costs"
+      },
+      "summary": "No customer class exceeds a quarter of revenue (finance is largest at 24.9%), and the report rates buyer power as moderate with low switching costs, so clients can move providers or use software.",
+      "evidence": [
+        {"doc_id": "ibisworld_54121c", "pdf_page": 21, "section_heading": "Products and Markets > Major Markets Segmentation", "quote": "Finance sector ($39.4bn) 24.9% Retail sector ($20.9bn) 13.2% Individual ($19.6bn) 12.4%"},
+        {"doc_id": "ibisworld_54121c", "pdf_page": 21, "section_heading": "Products and Markets > Major Markets Segmentation", "quote": "Public ($19.0bn) 12.0% Utilities and mining sector ($16.6bn) 10.5% Manufacturing and industrial sector ($16.0bn) 10.1% Nonprofit ($5.4bn) 3.4% Other businesses ($21.4bn) 13.5%"},
+        {"doc_id": "ibisworld_54121c", "pdf_page": 7, "section_heading": "At a Glance > SWOT", "quote": "Low Capital Requirements Low Customer Class Concentration"},
+        {"doc_id": "ibisworld_54121c", "pdf_page": 30, "section_heading": "Competitive Forces > Buyer & Supplier Power", "quote": "Moderate Steady Buyers: Low switching costs"},
+        {"doc_id": "ibisworld_54121c", "pdf_page": 30, "section_heading": "Competitive Forces > Buyer & Supplier Power", "quote": "the accounting services space has low switching costs"}
+      ],
+      "confidence": {"level": "med", "reason": "Shares are verbatim, but segments are by client type; no split by client revenue size, and 'Other businesses' at 13.5% hides small companies."},
+      "notes": "Segmentation is by client type, not size, so the $2M-$20M band cannot be isolated. The report says small businesses are an influential driver but gives no share."
+    },
+    {
+      "signal_id": "S6",
+      "force_tag": "rivalry (incumbents moving into advisory)",
+      "status": "FOUND",
+      "value": {
+        "trend": "Accounting firms expanding into advisory and consulting services as automation frees capacity.",
+        "why_chosen": "The report itself calls it 'the most notable development' for providers, and it is the trend that moves incumbents toward the advice-to-management work a fractional CFO would sell."
+      },
+      "summary": "The report says the most notable coming development is greater investment in advisory services, driven by the profit in consulting and by automation of low-value tasks.",
+      "evidence": [
+        {"doc_id": "ibisworld_54121c", "pdf_page": 12, "section_heading": "Performance > Outlook", "quote": "The most notable development for accounting service providers will be the increased investment in advisory services."},
+        {"doc_id": "ibisworld_54121c", "pdf_page": 12, "section_heading": "Performance > Outlook", "quote": "the massive profit associated with consulting services will cause companies to expand advisory operations"}
+      ],
+      "confidence": {"level": "high", "reason": "The source itself labels this the most notable development; only the reason we chose it is the extractor's."},
+      "notes": "The report does not say the advisory push is aimed at small businesses."
+    },
+    {
+      "signal_id": "S7",
+      "force_tag": "substitutes",
+      "status": "FOUND",
+      "value": {
+        "threat": "DIY and software substitutes: AI-enabled automation and low-cost providers such as TurboTax and H&R Block.",
+        "why_chosen": "The report names DIY solutions a 'significant competitive threat' and expects online alternatives to intensify, which is a direct substitute for the bookkeeping-type work small clients might otherwise buy."
+      },
+      "summary": "Automation is helping accountants but also enables do-it-yourself substitutes, especially for smaller tax and statement-review work, and TurboTax and H&R Block are named as growing competitors.",
+      "evidence": [
+        {"doc_id": "ibisworld_54121c", "pdf_page": 12, "section_heading": "Performance > Current Performance > Automation and AI", "quote": "it also poses a significant competitive threat via DIY solutions, particularly for smaller tax preparation or statement review cases"},
+        {"doc_id": "ibisworld_54121c", "pdf_page": 13, "section_heading": "Performance > Outlook > Consumer competition", "quote": "great competition from alternative accounting service providers, such as TurboTax and H&R Block"}
+      ],
+      "confidence": {"level": "med", "reason": "Quotes are direct, but the report's own substitutes rating is 'Low, steady', which sits uneasily with calling DIY a significant threat."},
+      "notes": "Internal tension: the industry-structure summary rates the substitutes force low while the text calls DIY a significant threat. The threat is stated mainly for tax preparation, not CFO-style work."
+    }
+  ]
+}

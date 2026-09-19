@@ -1,0 +1,173 @@
+{
+  "doc_id": "ibisworld_54161",
+  "extracted_by": "Claude Code (an LLM agent, model claude-sonnet-5) during the build session; not a human, and not a paid API call. Quotes were then checked by verify.py.",
+  "extraction_date": "2026-09-19",
+  "method_note": "Fresh pass over this document's cached pages only. Pages read: 3-14, 22-23, 29-35, 38-42. Nothing carried over from the other reports.",
+  "report_scope": {
+    "stated_industry_code": "54161",
+    "scope_summary": "IBISWorld US industry 'Management Consulting in the US'. Advises businesses, nonprofits and public-sector agencies on planning, HR, strategy, IT strategy, marketing and financial planning and budgeting. 'What's Included' lists financial management consulting.",
+    "naics_2022_listed": ["54161", "541611", "541613", "541614", "541618"],
+    "relation_to_chosen_naics": "Superset of the chosen 541611 (all management consulting incl. marketing, operations, HR, IT); financial management consulting is only one product line.",
+    "evidence": [
+      {"doc_id": "ibisworld_54161", "pdf_page": 4, "section_heading": "About This Industry > Codes", "quote": "2022 541611 – Administrative Management and General Management Consulting Services"},
+      {"doc_id": "ibisworld_54161", "pdf_page": 4, "section_heading": "About This Industry > What's Included", "quote": "Financial management consulting, and consulting combined with implementation"}
+    ]
+  },
+  "signals": [
+    {
+      "signal_id": "S1",
+      "force_tag": "context",
+      "status": "FOUND",
+      "value": {
+        "market_size": 420.2,
+        "market_size_unit": "USD billion (industry revenue)",
+        "market_size_year": "2026 (estimated)",
+        "cagr_historical_pct": 2.1,
+        "historical_period": "2021-2026",
+        "cagr_forecast_pct": 1.0,
+        "forecast_period": "2026-2031",
+        "forecast_market_size_usd_bn": 441.6,
+        "closest_segment": {"name": "Financial management consulting, and consulting combined with implementation", "revenue_usd_bn": 27.3, "share_pct": 6.5},
+        "scope_note": "All US management consulting (54161), far broader than fractional CFO services."
+      },
+      "summary": "US management consulting revenue is an estimated $420.2bn, having grown at a 2.1% CAGR over the last five years and forecast to grow only 1.0% a year to $441.6bn. The closest product line to CFO-type work, financial management consulting, is a 6.5% slice.",
+      "evidence": [
+        {"doc_id": "ibisworld_54161", "pdf_page": 9, "section_heading": "At a Glance > Executive Summary", "quote": "Revenue grew at a CAGR of 2.1% to an estimated $420.2 billion over the past five years"},
+        {"doc_id": "ibisworld_54161", "pdf_page": 10, "section_heading": "At a Glance > Executive Summary", "quote": "Revenue is poised to grow at a CAGR of 1.0% to an estimated $441.6 billion over the next five years"},
+        {"doc_id": "ibisworld_54161", "pdf_page": 8, "section_heading": "At a Glance > Products & Services", "quote": "Financial management consulting, and 27.3 6.5 consulting combined with implementation"}
+      ],
+      "confidence": {"level": "med", "reason": "Figures are stated exactly and repeat on several pages, but they describe all management consulting, not our niche; the segment row is a wrapped table cell."},
+      "notes": "Broader industry than ours. The 27.3 / 6.5 pair is read from a table whose label wraps over several lines; the quote is the verbatim run of text."
+    },
+    {
+      "signal_id": "S2",
+      "force_tag": "rivalry",
+      "status": "FOUND",
+      "value": {
+        "competitors": [
+          {"name": "Deloitte", "share_pct": 5.3, "share_range": null, "revenue_usd_bn": 22.4, "share_basis": "Share of total US Management Consulting (IBISWorld 54161) industry revenue, 2026"},
+          {"name": "Accenture Plc", "share_pct": null, "share_range": "2.5–5", "share_basis": "IBISWorld share band (percent of 54161 industry revenue), 2026"},
+          {"name": "EY", "share_pct": null, "share_range": "2.5–5", "share_basis": "IBISWorld share band (percent of 54161 industry revenue), 2026"},
+          {"name": "PwC", "share_pct": null, "share_range": "2.5–5", "share_basis": "IBISWorld share band (percent of 54161 industry revenue), 2026"},
+          {"name": "KPMG", "share_pct": null, "share_range": "0–2.5", "share_basis": "IBISWorld share band (percent of 54161 industry revenue), 2026"}
+        ],
+        "concentration_note": "Highly fragmented: the top 20 firms hold almost one-quarter of revenue, and over 80% of establishments are small nonemployers.",
+        "nonemployer_establishments_pct_over": 80.0
+      },
+      "summary": "Only Deloitte has a point share (5.3%); the next four global firms are given as bands. The industry is fragmented, with the top 20 firms holding roughly a quarter of revenue and most establishments being nonemployers.",
+      "evidence": [
+        {"doc_id": "ibisworld_54161", "pdf_page": 34, "section_heading": "Companies > Market Share", "quote": "Industry-specific company revenue as a share of total industry revenue."},
+        {"doc_id": "ibisworld_54161", "pdf_page": 34, "section_heading": "Companies > Market Share", "quote": "Deloitte ($22.4bn) 5.3% Other Companies ($397.9bn) 94.7%"},
+        {"doc_id": "ibisworld_54161", "pdf_page": 34, "section_heading": "Companies > Company Details", "quote": "Accenture Plc 2.5–5 10,000+ EY 2.5–5 10,000+ PwC 2.5–5 10,000+ KPMG 0–2.5 10,000+"},
+        {"doc_id": "ibisworld_54161", "pdf_page": 9, "section_heading": "At a Glance > Executive Summary", "quote": "with the top 20 firms representing almost one-quarter of firm revenue"},
+        {"doc_id": "ibisworld_54161", "pdf_page": 29, "section_heading": "Competitive Forces > Concentration", "quote": "with over 80.0% of all consultant establishments comprising small, nonemploying companies"}
+      ],
+      "confidence": {"level": "med", "reason": "Numbers are verbatim, but these are global generalist firms, not fractional-CFO competitors, and four of five shares are bands."},
+      "notes": "None of these firms sells fractional CFO services to $2M-$20M companies. Shares are of the whole management-consulting industry, not of our niche."
+    },
+    {
+      "signal_id": "S3",
+      "force_tag": "barriers to entry",
+      "status": "FOUND",
+      "value": {
+        "regulation_level": "Low, steady (IBISWorld industry-structure rating)",
+        "barriers_to_entry_level": "Low, steady (IBISWorld rating)",
+        "pressures": [
+          "Regulatory pressure is limited and mostly federal; state consumer-privacy laws are the main enforcement for data-heavy projects",
+          "The most commonly sought licence named is the Certified Management Consultant (CMC)",
+          "Sarbanes-Oxley discourages one firm providing both consulting and auditing to the same client"
+        ]
+      },
+      "summary": "IBISWorld rates regulation and entry barriers in management consulting as low and steady. The main constraints it names are privacy rules, the CMC credential, and Sarbanes-Oxley separation of consulting from audit.",
+      "evidence": [
+        {"doc_id": "ibisworld_54161", "pdf_page": 9, "section_heading": "At a Glance > Industry Structure", "quote": "Barriers to Entry Low Steady Regulation and Policy Low Steady"},
+        {"doc_id": "ibisworld_54161", "pdf_page": 38, "section_heading": "External Environment > Key Takeaways", "quote": "Regulatory pressures are limited and concentrated at the federal level."},
+        {"doc_id": "ibisworld_54161", "pdf_page": 30, "section_heading": "Competitive Forces > Barriers to Entry", "quote": "The most commonly sought-after license is the Certified Management Consultant (CMC) license"},
+        {"doc_id": "ibisworld_54161", "pdf_page": 39, "section_heading": "External Environment > Regulation & Policy", "quote": "discouraging firms from providing consulting and auditing services to the same client"}
+      ],
+      "confidence": {"level": "med", "reason": "Ratings and rules are stated, but they describe general management consulting; accounting-specific licensing for CPAs is not assessed here."},
+      "notes": "The report's 'low' regulation rating is for general management consulting. A fractional CFO run by CPAs would also sit under the accounting-industry rules in the other reports. Whether the CMC licence is mandatory is not stated on the cited page."
+    },
+    {
+      "signal_id": "S4",
+      "force_tag": "supplier power",
+      "status": "FOUND",
+      "value": {
+        "supplier_power_rating": null,
+        "inputs": [
+          {"input": "Skilled consultants (labour)", "finding": "Wages are the industry's largest cost; talent is hard and expensive to hire and retain.", "mean_salary_usd": 113790},
+          {"input": "Computers and software (equipment suppliers)", "finding": "The report says supplier influence is elevated because switching computer and software suppliers is costly."}
+        ]
+      },
+      "summary": "The key inputs are skilled consultants and computing/software. Wages are the largest cost category (mean management-consultant salary $113,790 in 2025 per BLS), and the report says supplier influence over equipment and software is elevated.",
+      "evidence": [
+        {"doc_id": "ibisworld_54161", "pdf_page": 33, "section_heading": "Competitive Forces > Buyer & Supplier Power", "quote": "Suppliers' influence remains elevated due to the valuable machinery and equipment they procure for consultants' services."},
+        {"doc_id": "ibisworld_54161", "pdf_page": 31, "section_heading": "Competitive Forces > Barriers to Entry > Labor Expenses", "quote": "Attracting and retaining top talent involves high salaries and benefits"},
+        {"doc_id": "ibisworld_54161", "pdf_page": 42, "section_heading": "Financial Benchmarks > Cost Structure", "quote": "Wages represent the industry's most significant expense category."},
+        {"doc_id": "ibisworld_54161", "pdf_page": 42, "section_heading": "Financial Benchmarks > Cost Structure", "quote": "the mean annual management consultant salary accelerated to $113,790 in 2025"}
+      ],
+      "confidence": {"level": "med", "reason": "Statements are direct, but the report describes machinery and equipment suppliers in generic terms; it names no software or data vendor and gives no concentration measure."},
+      "notes": "The numeric supplier-power rating label sits on a page break and could not be quoted, so it is left null. No credentialed-talent supply data specific to CFO-level staff."
+    },
+    {
+      "signal_id": "S5",
+      "force_tag": "buyer power",
+      "status": "FOUND",
+      "value": {
+        "customer_structure": "Diversified across customer classes; SWOT lists low customer-class concentration. Largest segment is financial services; households and individuals (including nonemploying businesses and sole proprietors) are second.",
+        "segments": [
+          {"segment": "Financial services companies", "share_pct": 27.7},
+          {"segment": "Households, consumers and individuals", "share_pct": 19.0},
+          {"segment": "Government organizations and Not-for-profit", "share_pct": 18.4},
+          {"segment": "Energy, resource and industrial", "share_pct": 15.0},
+          {"segment": "Technology, media and telecommunications", "share_pct": 11.2},
+          {"segment": "Healthcare and life sciences", "share_pct": 8.7}
+        ],
+        "buyer_power_rating": "High (larger corporate buyers wield bargaining power)"
+      },
+      "summary": "No customer class dominates: financial services is the largest at 27.7% of 2026 revenue, and no segment is above 30%. The report says large corporate buyers hold significant bargaining power.",
+      "evidence": [
+        {"doc_id": "ibisworld_54161", "pdf_page": 9, "section_heading": "At a Glance > SWOT", "quote": "Strengths Low Capital Requirements Low Customer Class Concentration"},
+        {"doc_id": "ibisworld_54161", "pdf_page": 23, "section_heading": "Products and Markets > Major Markets Segmentation", "quote": "Financial services companies ($116.4bn) 27.7%"},
+        {"doc_id": "ibisworld_54161", "pdf_page": 23, "section_heading": "Products and Markets > Major Markets Segmentation", "quote": "Households, consumers and individuals ($79.8bn) 19.0%"},
+        {"doc_id": "ibisworld_54161", "pdf_page": 23, "section_heading": "Products and Markets > Major Markets Segmentation", "quote": "Government organizations and Not-for-profit ($77.3bn) 18.4% Energy, resource and industrial ($63.0bn) 15.0%"},
+        {"doc_id": "ibisworld_54161", "pdf_page": 23, "section_heading": "Products and Markets > Major Markets Segmentation", "quote": "Technology, media and telecommunications companies ($47.1bn) 11.2% Healthcare and life sciences sector ($36.6bn) 8.7%"},
+        {"doc_id": "ibisworld_54161", "pdf_page": 32, "section_heading": "Competitive Forces > Buyer & Supplier Power", "quote": "Larger companies wield significant bargaining power, prioritizing consultants' quality of service, brand name and pricing."}
+      ],
+      "confidence": {"level": "med", "reason": "Segment shares are verbatim, but buyers are mostly large organizations; there is no split by client revenue size, so the $2M-$20M band is invisible."},
+      "notes": "Segments are by client type, not client size. The 'Households, consumers and individuals' segment is said to include nonemploying businesses and sole proprietorships, the closest hint of small-business buyers."
+    },
+    {
+      "signal_id": "S6",
+      "force_tag": "new entrants / rivalry (niche specialization)",
+      "status": "FOUND",
+      "value": {
+        "trend": "Specialization: niche firms, especially technology-focused ones, are expected to enter and small consultancies are told to specialize to compete with large firms.",
+        "why_chosen": "It appears in both the executive summary and the outlook section, and it is the trend that most directly changes the position of a small new entrant, unlike macro drivers that lift or lower all firms equally."
+      },
+      "summary": "The report expects more niche entrants specializing in new technology and says specialization is necessary for smaller consultancies to defend against larger rivals.",
+      "evidence": [
+        {"doc_id": "ibisworld_54161", "pdf_page": 9, "section_heading": "At a Glance > Executive Summary", "quote": "the entry of niche firms specializing in new technology (IT, VR, AR and AI) is expected to increase"},
+        {"doc_id": "ibisworld_54161", "pdf_page": 14, "section_heading": "Performance > Outlook", "quote": "Specialization is necessary, as it helps smaller consultancies protect against competitive threats by providing timeliness, quality and validity in client consultations."}
+      ],
+      "confidence": {"level": "med", "reason": "Both quotes support it, but the choice of 'biggest' trend is the extractor's judgement, not the report's ranking."},
+      "notes": "The report does not rank trends; the selection and the reason are the extractor's."
+    },
+    {
+      "signal_id": "S7",
+      "force_tag": "substitutes",
+      "status": "FOUND",
+      "value": {
+        "threat": "Substitutes: in-house teams and generative-AI or software tools that give away analysis consultants used to charge for.",
+        "why_chosen": "The report calls in-house channels the largest competitive threat in the segment that includes small nonemploying businesses, and separately says generative AI threatens paid analysis; substitutes hit the buyer's make-or-buy choice directly."
+      },
+      "summary": "In-house alternatives and generative AI are the threats the report stresses most for the client segment that includes small businesses.",
+      "evidence": [
+        {"doc_id": "ibisworld_54161", "pdf_page": 22, "section_heading": "Products and Markets > Major Markets", "quote": "in-house channels remain the largest competitive threat and ate into the segment's revenue stream"},
+        {"doc_id": "ibisworld_54161", "pdf_page": 13, "section_heading": "Performance > Current Performance", "quote": "The proliferation of generative AI technology threatens management consultants by efficiently compiling research and offering free analysis"}
+      ],
+      "confidence": {"level": "med", "reason": "Quotes are direct, but the first refers to the individuals/sole-proprietor segment only; the report's overall substitutes rating is 'Moderate, steady', which is not a headline threat."},
+      "notes": "The report's own Substitutes rating is only moderate; 'biggest' is the extractor's choice, made on the strength of the two quotes."
+    }
+  ]
+}

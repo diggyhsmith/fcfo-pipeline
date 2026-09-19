@@ -1,0 +1,158 @@
+{
+  "doc_id": "firstresearch_accounting-services",
+  "extracted_by": "Claude Code (an LLM agent, model claude-sonnet-5) during the build session; not a human, and not a paid API call. Quotes were then checked by verify.py.",
+  "extraction_date": "2026-09-19",
+  "method_note": "Fresh pass over this document's cached pages only. Pages read: 1, 3-16, 24-26 (pages 17-23 are call-prep questions and benchmark tables and were skimmed only). Nothing carried over from the other reports.",
+  "report_scope": {
+    "stated_industry_code": null,
+    "scope_summary": "First Research (Dun & Bradstreet) industry profile 'Accounting Services': auditing, bookkeeping, payroll processing and tax return preparation. The printout's 'Associated Industry Codes' section is empty, so no NAICS or SIC code is stated.",
+    "naics_2022_listed": [],
+    "relation_to_chosen_naics": "No code stated, so a match cannot be confirmed. The activities listed (auditing, bookkeeping, payroll, tax) describe the accounting family (5412), not management consulting 541611.",
+    "evidence": [
+      {"doc_id": "firstresearch_accounting-services", "pdf_page": 5, "section_heading": "Industry Description", "quote": "Companies in this industry provide services such as auditing, bookkeeping, payroll processing, and tax return preparation."},
+      {"doc_id": "firstresearch_accounting-services", "pdf_page": 26, "section_heading": "Industry Codes", "quote": "Industry Codes Powered by Accounting Services Associated Industry Codes"}
+    ]
+  },
+  "signals": [
+    {
+      "signal_id": "S1",
+      "force_tag": "context",
+      "status": "PARTIAL",
+      "value": {
+        "market_size": 153,
+        "market_size_unit": "USD billion (combined annual revenue)",
+        "market_size_year": "not stated on the page (report data published July 2025)",
+        "cagr_historical_pct": null,
+        "historical_period": "not stated",
+        "cagr_forecast_pct": 4,
+        "forecast_period": "2024-2029",
+        "forecast_basis": "Current (nominal) dollars, for 'US accounting, tax prep, bookkeeping, and payroll services'",
+        "establishments": 133000,
+        "scope_note": "US accounting services broadly, including payroll and tax preparation; wider than fractional CFO services."
+      },
+      "summary": "The US accounting services industry has about 133,000 establishments and about $153bn of annual revenue, with revenue forecast to compound at 4% a year from 2024 to 2029. No historical growth rate and no year for the $153bn are given.",
+      "evidence": [
+        {"doc_id": "firstresearch_accounting-services", "pdf_page": 1, "section_heading": "Industry Overview > Fast Facts", "quote": "The US accounting services industry includes about 133,000 establishments"},
+        {"doc_id": "firstresearch_accounting-services", "pdf_page": 1, "section_heading": "Industry Overview > Fast Facts", "quote": "combined annual revenue of about $153 billion."},
+        {"doc_id": "firstresearch_accounting-services", "pdf_page": 1, "section_heading": "Industry Overview > Industry Forecast", "quote": "forecast to grow at an annual compounded rate of 4% between 2024 and 2029"}
+      ],
+      "confidence": {"level": "med", "reason": "Figures are exact but rounded ('about'), undated, and the forecast is nominal while IBISWorld's convention is not stated; no historical CAGR."},
+      "notes": "Broader industry (accounting, tax prep, bookkeeping, payroll). The report was published July 2025, older than both IBISWorld reports."
+    },
+    {
+      "signal_id": "S2",
+      "force_tag": "rivalry",
+      "status": "PARTIAL",
+      "value": {
+        "competitors": [
+          {"name": "ADP", "share_pct": null, "share_range": null, "share_basis": "no share stated"},
+          {"name": "H&R Block", "share_pct": null, "share_range": null, "share_basis": "no share stated"},
+          {"name": "Paychex", "share_pct": null, "share_range": null, "share_basis": "no share stated"}
+        ],
+        "concentration_note": "The 50 largest US companies account for just less than 50% of revenue (an upper-bound statement, not a company share).",
+        "top_50_share_upper_bound_pct": 50
+      },
+      "summary": "Three leading companies are named (ADP, H&R Block, Paychex) with no market shares. The only concentration measure is that the 50 largest firms hold just under half of revenue.",
+      "evidence": [
+        {"doc_id": "firstresearch_accounting-services", "pdf_page": 1, "section_heading": "Industry Overview > Fast Facts", "quote": "Leading companies include ADP, H&R Block, and Paychex (all based in the US)."},
+        {"doc_id": "firstresearch_accounting-services", "pdf_page": 5, "section_heading": "Industry Description > Competitive Landscape", "quote": "the 50 largest US companies account for just less than 50% of revenue"}
+      ],
+      "confidence": {"level": "low", "reason": "Names without any per-company share; the concentration statement is a loose bound."},
+      "notes": "No competitor share percentages, so this signal cannot fill the 'top 3-5 with shares' requirement. Leaders named are payroll and tax-prep firms, not fractional CFO providers."
+    },
+    {
+      "signal_id": "S3",
+      "force_tag": "barriers to entry",
+      "status": "FOUND",
+      "value": {
+        "regulation_level": "High regulatory complexity (the report's own challenge heading)",
+        "pressures": [
+          "Directives from the IRS, SEC and PCAOB, plus self-regulation by FASB and AICPA",
+          "Hundreds of rules and opinions to track, a particular burden for small firms",
+          "State licensing of accountants and firms, with some reciprocity",
+          "Tax preparers must register with the IRS, pass competency exams and take continuing education"
+        ]
+      },
+      "summary": "The report lists 'High Regulatory Complexity' as the first business challenge: many directives from the IRS and SEC, hundreds of rules, state licensing, and registration requirements for tax preparers.",
+      "evidence": [
+        {"doc_id": "firstresearch_accounting-services", "pdf_page": 14, "section_heading": "Challenges, Trends & Opportunities > High Regulatory Complexity", "quote": "Accounting firms must comply with numerous directives from government and industry groups including the IRS and SEC."},
+        {"doc_id": "firstresearch_accounting-services", "pdf_page": 14, "section_heading": "Challenges, Trends & Opportunities > High Regulatory Complexity", "quote": "Practices must stay current with hundreds of official rules and formal opinions, a special challenge for small firms with little or no staff."},
+        {"doc_id": "firstresearch_accounting-services", "pdf_page": 7, "section_heading": "Industry Description > Finance & Regulation > Regulation", "quote": "Accountants and accounting firms must have licenses in the states where they do business."},
+        {"doc_id": "firstresearch_accounting-services", "pdf_page": 7, "section_heading": "Industry Description > Finance & Regulation > Regulation", "quote": "Increased regulations now require tax preparers to register with the IRS, pass competency exams, and fulfill continuing education credits."}
+      ],
+      "confidence": {"level": "med", "reason": "Direct statements, but no numeric rating and they describe accounting firms, not advisory firms."},
+      "notes": "Describes regulation of accounting firms. Whether a non-audit fractional CFO firm is covered is not stated."
+    },
+    {
+      "signal_id": "S4",
+      "force_tag": "supplier power",
+      "status": "PARTIAL",
+      "value": {
+        "supplier_power_rating": null,
+        "inputs": [
+          {"input": "Skilled personnel (partners and junior accountants)", "finding": "Firms depend heavily on senior partners' reputation and junior accountants' competence, and recruiting well-qualified specialists is getting harder."},
+          {"input": "Accounting software vendors", "finding": "Software producers update industry-specific products to track rule changes; no vendor concentration or pricing is given."}
+        ]
+      },
+      "summary": "The report treats staffing as the main input constraint (dependence on senior partners, difficulty recruiting specialists) and mentions software vendors only as tools that track rule changes; it gives no supplier concentration data.",
+      "evidence": [
+        {"doc_id": "firstresearch_accounting-services", "pdf_page": 14, "section_heading": "Challenges, Trends & Opportunities > Dependence on Skilled Personnel", "quote": "Accounting firms depend heavily on the reputation and expertise of senior partners and the competence of junior accountants."},
+        {"doc_id": "firstresearch_accounting-services", "pdf_page": 12, "section_heading": "Executive Insight > Human Resources > Recruiting Specialists", "quote": "recruiting well-qualified specialists becomes more difficult"},
+        {"doc_id": "firstresearch_accounting-services", "pdf_page": 6, "section_heading": "Industry Description > Technology", "quote": "Software producers update industry-specific products to reflect changes in accounting, tax, and auditing rules."}
+      ],
+      "confidence": {"level": "low", "reason": "Qualitative statements only; no supplier concentration, pricing or talent-supply data."},
+      "notes": "Supplier power as a concept is not analysed in this report; only the dependence on people and software is stated."
+    },
+    {
+      "signal_id": "S5",
+      "force_tag": "buyer power",
+      "status": "PARTIAL",
+      "value": {
+        "customer_structure": "Customers are businesses, nonprofits, government and individuals; some practices specialize by segment or industry. No segment shares are given.",
+        "segments": [],
+        "buyer_power_rating": null,
+        "pricing_note": "Clients often compare firms on the price of basic services."
+      },
+      "summary": "Customer types are listed with no shares, so concentration cannot be measured. Buyers are described as comparing firms on the price of basic services, and small business owners are said to rely heavily on their accountants for advice.",
+      "evidence": [
+        {"doc_id": "firstresearch_accounting-services", "pdf_page": 6, "section_heading": "Industry Description > Sales & Marketing", "quote": "Typical customers are businesses, nonprofits, government, and individuals"},
+        {"doc_id": "firstresearch_accounting-services", "pdf_page": 12, "section_heading": "Executive Insight > Sales/Marketing > Developing Pricing Strategy", "quote": "Potential clients often compare accounting firms by the price of basic services, adding importance to competitive pricing."},
+        {"doc_id": "firstresearch_accounting-services", "pdf_page": 5, "section_heading": "Industry Description > Products & Operation", "quote": "Small business owners often rely heavily on their accounting firms for advice."}
+      ],
+      "confidence": {"level": "low", "reason": "Qualitative only; no customer-class shares or concentration figures."},
+      "notes": "The only small-business statement is that owners rely on accountants for advice, which supports demand for advisory work but does not quantify buyers."
+    },
+    {
+      "signal_id": "S6",
+      "force_tag": "context / substitutes-adjacent (technology)",
+      "status": "FOUND",
+      "value": {
+        "trend": "Cloud computing, SaaS and hosted solutions, alongside AI productivity tools, are becoming standard for small accounting firms.",
+        "why_chosen": "It is the only trend that appears in the report's Technology section, its Business Trends list and its executive insights, so it is the most repeated theme; the report does not rank trends."
+      },
+      "summary": "Cloud, SaaS and hosted software are becoming common in small accounting firms, and the report says AI is a major help in raising productivity.",
+      "evidence": [
+        {"doc_id": "firstresearch_accounting-services", "pdf_page": 14, "section_heading": "Challenges, Trends & Opportunities > Business Trends > Firms Update Technology, Move Operations Online", "quote": "Cloud computing, software as a service applications (SaaS), and hosted solutions are becoming increasingly common among small accounting firms."},
+        {"doc_id": "firstresearch_accounting-services", "pdf_page": 6, "section_heading": "Industry Description > Technology", "quote": "Artificial Intelligence (AI) is a major help in increasing productivity."}
+      ],
+      "confidence": {"level": "med", "reason": "Quotes are direct; 'biggest' is the extractor's choice based on repetition, not a ranking in the report."},
+      "notes": "The report does not rank trends; other listed trends include alignment with international accounting standards and online tax preparation."
+    },
+    {
+      "signal_id": "S7",
+      "force_tag": "context (macro demand risk)",
+      "status": "FOUND",
+      "value": {
+        "threat": "A slow economy cutting business demand for accounting services.",
+        "why_chosen": "It is the risk the report elevates to its summary rating box (Growth Rating: Demand tied to business activity and personal income; Risk: slow economy). The report names no substitutes or entrants as its headline risk."
+      },
+      "summary": "The report's headline risk is that a slow economy reduces business needs; separately, it says accounting practices that act as consultants shaping clients' business decisions face high litigation risk.",
+      "evidence": [
+        {"doc_id": "firstresearch_accounting-services", "pdf_page": 1, "section_heading": "Industry Overview > Industry Growth Rating", "quote": "Risk: Slow economy cuts business needs"},
+        {"doc_id": "firstresearch_accounting-services", "pdf_page": 14, "section_heading": "Challenges, Trends & Opportunities > Litigation Risk", "quote": "Accounting practices that serve as consultants in shaping clients' business decisions are at high risk."}
+      ],
+      "confidence": {"level": "med", "reason": "The headline risk is stated verbatim; calling it the biggest is a judgement, and the litigation quote is a second, more niche-relevant risk."},
+      "notes": "The litigation-risk statement concerns firms that consult on clients' business decisions, which is close to what a fractional CFO does; it is not the chosen threat but is worth a reader's attention."
+    }
+  ]
+}
