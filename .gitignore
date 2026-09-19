@@ -14,3 +14,6 @@ __pycache__/
 .ipynb_checkpoints/
 .DS_Store
 dev/_all_cells.py
+
+# built locally by build_pdf.py; rebuild after editing reflection.md
+submission.pdf

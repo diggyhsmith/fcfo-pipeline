@@ -6,7 +6,7 @@ Repo URL comes from submission_config.json {"repo_url": "https://github.com/USER
 
 Sections, in order:  1. Working tool link | 2. Output (2a NAICS, 2b brief, 2c sources, 2d gaps, 2e method/AI/limits) | 3. Reflection
 """
-import json, re, sys, os, html, argparse, datetime
+import json, re, sys, os, html, argparse, datetime, textwrap
 from xml.sax.saxutils import escape
 from reportlab.lib.pagesizes import letter
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
@@ -208,8 +208,9 @@ def build(brief, reflection, urls, excerpt, path=OUT):
     for x in brief["spot_check"]["items"]:
         P(f"{clean(x['signal_id'])} {clean(x['name'])}: <b>{clean(x['doc_id'])}</b>, PDF p.{x['pdf_page']} (printed {clean(x['printed_page'])}): &ldquo;{clean(x['quote'])}&rdquo;", "cite")
     P("Excerpt of real pipeline output (saved from the executed notebook)", "h3")
-    for line in excerpt.split("\n"):
-        story.append(Preformatted(line if line.strip() else " ", S["mono"]))
+    for line in excerpt.split("\n"):        # wrap to the page width (Courier 6.9pt fits ~118 characters) so nothing is clipped
+        for w in (textwrap.wrap(line, 118, subsequent_indent="      ", break_long_words=True) or [" "]):
+            story.append(Preformatted(w, S["mono"]))
 
     # ---------------- 3. Reflection
     P("3. Reflection", "h1")

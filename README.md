@@ -5,7 +5,9 @@ A class project (BYU MAcc strategy course). It takes a company description, pick
 **page-level citation on every one**, **verifies every quote against the PDF page in code**, reconciles the reports, lists what
 could not be found, and writes a brief.
 
-**Open the working tool:** [`pipeline.ipynb`](pipeline.ipynb). GitHub renders it with the saved outputs; no login needed.
+**Open the working tool (no login needed; outputs are saved in the file):**
+* GitHub: https://github.com/diggyhsmith/fcfo-pipeline/blob/main/pipeline.ipynb
+* nbviewer: https://nbviewer.org/github/diggyhsmith/fcfo-pipeline/blob/main/pipeline.ipynb
 
 ## Who did what (read this first)
 
