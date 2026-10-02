@@ -17,3 +17,5 @@ dev/_all_cells.py
 
 # built locally by build_pdf.py; rebuild after editing reflection.md
 submission.pdf
+dev/_ff_all_cells.py
+five_forces_submission.pdf

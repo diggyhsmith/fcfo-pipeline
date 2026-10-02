@@ -1,0 +1,14 @@
+EXCERPTS ONLY (paragraphs around cited quotes) of: Bench shuts down, leaving thousands of businesses without access to accounting and tax docs
+TechCrunch (trade press), 2024-12-27 | https://techcrunch.com/2024/12/27/bench-shuts-down-leaving-thousands-of-businesses-without-access-to-accounting-and-tax-docs/ | accessed 2026-10-02
+sha256 of full fetched text: 0f7511015b947520
+
+
+“We regret to inform you that as of December 27, 2024, the Bench platform will no longer be accessible,” the notice reads. “We know this news is abrupt and may cause disruption, so we’re committed to helping Bench customers navigate through the transition.”
+
+The company’s entire website is currently offline except for the notice, leaving thousands of businesses in the lurch. Bench touted having more than 35,000 U.S. customers just hours before it was shut down, according to a snapshot
+saved by the Internet Archive.
+
+Bench, which had raised $113 million from high-profile backers such as Shopify and Bain Capital Ventures, developed a software platform to help customers store and manage their bookkeeping and tax reporting documents.
+
+The move is a shock to current and former customers. Justin Metros, the co-founder and CTO of
+Radiator

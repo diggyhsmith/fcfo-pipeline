@@ -1,0 +1,981 @@
+{
+ "meta": {
+  "what": "Curated evidence for the Porter's Five Forces scorer. One fact = one claim + one or more verbatim citations.",
+  "authored_by": "Claude Code (an LLM agent) chose these facts, wrote the claim text and copied the quotes, in the build session of 2026-10-02. No paid API was used. Code (five_forces.ipynb) checks every quote against cached source text, checks that 'brief' facts really come from brief.json, and drops any fact whose quotes do not verify.",
+  "origin_types": {
+   "brief": "Quote already in brief.json (verified in the first project). signal_id + doc_id say where.",
+   "report_page": "New extraction from a page of the same three paywalled reports (cache/pages.jsonl). Quotes <= 25 words.",
+   "public": "New public source fetched by fetch_public.py and cached in public_sources/."
+  },
+  "direction": "'+' = evidence that the force is STRONG (squeezes profit, pushes the score up). '-' = evidence the force is WEAK (pushes the score down). 'mixed' = cuts both ways; the claim says how.",
+  "segment_note": "Target segment is US businesses with roughly $2M-$20M revenue buying fractional (part-time) CFO services. Every report figure describes a proxy industry (54161 management consulting, 54121c accounting)."
+ },
+ "facts": [
+  {
+   "fact_id": "R1",
+   "force": "rivalry",
+   "subdimension": "market concentration",
+   "direction": "+",
+   "origin": {
+    "type": "brief",
+    "signal_id": "S2",
+    "doc_id": "ibisworld_54161"
+   },
+   "claim": "No firm leads: the largest consultancy (Deloitte) holds 5.3% of US management-consulting revenue and everyone outside the top firm shares the other 94.7%.",
+   "citations": [
+    {
+     "doc_id": "ibisworld_54161",
+     "section": "Companies > Market Share",
+     "pdf_page": 34,
+     "printed_page": "31",
+     "quote": "Deloitte ($22.4bn) 5.3% Other Companies ($397.9bn) 94.7%"
+    }
+   ]
+  },
+  {
+   "fact_id": "R2",
+   "force": "rivalry",
+   "subdimension": "market concentration",
+   "direction": "+",
+   "origin": {
+    "type": "brief",
+    "signal_id": "S2",
+    "doc_id": "ibisworld_54161"
+   },
+   "claim": "The field is a long tail of one-person shops: over 80% of consulting establishments are nonemployers, exactly the profile of a solo fractional CFO.",
+   "citations": [
+    {
+     "doc_id": "ibisworld_54161",
+     "section": "Competitive Forces > Concentration",
+     "pdf_page": 29,
+     "printed_page": "26",
+     "quote": "with over 80.0% of all consultant establishments comprising small, nonemploying companies"
+    }
+   ]
+  },
+  {
+   "fact_id": "R3",
+   "force": "rivalry",
+   "subdimension": "market concentration",
+   "direction": "+",
+   "origin": {
+    "type": "public"
+   },
+   "claim": "A listed mid-market competitor (CBIZ, which bought Marcum's advisory business) describes its own market as highly fragmented and competitive.",
+   "citations": [
+    {
+     "source_id": "sec_cbiz_10k_fy2025",
+     "section": "Part I, Item 1. Business > Competition",
+     "pdf_page": null,
+     "quote": "The professional services industry is highly fragmented and competitive."
+    }
+   ]
+  },
+  {
+   "fact_id": "R4",
+   "force": "rivalry",
+   "subdimension": "number and diversity of competitors",
+   "direction": "+",
+   "origin": {
+    "type": "public"
+   },
+   "claim": "Rivals come from several directions at once: consulting firms, accounting-firm advisory arms, regional business-services firms and independent contractors.",
+   "citations": [
+    {
+     "source_id": "sec_cbiz_10k_fy2025",
+     "section": "Item 1A. Risk Factors > The business services industry is competitive and fragmented",
+     "pdf_page": null,
+     "quote": "Our principal competitors include financial and management consulting firms, the consulting practices of major accounting firms, local and regional business services companies, independent contractors"
+    }
+   ]
+  },
+  {
+   "fact_id": "R5",
+   "force": "rivalry",
+   "subdimension": "industry growth rate",
+   "direction": "+",
+   "origin": {
+    "type": "brief",
+    "signal_id": "S1",
+    "doc_id": "ibisworld_54161"
+   },
+   "claim": "Growth is slowing to about 1% a year, so firms grow mainly by taking clients from each other.",
+   "citations": [
+    {
+     "doc_id": "ibisworld_54161",
+     "section": "At a Glance > Executive Summary",
+     "pdf_page": 10,
+     "printed_page": "7",
+     "quote": "Revenue is poised to grow at a CAGR of 1.0% to an estimated $441.6 billion over the next five years"
+    }
+   ]
+  },
+  {
+   "fact_id": "R6",
+   "force": "rivalry",
+   "subdimension": "incumbents moving into the niche",
+   "direction": "+",
+   "origin": {
+    "type": "brief",
+    "signal_id": "S6",
+    "doc_id": "ibisworld_54121c"
+   },
+   "claim": "Accounting firms, which already hold the small-business client relationship, are expanding into advisory work because it is more profitable.",
+   "citations": [
+    {
+     "doc_id": "ibisworld_54121c",
+     "section": "Performance > Outlook",
+     "pdf_page": 12,
+     "printed_page": "9",
+     "quote": "the massive profit associated with consulting services will cause companies to expand advisory operations"
+    }
+   ]
+  },
+  {
+   "fact_id": "R7",
+   "force": "rivalry",
+   "subdimension": "price / service standardization",
+   "direction": "+",
+   "origin": {
+    "type": "report_page"
+   },
+   "claim": "CPA rules standardize the core service, so providers compete on price and niche expertise.",
+   "citations": [
+    {
+     "doc_id": "ibisworld_54121c",
+     "section": "Competitive Forces > Barriers to Entry > Differentiation",
+     "pdf_page": 29,
+     "printed_page": "26",
+     "quote": "CPA regulatory requirements create some standardization, causing service providers to compete based on price and expertise in different fields."
+    }
+   ]
+  },
+  {
+   "fact_id": "R8",
+   "force": "rivalry",
+   "subdimension": "industry growth rate",
+   "direction": "+",
+   "origin": {
+    "type": "report_page"
+   },
+   "claim": "Slower business formation made the accounting market more densely competitive and pushed firms into specialized services.",
+   "citations": [
+    {
+     "doc_id": "ibisworld_54121c",
+     "section": "Performance > Current Performance",
+     "pdf_page": 11,
+     "printed_page": "8",
+     "quote": "resulting in a more densely competitive market that forces accountants to pivot to specialized service provision."
+    }
+   ]
+  },
+  {
+   "fact_id": "R9",
+   "force": "rivalry",
+   "subdimension": "differentiation (offsetting)",
+   "direction": "-",
+   "origin": {
+    "type": "report_page"
+   },
+   "claim": "Offsetting: small firms serving narrow niches face less head-on competition and can hold price.",
+   "citations": [
+    {
+     "doc_id": "ibisworld_54161",
+     "section": "Competitive Forces > Concentration",
+     "pdf_page": 29,
+     "printed_page": "26",
+     "quote": "Competition is kept at bay as they serve niche markets, allowing price stability and even pricing autonomy."
+    }
+   ]
+  },
+  {
+   "fact_id": "R10",
+   "force": "rivalry",
+   "subdimension": "market concentration (conflicting)",
+   "direction": "-",
+   "origin": {
+    "type": "brief",
+    "signal_id": "S2",
+    "doc_id": "firstresearch_accounting-services"
+   },
+   "claim": "Conflicting signal: First Research says the 50 largest accounting firms hold just under half of revenue, more concentrated than IBISWorld's picture.",
+   "citations": [
+    {
+     "doc_id": "firstresearch_accounting-services",
+     "section": "Industry Description > Competitive Landscape",
+     "pdf_page": 5,
+     "printed_page": "5",
+     "quote": "the 50 largest US companies account for just less than 50% of revenue"
+    }
+   ]
+  },
+  {
+   "fact_id": "R11",
+   "force": "rivalry",
+   "subdimension": "fixed costs",
+   "direction": "+",
+   "origin": {
+    "type": "public"
+   },
+   "claim": "Professional-services costs are mostly fixed in the short run (salaried staff), so idle capacity pushes firms to discount to keep people billable.",
+   "citations": [
+    {
+     "source_id": "sec_cbiz_10k_fy2025",
+     "section": "Part I, Item 1. Business > Seasonality",
+     "pdf_page": null,
+     "quote": "a large portion of our operating costs are relatively fixed in the short term"
+    }
+   ]
+  },
+  {
+   "fact_id": "R12",
+   "force": "rivalry",
+   "subdimension": "price transparency",
+   "direction": "+",
+   "origin": {
+    "type": "public"
+   },
+   "claim": "A venture-backed rival publishes an entry price for fractional CFO work, which anchors buyers' price expectations for everyone else.",
+   "citations": [
+    {
+     "source_id": "pilot_cfo_services",
+     "section": "CFO services page > engagement tiers",
+     "pdf_page": null,
+     "quote": "Starting at $1,750/mo"
+    }
+   ]
+  },
+  {
+   "fact_id": "B1",
+   "force": "buyer_power",
+   "subdimension": "buyer concentration",
+   "direction": "-",
+   "origin": {
+    "type": "brief",
+    "signal_id": "S5",
+    "doc_id": "ibisworld_54161"
+   },
+   "claim": "IBISWorld lists low customer-class concentration as a strength: no customer group dominates.",
+   "citations": [
+    {
+     "doc_id": "ibisworld_54161",
+     "section": "At a Glance > SWOT",
+     "pdf_page": 9,
+     "printed_page": "6",
+     "quote": "Strengths Low Capital Requirements Low Customer Class Concentration"
+    }
+   ]
+  },
+  {
+   "fact_id": "B2",
+   "force": "buyer_power",
+   "subdimension": "buyer concentration",
+   "direction": "-",
+   "origin": {
+    "type": "public"
+   },
+   "claim": "The buyer pool is huge and atomized: 36.2 million US small businesses, so no single client can dictate terms to the industry.",
+   "citations": [
+    {
+     "source_id": "sba_advocacy_faq_2026",
+     "section": "Q2. How many small businesses are there in the U.S.?",
+     "pdf_page": 1,
+     "quote": "There are 36,207,130 small businesses in the U.S."
+    }
+   ]
+  },
+  {
+   "fact_id": "B3",
+   "force": "buyer_power",
+   "subdimension": "buyer concentration",
+   "direction": "-",
+   "origin": {
+    "type": "public"
+   },
+   "claim": "Even for a large mid-market provider, the single biggest client is under 2% of revenue.",
+   "citations": [
+    {
+     "source_id": "sec_cbiz_10k_fy2025",
+     "section": "Part I, Item 1. Business > Clients",
+     "pdf_page": null,
+     "quote": "Our largest client, which is served by the National Practices group, generated approximately 1.7% of our consolidated revenue in 2025."
+    }
+   ]
+  },
+  {
+   "fact_id": "B4",
+   "force": "buyer_power",
+   "subdimension": "buyer switching costs",
+   "direction": "+",
+   "origin": {
+    "type": "brief",
+    "signal_id": "S5",
+    "doc_id": "ibisworld_54121c"
+   },
+   "claim": "Switching accounting providers is cheap for the client.",
+   "citations": [
+    {
+     "doc_id": "ibisworld_54121c",
+     "section": "Competitive Forces > Buyer & Supplier Power",
+     "pdf_page": 30,
+     "printed_page": "27",
+     "quote": "the accounting services space has low switching costs"
+    }
+   ]
+  },
+  {
+   "fact_id": "B5",
+   "force": "buyer_power",
+   "subdimension": "buyer switching costs",
+   "direction": "+",
+   "origin": {
+    "type": "public"
+   },
+   "claim": "Engagements are cancellable at will: clients can leave with little notice and no penalty.",
+   "citations": [
+    {
+     "source_id": "sec_cbiz_10k_fy2025",
+     "section": "Forward-looking statements / Item 1A. Risk Factors (client base)",
+     "pdf_page": null,
+     "quote": "Our clients may terminate our engagements with little or no notice and without penalty"
+    }
+   ]
+  },
+  {
+   "fact_id": "B6",
+   "force": "buyer_power",
+   "subdimension": "buyer price sensitivity",
+   "direction": "+",
+   "origin": {
+    "type": "brief",
+    "signal_id": "S5",
+    "doc_id": "firstresearch_accounting-services"
+   },
+   "claim": "Prospective clients shop on the price of basic services.",
+   "citations": [
+    {
+     "doc_id": "firstresearch_accounting-services",
+     "section": "Executive Insight > Sales/Marketing > Developing Pricing Strategy",
+     "pdf_page": 12,
+     "printed_page": "12",
+     "quote": "Potential clients often compare accounting firms by the price of basic services, adding importance to competitive pricing."
+    }
+   ]
+  },
+  {
+   "fact_id": "B7",
+   "force": "buyer_power",
+   "subdimension": "threat of backward integration",
+   "direction": "+",
+   "origin": {
+    "type": "brief",
+    "signal_id": "S7",
+    "doc_id": "ibisworld_54161"
+   },
+   "claim": "Doing the work in-house (for us: hiring a full-time controller or CFO) is the biggest competitive threat in the client segment that includes small businesses. Treated here as backward integration by the buyer, not as a substitute, so it is not counted twice.",
+   "citations": [
+    {
+     "doc_id": "ibisworld_54161",
+     "section": "Products and Markets > Major Markets",
+     "pdf_page": 22,
+     "printed_page": "19",
+     "quote": "in-house channels remain the largest competitive threat and ate into the segment's revenue stream"
+    }
+   ]
+  },
+  {
+   "fact_id": "B8",
+   "force": "buyer_power",
+   "subdimension": "buyer size (mixed)",
+   "direction": "mixed",
+   "origin": {
+    "type": "brief",
+    "signal_id": "S5",
+    "doc_id": "ibisworld_54161"
+   },
+   "claim": "IBISWorld's 'high' buyer-power rating is driven by large corporate clients. Our $2M-$20M buyers do not have that leverage individually, so the report's rating overstates buyer power for our segment.",
+   "citations": [
+    {
+     "doc_id": "ibisworld_54161",
+     "section": "Competitive Forces > Buyer & Supplier Power",
+     "pdf_page": 32,
+     "printed_page": "29",
+     "quote": "Larger companies wield significant bargaining power, prioritizing consultants' quality of service, brand name and pricing."
+    }
+   ]
+  },
+  {
+   "fact_id": "B9",
+   "force": "buyer_power",
+   "subdimension": "buyer dependence (offsetting)",
+   "direction": "-",
+   "origin": {
+    "type": "brief",
+    "signal_id": "S5",
+    "doc_id": "firstresearch_accounting-services"
+   },
+   "claim": "Small business owners lean heavily on their accountants for advice, a trust relationship that blunts price shopping once established.",
+   "citations": [
+    {
+     "doc_id": "firstresearch_accounting-services",
+     "section": "Industry Description > Products & Operation",
+     "pdf_page": 5,
+     "printed_page": "5",
+     "quote": "Small business owners often rely heavily on their accounting firms for advice."
+    }
+   ]
+  },
+  {
+   "fact_id": "B10",
+   "force": "buyer_power",
+   "subdimension": "demand trend",
+   "direction": "+",
+   "origin": {
+    "type": "brief",
+    "signal_id": "S7",
+    "doc_id": "firstresearch_accounting-services"
+   },
+   "claim": "Demand is cyclical: a slow economy cuts business needs, which hands buyers leverage in downturns (a retainer is an easy line to cut).",
+   "citations": [
+    {
+     "doc_id": "firstresearch_accounting-services",
+     "section": "Industry Overview > Industry Growth Rating",
+     "pdf_page": 1,
+     "printed_page": "1",
+     "quote": "Risk: Slow economy cuts business needs"
+    }
+   ]
+  },
+  {
+   "fact_id": "P1",
+   "force": "supplier_power",
+   "subdimension": "supplier concentration (talent supply)",
+   "direction": "+",
+   "origin": {
+    "type": "brief",
+    "signal_id": "S4",
+    "doc_id": "ibisworld_54121c"
+   },
+   "claim": "The key input, credentialed accountants, is scarce: demand has outrun the number of new accountants.",
+   "citations": [
+    {
+     "doc_id": "ibisworld_54121c",
+     "section": "At a Glance > Executive Summary",
+     "pdf_page": 7,
+     "printed_page": "4",
+     "quote": "increased demand for accounting services has drastically outpaced the number of new accountants that have begun operating"
+    }
+   ]
+  },
+  {
+   "fact_id": "P2",
+   "force": "supplier_power",
+   "subdimension": "supplier concentration (talent supply)",
+   "direction": "+",
+   "origin": {
+    "type": "public"
+   },
+   "claim": "The pipeline is still shrinking: accounting graduates fell 6.6% in 2023-24 (AICPA 2025 Trends report, as reported by CFO Dive).",
+   "citations": [
+    {
+     "source_id": "cfodive_aicpa_trends_2025",
+     "section": "Dive Brief",
+     "pdf_page": null,
+     "quote": "The number of U.S. students who graduated with a bachelor's or a master's degree in accounting fell 6.6%"
+    }
+   ]
+  },
+  {
+   "fact_id": "P3",
+   "force": "supplier_power",
+   "subdimension": "input importance / cost",
+   "direction": "+",
+   "origin": {
+    "type": "brief",
+    "signal_id": "S4",
+    "doc_id": "ibisworld_54161"
+   },
+   "claim": "Labor is the biggest cost line, so any talent price increase hits margins directly.",
+   "citations": [
+    {
+     "doc_id": "ibisworld_54161",
+     "section": "Financial Benchmarks > Cost Structure",
+     "pdf_page": 42,
+     "printed_page": "39",
+     "quote": "Wages represent the industry's most significant expense category."
+    }
+   ]
+  },
+  {
+   "fact_id": "P4",
+   "force": "supplier_power",
+   "subdimension": "input importance / cost",
+   "direction": "+",
+   "origin": {
+    "type": "public"
+   },
+   "claim": "BLS projects about 115,300 accountant openings a year, so employers keep competing for the same people.",
+   "citations": [
+    {
+     "source_id": "bls_ooh_accountants",
+     "section": "Summary / Job Outlook",
+     "pdf_page": null,
+     "quote": "About 115,300 openings for accountants and auditors are projected each year, on average, over the decade."
+    }
+   ]
+  },
+  {
+   "fact_id": "P5",
+   "force": "supplier_power",
+   "subdimension": "threat of supplier forward integration",
+   "direction": "+",
+   "origin": {
+    "type": "report_page",
+    "note": "first quote is also in brief.json (S4, firstresearch_accounting-services); the second is a new extraction from the same page"
+   },
+   "claim": "Senior people carry the client relationships; when one leaves a small firm, revenue goes too. A fractional CFO can walk out and sell directly to the same clients.",
+   "citations": [
+    {
+     "doc_id": "firstresearch_accounting-services",
+     "section": "Challenges, Trends & Opportunities > Dependence on Skilled Personnel",
+     "pdf_page": 14,
+     "printed_page": "14",
+     "quote": "Accounting firms depend heavily on the reputation and expertise of senior partners and the competence of junior accountants."
+    },
+    {
+     "doc_id": "firstresearch_accounting-services",
+     "section": "Challenges, Trends & Opportunities > Dependence on Skilled Personnel",
+     "pdf_page": 14,
+     "printed_page": "14",
+     "quote": "The departure of a senior partner in a small firm can greatly impact revenue."
+    }
+   ]
+  },
+  {
+   "fact_id": "P6",
+   "force": "supplier_power",
+   "subdimension": "threat of supplier forward integration (software)",
+   "direction": "+",
+   "origin": {
+    "type": "public"
+   },
+   "claim": "The dominant small-business software supplier is building the finance function into its own product: Intuit's 'Finance Agent' targets forecasting and KPI analysis for mid-market firms, which is CFO work.",
+   "citations": [
+    {
+     "source_id": "intuit_ai_agents_2025",
+     "section": "Press release, 2025-07-01 > Finance Agent",
+     "pdf_page": null,
+     "quote": "Provides a comprehensive approach to the financial management of growing, mid-market businesses with robust reporting, KPI analysis, and scenario planning and forecasting"
+    }
+   ]
+  },
+  {
+   "fact_id": "P7",
+   "force": "supplier_power",
+   "subdimension": "switching suppliers (offsetting)",
+   "direction": "-",
+   "origin": {
+    "type": "report_page"
+   },
+   "claim": "Offsetting: a pool of part-time professionals, which is the fractional model itself, is IBISWorld's named way to blunt labor supplier power.",
+   "citations": [
+    {
+     "doc_id": "ibisworld_54161",
+     "section": "Competitive Forces > Key Success Factors > Be willing to outsource when appropriate",
+     "pdf_page": 33,
+     "printed_page": "30",
+     "quote": "management consultants can mitigate supplier power by maintaining a pool of part-time trained workers available for hire as needed"
+    }
+   ]
+  },
+  {
+   "fact_id": "P8",
+   "force": "supplier_power",
+   "subdimension": "supplier concentration (easing)",
+   "direction": "-",
+   "origin": {
+    "type": "public"
+   },
+   "claim": "Easing: accounting enrollment rose 12% and at least 23 states now allow an alternative to the 150-hour CPA rule, so supply should loosen over several years.",
+   "citations": [
+    {
+     "source_id": "cfodive_aicpa_trends_2025",
+     "section": "Dive Insight",
+     "pdf_page": null,
+     "quote": "the number of accounting students enrolled in colleges and universities last year rose by 12% YoY"
+    },
+    {
+     "source_id": "cfodive_aicpa_trends_2025",
+     "section": "Dive Insight",
+     "pdf_page": null,
+     "quote": "23 states have changed their rules to allow for alternative CPA pathways"
+    }
+   ]
+  },
+  {
+   "fact_id": "N1",
+   "force": "new_entrants",
+   "subdimension": "capital / scale requirements",
+   "direction": "+",
+   "origin": {
+    "type": "report_page"
+   },
+   "claim": "Startup costs are modest (technology, office, initial marketing); the business is not capital-intensive.",
+   "citations": [
+    {
+     "doc_id": "ibisworld_54161",
+     "section": "Competitive Forces > Barriers to Entry > Start-Up Costs",
+     "pdf_page": 30,
+     "printed_page": "27",
+     "quote": "Start-up costs for management consulting include expenses for technology infrastructure, office space and initial marketing campaigns. However, the industry is not capital-intensive"
+    }
+   ]
+  },
+  {
+   "fact_id": "N2",
+   "force": "new_entrants",
+   "subdimension": "regulatory barriers",
+   "direction": "+",
+   "origin": {
+    "type": "brief",
+    "signal_id": "S3",
+    "doc_id": "ibisworld_54161"
+   },
+   "claim": "IBISWorld rates both barriers to entry and regulation as low and steady for management consulting, the code that contains our NAICS 541611.",
+   "citations": [
+    {
+     "doc_id": "ibisworld_54161",
+     "section": "At a Glance > Industry Structure",
+     "pdf_page": 9,
+     "printed_page": "6",
+     "quote": "Barriers to Entry Low Steady Regulation and Policy Low Steady"
+    }
+   ]
+  },
+  {
+   "fact_id": "N3",
+   "force": "new_entrants",
+   "subdimension": "licensing barriers",
+   "direction": "+",
+   "origin": {
+    "type": "public"
+   },
+   "claim": "The CPA licence is legally required only for SEC filings and attest work; other accountants get it by choice. Advisory and fractional-CFO work therefore has no licence gate.",
+   "citations": [
+    {
+     "source_id": "bls_ooh_accountants",
+     "section": "How to Become One > Licenses, Certifications, and Registrations",
+     "pdf_page": null,
+     "quote": "Any accountant who files a report with the Securities and Exchange Commission (SEC) is required to be a licensed Certified Public Accountant (CPA)."
+    },
+    {
+     "source_id": "bls_ooh_accountants",
+     "section": "How to Become One > Licenses, Certifications, and Registrations",
+     "pdf_page": null,
+     "quote": "Other accountants choose to become a CPA to enhance their job prospects or to gain clients."
+    },
+    {
+     "source_id": "sec_cbiz_10k_fy2025",
+     "section": "Part I, Item 1. Business > Regulation",
+     "pdf_page": null,
+     "quote": "Attest services are not permitted to be performed by any individual or entity that is not licensed to do so."
+    }
+   ]
+  },
+  {
+   "fact_id": "N4",
+   "force": "new_entrants",
+   "subdimension": "entry frequency / niche entry",
+   "direction": "+",
+   "origin": {
+    "type": "report_page"
+   },
+   "claim": "Entry already happens often, and is easiest for specialists serving a narrow market.",
+   "citations": [
+    {
+     "doc_id": "ibisworld_54121c",
+     "section": "Competitive Forces > Concentration",
+     "pdf_page": 27,
+     "printed_page": "24",
+     "quote": "New entrants into the accounting space are common due to the limited barriers to entry."
+    },
+    {
+     "doc_id": "ibisworld_54161",
+     "section": "Competitive Forces > Concentration",
+     "pdf_page": 29,
+     "printed_page": "26",
+     "quote": "there are lower barriers to entry serving specialized markets and services."
+    }
+   ]
+  },
+  {
+   "fact_id": "N5",
+   "force": "new_entrants",
+   "subdimension": "technology lowering entry cost",
+   "direction": "+",
+   "origin": {
+    "type": "report_page"
+   },
+   "claim": "Remote-delivery technology lets small new firms reach clients beyond their city, removing the need for a local office network.",
+   "citations": [
+    {
+     "doc_id": "ibisworld_54161",
+     "section": "Competitive Forces > Concentration > Technology supports and incentivizes new entrants",
+     "pdf_page": 29,
+     "printed_page": "26",
+     "quote": "Adopting technologies enabling remote service provision permits smaller firms to grow and expand by accessing a broader client base."
+    }
+   ]
+  },
+  {
+   "fact_id": "N6",
+   "force": "new_entrants",
+   "subdimension": "profitability attracting entrants",
+   "direction": "+",
+   "origin": {
+    "type": "report_page"
+   },
+   "claim": "Margins are high enough to attract entrants (EBIT about 17.9% of revenue for accounting, a 2023 figure).",
+   "citations": [
+    {
+     "doc_id": "ibisworld_54121c",
+     "section": "Industry questions > Finance",
+     "pdf_page": 54,
+     "printed_page": "51",
+     "quote": "The average profit margin, measured as earnings before interest and taxes, for accounting professionals is high, accounting for an estimated 17.9% of revenue in 2023"
+    }
+   ]
+  },
+  {
+   "fact_id": "N7",
+   "force": "new_entrants",
+   "subdimension": "brand / reputation investment (offsetting)",
+   "direction": "-",
+   "origin": {
+    "type": "report_page"
+   },
+   "claim": "Offsetting: standing out takes real investment in brand and a proven track record, which favors incumbents. For a CFO, who is trusted with the client's cash and books, this matters more than the low cash cost of entry.",
+   "citations": [
+    {
+     "doc_id": "ibisworld_54161",
+     "section": "Competitive Forces > Barriers to Entry > Differentiation",
+     "pdf_page": 31,
+     "printed_page": "28",
+     "quote": "Establishing a unique value proposition demands significant investment in branding and specialized expertise, which favors incumbent consultants with a proven track record."
+    }
+   ]
+  },
+  {
+   "fact_id": "N8",
+   "force": "new_entrants",
+   "subdimension": "regulatory barriers (conflicting)",
+   "direction": "-",
+   "origin": {
+    "type": "brief",
+    "signal_id": "S3",
+    "doc_id": "ibisworld_54121c"
+   },
+   "claim": "Conflicting signal: for firms that practice as CPAs, accounting regulation is rated high and increasing (exam plus 150 credit hours), although IBISWorld still rates barriers to entry as low.",
+   "citations": [
+    {
+     "doc_id": "ibisworld_54121c",
+     "section": "At a Glance > Industry Structure",
+     "pdf_page": 7,
+     "printed_page": "4",
+     "quote": "Barriers to Entry Low Increasing Regulation and Policy High Increasing"
+    },
+    {
+     "doc_id": "ibisworld_54121c",
+     "section": "External Environment > Regulation & Policy > CPA requirement",
+     "pdf_page": 39,
+     "printed_page": "36",
+     "quote": "To be designated as a CPA, an individual must pass the Uniform CPA Examination and have 150 credits"
+    }
+   ]
+  },
+  {
+   "fact_id": "X1",
+   "force": "substitutes",
+   "subdimension": "availability of substitutes (software)",
+   "direction": "+",
+   "origin": {
+    "type": "report_page"
+   },
+   "claim": "ERP and analytics software already replace part of the advisory function by automating processes and giving owners real-time data.",
+   "citations": [
+    {
+     "doc_id": "ibisworld_54161",
+     "section": "Competitive Forces > Substitutes > Business software and analytics tools",
+     "pdf_page": 31,
+     "printed_page": "28",
+     "quote": "Advanced business software, including ERP and CRM systems, can replace some management consultant functions by automating processes and providing real-time data insights."
+    }
+   ]
+  },
+  {
+   "fact_id": "X2",
+   "force": "substitutes",
+   "subdimension": "relative price (AI)",
+   "direction": "+",
+   "origin": {
+    "type": "brief",
+    "signal_id": "S7",
+    "doc_id": "ibisworld_54161"
+   },
+   "claim": "Generative AI offers analysis at close to zero price.",
+   "citations": [
+    {
+     "doc_id": "ibisworld_54161",
+     "section": "Performance > Current Performance",
+     "pdf_page": 13,
+     "printed_page": "10",
+     "quote": "The proliferation of generative AI technology threatens management consultants by efficiently compiling research and offering free analysis"
+    }
+   ]
+  },
+  {
+   "fact_id": "X3",
+   "force": "substitutes",
+   "subdimension": "availability of substitutes (DIY)",
+   "direction": "+",
+   "origin": {
+    "type": "brief",
+    "signal_id": "S7",
+    "doc_id": "ibisworld_54121c"
+   },
+   "claim": "Automation enables do-it-yourself substitutes, especially for the smaller, simpler jobs typical of small businesses.",
+   "citations": [
+    {
+     "doc_id": "ibisworld_54121c",
+     "section": "Performance > Current Performance > Automation and AI",
+     "pdf_page": 12,
+     "printed_page": "9",
+     "quote": "it also poses a significant competitive threat via DIY solutions, particularly for smaller tax preparation or statement review cases"
+    }
+   ]
+  },
+  {
+   "fact_id": "X4",
+   "force": "substitutes",
+   "subdimension": "relative performance (AI bookkeeping)",
+   "direction": "+",
+   "origin": {
+    "type": "public"
+   },
+   "claim": "Intuit claims its QuickBooks agent automates bookkeeping and reconciliation. That is the base layer a fractional CFO often cleans up first, so this is a vendor claim of substitute performance.",
+   "citations": [
+    {
+     "source_id": "intuit_ai_agents_2025",
+     "section": "Press release, 2025-07-01 > Accounting Agent",
+     "pdf_page": null,
+     "quote": "Automates bookkeeping and transaction categorization, and assists in reconciliation, delivering cleaner, more accurate books."
+    }
+   ]
+  },
+  {
+   "fact_id": "X5",
+   "force": "substitutes",
+   "subdimension": "availability of substitutes (incumbent view)",
+   "direction": "+",
+   "origin": {
+    "type": "public"
+   },
+   "claim": "A listed provider tells investors that new technology lets its own clients reduce or bypass its services.",
+   "citations": [
+    {
+     "source_id": "sec_cbiz_10k_fy2025",
+     "section": "Item 1A. Risk Factors > Rapid technological changes",
+     "pdf_page": null,
+     "quote": "enable our current customers to reduce or bypass the use of our services"
+    }
+   ]
+  },
+  {
+   "fact_id": "X6",
+   "force": "substitutes",
+   "subdimension": "relative performance (limits)",
+   "direction": "-",
+   "origin": {
+    "type": "report_page"
+   },
+   "claim": "Software substitutes do not scale as a robust alternative without a specialist overseeing them, so they complement CFO judgment more than replace it.",
+   "citations": [
+    {
+     "doc_id": "ibisworld_54161",
+     "section": "Competitive Forces > Substitutes > Business software and analytics tools",
+     "pdf_page": 31,
+     "printed_page": "28",
+     "quote": "making them difficult to scale as a robust alternative if specialists are not overseeing their use."
+    }
+   ]
+  },
+  {
+   "fact_id": "X7",
+   "force": "substitutes",
+   "subdimension": "substitute threat rating (conflicting)",
+   "direction": "-",
+   "origin": {
+    "type": "report_page"
+   },
+   "claim": "IBISWorld rates the do-it-yourself substitute for accounting as low and steady, because tax complexity keeps clients with professionals.",
+   "citations": [
+    {
+     "doc_id": "ibisworld_54121c",
+     "section": "Competitive Forces > Substitutes",
+     "pdf_page": 29,
+     "printed_page": "26",
+     "quote": "Do-it-yourself Low Steady"
+    },
+    {
+     "doc_id": "ibisworld_54121c",
+     "section": "Competitive Forces > Substitutes",
+     "pdf_page": 29,
+     "printed_page": "26",
+     "quote": "many individuals and larger businesses opt to hire professional accountants due to the complexity of the US tax code"
+    }
+   ]
+  },
+  {
+   "fact_id": "X8",
+   "force": "substitutes",
+   "subdimension": "awareness / adoption of substitutes",
+   "direction": "-",
+   "origin": {
+    "type": "public"
+   },
+   "claim": "Measured AI use by US businesses is still low (7.6% in Sept 2024-Aug 2025), so the AI substitute is more of a threat for later than a current one.",
+   "citations": [
+    {
+     "source_id": "sba_advocacy_faq_2026",
+     "section": "Q4. How are small businesses adopting artificial intelligence?",
+     "pdf_page": 1,
+     "quote": "Between Sept. 2024 and Aug. 2025, 7.6 percent of businesses used artificial intelligence (A.I.)."
+    }
+   ]
+  },
+  {
+   "fact_id": "X9",
+   "force": "substitutes",
+   "subdimension": "switching cost to substitute (risk)",
+   "direction": "-",
+   "origin": {
+    "type": "public"
+   },
+   "claim": "Tech-enabled substitutes carry their own risk: Bench, a VC-funded bookkeeping platform, shut down without warning, cutting thousands of small businesses off from their books.",
+   "citations": [
+    {
+     "source_id": "techcrunch_bench_2024",
+     "section": "Article, 2024-12-27",
+     "pdf_page": null,
+     "quote": "Bench touted having more than 35,000 U.S. customers just hours before it was shut down"
+    },
+    {
+     "source_id": "techcrunch_bench_2024",
+     "section": "Article, 2024-12-27",
+     "pdf_page": null,
+     "quote": "Bench, which had raised $113 million from high-profile backers such as Shopify and Bain Capital Ventures"
+    }
+   ]
+  }
+ ]
+}

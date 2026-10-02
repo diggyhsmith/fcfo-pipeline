@@ -1,0 +1,80 @@
+{
+ "intuit_ai_agents_2025": {
+  "source_id": "intuit_ai_agents_2025",
+  "kind": "commercial",
+  "title": "Intuit Introduces Ground-Breaking Virtual Team of AI Agents to Fuel Growth for Businesses",
+  "publisher": "Intuit Inc. (press release)",
+  "url": "https://investors.intuit.com/news-events/press-releases/detail/1258/intuit-introduces-ground-breaking-virtual-team-of-ai-agents-to-fuel-growth-for-businesses",
+  "accessed": "2026-10-02",
+  "sha256_full_text": "a2d20589cf025fb9",
+  "chars_full_text": 9241,
+  "committed_text": "excerpts around cited quotes only"
+ },
+ "pilot_cfo_services": {
+  "source_id": "pilot_cfo_services",
+  "kind": "commercial",
+  "title": "Pilot: CFO services (vendor marketing page)",
+  "publisher": "Pilot.com",
+  "url": "https://pilot.com/cfo-services",
+  "accessed": "2026-10-02",
+  "sha256_full_text": "e75a6f7a6aae18e3",
+  "chars_full_text": 6451,
+  "committed_text": "excerpts around cited quotes only"
+ },
+ "sec_cbiz_10k_fy2025": {
+  "source_id": "sec_cbiz_10k_fy2025",
+  "kind": "government",
+  "title": "CBIZ, Inc. Form 10-K for fiscal year ended Dec 31, 2025 (filed 2026-02-26)",
+  "publisher": "SEC EDGAR (CIK 0000944148)",
+  "url": "https://www.sec.gov/Archives/edgar/data/944148/000094414826000038/cbz-20251231.htm",
+  "accessed": "2026-10-02",
+  "sha256_full_text": "03888b0751f3a820",
+  "chars_full_text": 328959,
+  "committed_text": "full"
+ },
+ "sba_advocacy_faq_2026": {
+  "source_id": "sba_advocacy_faq_2026",
+  "kind": "government",
+  "title": "Frequently Asked Questions About Small Business (January 2026)",
+  "publisher": "U.S. SBA Office of Advocacy",
+  "url": "https://advocacy.sba.gov/wp-content/uploads/2026/02/FINAL_FAQsAboutSmallBusiness_2026_012826.pdf",
+  "accessed": "2026-10-02",
+  "sha256_full_text": "2ade63d6f5983187",
+  "chars_full_text": 31811,
+  "committed_text": "full"
+ },
+ "techcrunch_bench_2024": {
+  "source_id": "techcrunch_bench_2024",
+  "kind": "commercial",
+  "title": "Bench shuts down, leaving thousands of businesses without access to accounting and tax docs",
+  "publisher": "TechCrunch (trade press), 2024-12-27",
+  "url": "https://techcrunch.com/2024/12/27/bench-shuts-down-leaving-thousands-of-businesses-without-access-to-accounting-and-tax-docs/",
+  "accessed": "2026-10-02",
+  "sha256_full_text": "0f7511015b947520",
+  "chars_full_text": 5150,
+  "committed_text": "excerpts around cited quotes only"
+ },
+ "bls_ooh_accountants": {
+  "source_id": "bls_ooh_accountants",
+  "kind": "government",
+  "title": "Occupational Outlook Handbook: Accountants and Auditors",
+  "publisher": "U.S. Bureau of Labor Statistics",
+  "url": "https://www.bls.gov/ooh/business-and-financial/accountants-and-auditors.htm",
+  "fetch_url": "https://web.archive.org/web/20260926192746id_/https://www.bls.gov/ooh/business-and-financial/accountants-and-auditors.htm",
+  "accessed": "2026-10-02",
+  "sha256_full_text": "3696462de1866d9c",
+  "chars_full_text": 21581,
+  "committed_text": "full"
+ },
+ "cfodive_aicpa_trends_2025": {
+  "source_id": "cfodive_aicpa_trends_2025",
+  "kind": "commercial",
+  "title": "US accounting degree graduates drop 6.6% (coverage of AICPA 2025 Trends report)",
+  "publisher": "CFO Dive (trade press)",
+  "url": "https://www.cfodive.com/news/us-accounting-degree-graduates-drop-talent-shortage/803914/",
+  "accessed": "2026-10-02",
+  "sha256_full_text": "921212f0d9916852",
+  "chars_full_text": 8450,
+  "committed_text": "excerpts around cited quotes only"
+ }
+}

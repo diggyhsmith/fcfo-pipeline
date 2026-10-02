@@ -1,0 +1,22 @@
+EXCERPTS ONLY (paragraphs around cited quotes) of: US accounting degree graduates drop 6.6% (coverage of AICPA 2025 Trends report)
+CFO Dive (trade press) | https://www.cfodive.com/news/us-accounting-degree-graduates-drop-talent-shortage/803914/ | accessed 2026-10-02
+sha256 of full fetched text: 921212f0d9916852
+
+
+Dive Brief:
+
+The number of U.S. students who graduated with a bachelor’s or a master’s degree
+in accounting fell 6.6%
+in the 2023-2024 academic year from the year earlier period, downshifting from the 9.6% year-over-year plunge seen in the previous school year and 7.4% in 2021-2022, according to a biennial report from the American Institute of CPAs.
+
+[...]
+The data on last year’s graduation rates comes as an accounting industry push to tackle a years-long accounting talent shortage and reverse the decline in the supply of accounting graduates has gained its footing. At the same time, countervailing forces are also easing demand such as firms hiring workers overseas and automation.
+
+Among the steps industry leaders have taken to reverse the talent decline is a push to remove the requirement that certified public accountants complete 150 college credit hours by offering new paths to licensure. These new pathways typically substitute a second year of experience for the existing semester hour requirement that equates to five years of post-secondary schooling, which some see as one of the main barriers to drawing more students into the profession. To date, at least
+23 states have changed their rules
+to allow for alternative CPA pathways and more are expected to do so next year, CFO Dive previously reported.
+
+The report suggests that college students may be taking notice: the number of accounting students enrolled in colleges and universities last year rose by 12% YoY, citing data from the National Student Clearinghouse. Looking ahead, demand for accounting students is growing, with 75% of employers who hired new accounting graduates in 2024 expecting to hire the same number of staff or more this year.
+
+Still, the report provided a mixed outlook. Those looking to see more signs of a strengthening pipeline didn’t get it in the data contained in the report regarding students who passed their fourth section of the CPA exam in 2024. Last year, 13,070 students passed their fourth section, down considerably from 2023 when 19,382 passed.
+

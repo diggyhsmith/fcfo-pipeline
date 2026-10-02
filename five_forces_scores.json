@@ -1,0 +1,37 @@
+{
+ "meta": {
+  "authored_by": "Claude Code (an LLM agent), build session 2026-10-02. Scores and rationales are judgment, not computed. five_forces.ipynb enforces the rules: whole numbers 1-5, each rationale cites at least 3 VERIFIED facts of its own force by ID, those facts span at least 2 sub-dimensions, rationale is 2-3 sentences, and no number is averaged across forces.",
+  "scale": "1-5 whole numbers. 5 = the force is strong and squeezes industry profits hard; 1 = the force is weak. (Written-assignment convention; the course spreadsheet's reverse convention is NOT used. See method notes.)"
+ },
+ "forces": {
+  "rivalry": {
+   "score": 4,
+   "rationale": "Rivalry is strong: no firm leads (R1, top firm 5.3%), over 80% of establishments are one-person shops (R2), a listed rival calls the market highly fragmented (R3, R4), and growth is slowing to about 1% a year (R5, R8), so firms grow by taking each other's clients. Accounting firms that already hold the small-business relationship are moving into advisory (R6), and a funded rival publishes a $1,750/month entry price that anchors buyers (R12). It is a 4 and not a 5 because niche specialists can still hold price (R9) and First Research reads accounting as more concentrated than IBISWorld does (R10), so a vertical-focused fractional CFO faces less head-on rivalry than a generic one."
+  },
+  "buyer_power": {
+   "score": 3,
+   "rationale": "Individually our buyers are weak: there are 36.2 million US small businesses and no customer class or single client dominates (B1, B2, B3), and IBISWorld's 'high' rating comes from large corporations our $2M-$20M segment does not include (B8). Collectively they still cap price, because each client can leave cheaply and at will (B4, B5), shops on the price of basic services (B6), can bring the work in-house by hiring a controller (B7), and cuts discretionary retainers in a slow economy (B10). I was torn between 2 and 3 and chose 3 because low switching costs make keeping clients, not winning them, the constant pressure on a retainer business, even with the advice dependence noted in B9."
+  },
+  "supplier_power": {
+   "score": 4,
+   "rationale": "The supplier that matters is senior finance talent, and it is scarce and getting scarcer: demand has outrun new accountants (P1), graduates fell 6.6% (P2), employers compete for about 115,300 openings a year (P4), and wages are the largest cost line (P3). Suppliers can also forward-integrate: a senior person who leaves takes the revenue (P5), and the main small-business software vendor is building forecasting and KPI analysis into its own product (P6). It is a 4 and not a 5 because part-time talent pools, which are the fractional model itself, are the standard mitigation (P7), and supply should ease as enrollment rises and more states relax the 150-hour rule (P8)."
+  },
+  "new_entrants": {
+   "score": 4,
+   "rationale": "Entry is cheap and needs no licence: the business is not capital-intensive (N1), IBISWorld rates entry barriers and regulation as low (N2), the CPA licence is legally required only for SEC and attest work (N3), and remote delivery removes the need for a local office (N5). Entry already happens often, especially in niches (N4), and margins high enough to attract it are reported (N6, a 2023 figure). It is a 4 and not a 5 because a client handing over its cash and books needs a brand and track record that newcomers lack (N7), and firms that practice as CPAs face high and rising regulation (N8)."
+  },
+  "substitutes": {
+   "score": 3,
+   "rationale": "Substitutes are real for the lower layer of the work: ERP and analytics software (X1), free generative-AI analysis (X2), do-it-yourself tools (X3) and Intuit's bookkeeping agent (X4), and a listed provider warns that technology lets its own clients bypass it (X5). The judgment layer, deciding what to do with the numbers, is harder to replace: software needs a specialist overseeing it (X6), IBISWorld rates DIY accounting as low (X7), only 7.6% of businesses used AI in the latest federal survey (X8), and Bench's sudden shutdown shows the risk of replacing a person with a platform (X9). I was torn between 3 and 4 because the AI evidence is mostly vendor claims about a fast-moving category, and I chose 3 based on current adoption data."
+  }
+ },
+ "overall_read": {
+  "dominant_forces": ["new_entrants", "rivalry"],
+  "text": "This is a moderately unattractive industry for a new fractional CFO firm. Two linked forces dominate it: the threat of new entrants and rivalry. With no capital or licence gate, every experienced finance professional is a potential competitor, which keeps the field fragmented, slow-growing and anchored on price. Supplier power over senior talent adds pressure on the cost side and feeds the same problem, because the people we would hire can set up on their own. Buyer power and substitutes matter less, so our profits will depend on firm-level differentiation, such as a vertical niche and sticky client relationships, rather than on industry structure."
+ },
+ "least_confident": {
+  "force": "substitutes",
+  "why": "The evidence conflicts and is weak where it matters most. IBISWorld rates DIY accounting as low (X7), while the management-consulting report and a listed rival treat AI and software as active threats (X2, X5). The strongest evidence of substitute performance is vendor marketing (X4, and P6 on the supplier side), not data on what buyers actually do. The only adoption number (X8) covers all US businesses and all uses of AI, not finance work at $2M-$20M firms. The reports are also from 2025-2026, while AI finance tools change month to month, and the industry itself is a proxy.",
+  "what_would_settle_it": "Three things would settle it: (1) Census Business Trends and Outlook Survey AI-use data cut by firm size and by business function (finance or accounting), to see whether $2M-$20M firms use AI for planning and forecasting, not just for marketing copy; (2) 10-20 interviews with owners in the target band who have recently dropped or skipped outside CFO help, asking what replaced it; (3) adoption or retention numbers for products like Intuit's Finance Agent among mid-market users, if Intuit discloses them. If those show software replacing the forecasting and decision-support work, not just bookkeeping, the score should go to 4."
+ }
+}

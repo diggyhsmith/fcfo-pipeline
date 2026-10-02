@@ -1,5 +1,9 @@
 # Industry Intelligence Pipeline: fractional CFO services
 
+> **New: Porter's Five Forces Scorer** (second deliverable, built on this pipeline's `brief.json`):
+> [five_forces.ipynb](https://github.com/diggyhsmith/fcfo-pipeline/blob/main/five_forces.ipynb)
+> ([nbviewer](https://nbviewer.org/github/diggyhsmith/fcfo-pipeline/blob/main/five_forces.ipynb)). See the section at the end.
+
 A class project (BYU MAcc strategy course). It takes a company description, picks an industry code from the official
 2022 NAICS Manual, ingests industry-report PDFs that were downloaded by hand, extracts seven structured signals with a
 **page-level citation on every one**, **verifies every quote against the PDF page in code**, reconciles the reports, lists what
@@ -81,4 +85,37 @@ sources.json              report metadata (no report text)
 reflection.md             reflection draft (to be rewritten by the student)
 notes_for_reflection.md   notes kept during the build
 dev/                      cell sources and the notebook builder
+```
+
+## Porter's Five Forces Scorer (`five_forces.ipynb`)
+
+Reads `brief.json` and scores each force 1-5 in whole numbers, where **5 = the force is strong and squeezes industry profits** (the written assignment's
+scale, which is the reverse of the course spreadsheet's). Each score comes with a rationale and 3+ cited, code-verified facts, plus an overall read that
+names the dominant forces instead of averaging. The notebook also names the least-confident force.
+
+| Step | Done by |
+|---|---|
+| Facts, claims, quotes (`five_forces_evidence.json`), scores and rationales (`five_forces_scores.json`) | Claude Code (LLM agent), as judgment |
+| Fetching public sources (`fetch_public.py`), signal-to-force mapping, coverage checklist, quote verification (same `verify.py`), rule checks, outputs | Python in the notebook |
+
+```bash
+python fetch_public.py                      # only needed if public_sources/ is missing; no API key
+jupyter nbconvert --to notebook --execute --inplace five_forces.ipynb
+python build_five_forces_pdf.py             # five_forces_submission.pdf from five_forces.json + reflection_five_forces.md
+```
+
+Without the paywalled PDFs, a fresh clone **replays** the committed report-quote results (`five_forces_verification_log.json`) and says so.
+Public-source quotes are always re-verified live against `public_sources/`. That folder holds the full text of government documents (BLS, SEC EDGAR, SBA)
+and, for commercial pages, only the paragraphs around each cited quote. `build_pdf.py` and `reflection.md` still build the first deliverable.
+
+```
+five_forces.ipynb                 the tool (executed; outputs saved)
+five_forces_evidence.json         facts: force, sub-dimension label, direction, claim, citations (quotes <= 25 words)
+five_forces_scores.json           scores, rationales, overall read, least-confident force
+five_forces.json / .md            final output
+five_forces_verification_log.json result for every quote + negative controls (no page text)
+fetch_public.py, public_sources/  public enrichment sources and their cached text
+build_five_forces_pdf.py          builds and checks five_forces_submission.pdf
+reflection_five_forces.md         reflection (written by the student)
+dev/ff_cells/, dev/build_five_forces_notebook.py   notebook cell sources and builder
 ```

@@ -1,0 +1,14 @@
+EXCERPTS ONLY (paragraphs around cited quotes) of: Intuit Introduces Ground-Breaking Virtual Team of AI Agents to Fuel Growth for Businesses
+Intuit Inc. (press release) | https://investors.intuit.com/news-events/press-releases/detail/1258/intuit-introduces-ground-breaking-virtual-team-of-ai-agents-to-fuel-growth-for-businesses | accessed 2026-10-02
+sha256 of full fetched text: a2d20589cf025fb9
+
+with tailored acceleration strategies that predict late payments, automate invoice tracking, and create and send invoices and reminders.
+
+Accounting Agent:
+Automates bookkeeping and transaction categorization, and assists in reconciliation, delivering cleaner, more accurate books.
+
+Finance Agent:
+Provides a comprehensive approach to the financial management of growing, mid-market businesses with robust reporting, KPI analysis, and scenario planning and forecasting based on performance and peer benchmarking, helping finance teams make smart decisions to achieve financial goals.
+
+“I need more time to be able to invest back into my business,” said Kurtis Graham, founder, COSIGN Enterprises, LLC. “Intuit’s AI can help me save several hours a month and drive revenue for my business. That’s a win-win for my business.”
+
