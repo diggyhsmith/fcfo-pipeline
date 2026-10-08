@@ -1,0 +1,100 @@
+{
+  "company": "Kopsa Otte CPAs and Advisors",
+  "slug": "kopsa_otte",
+  "website": "kopsaotte.com",
+  "retrieved": "2026-10-08",
+  "identity_note": "Google listing 'Kopsa Otte Associates LLC' at 306 E 7th St, York, NE 68467, phone (402) 362-6636, website kopsaotte.com; the same street address and phone are printed on kopsaotte.com.",
+  "attempts": [
+    {
+      "source": "Trustpilot",
+      "url": "https://www.trustpilot.com/review/kopsaotte.com",
+      "http_status": 404,
+      "exists": false,
+      "review_count": 0
+    },
+    {
+      "source": "Google Maps",
+      "url": "https://www.google.com/maps/place/Kopsa+Otte+Associates+LLC/data=!4m2!3m1!1s0x8797455fcd1efb2f:0x9ff9f165e1ba1ca0?hl=en",
+      "listing": {
+        "name": "Kopsa Otte Associates LLC",
+        "rating_line": "5.0 (2)",
+        "address": "306 E 7th St, York, NE 68467",
+        "website": "kopsaotte.com",
+        "permanently_closed": false,
+        "final_url": "https://www.google.com/maps/place/Kopsa+Otte+Associates+LLC/@40.8677711,-97.5902876,17z/data=!3m1!4b1!4m6!3m5!1s0x8797455fcd1efb2f:0x9ff9f165e1ba1ca0!8m2!3d40.8677711!4d-97.5902876!16s%2Fg%2F1vyk2_x4?hl=en&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+        "listed_review_count": 2,
+        "star_histogram": {
+          "5": 2,
+          "4": 0,
+          "3": 0,
+          "2": 0,
+          "1": 0
+        },
+        "review_topics": [],
+        "summary_snippets": []
+      },
+      "itemized_reviews_retrieved": 2
+    }
+  ],
+  "reviews": [
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnTURnNzREeWVBEAE",
+      "stars": 5,
+      "date_relative": "a year ago",
+      "text": "We work with Theresa and I look forward to our tax meetings because she is so\nknowledgeable and enjoyable to work with!!",
+      "owner_replied": false,
+      "how_surfaced": "Reviews tab",
+      "source": "Google Maps",
+      "source_url": "https://www.google.com/maps/place/Kopsa+Otte+Associates+LLC/@40.8677711,-97.5902876,17z/data=!3m1!4b1!4m6!3m5!1s0x8797455fcd1efb2f:0x9ff9f165e1ba1ca0!8m2!3d40.8677711!4d-97.5902876!16s%2Fg%2F1vyk2_x4?hl=en&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+      "first_retrieved": "2026-10-08T16:19:53"
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR5d092NmtBRRAB",
+      "stars": 5,
+      "date_relative": "5 years ago",
+      "text": "Great service",
+      "owner_replied": false,
+      "how_surfaced": "Reviews tab",
+      "source": "Google Maps",
+      "source_url": "https://www.google.com/maps/place/Kopsa+Otte+Associates+LLC/@40.8677711,-97.5902876,17z/data=!3m1!4b1!4m6!3m5!1s0x8797455fcd1efb2f:0x9ff9f165e1ba1ca0!8m2!3d40.8677711!4d-97.5902876!16s%2Fg%2F1vyk2_x4?hl=en&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+      "first_retrieved": "2026-10-08T16:19:53"
+    }
+  ],
+  "star_histogram": {
+    "5": 2,
+    "4": 0,
+    "3": 0,
+    "2": 0,
+    "1": 0
+  },
+  "listed_review_count": 2,
+  "review_topics": [],
+  "runs": [
+    {
+      "run_at": "2026-10-08T16:19:53",
+      "itemized_this_run": 2,
+      "new_this_run": 2,
+      "histogram_this_run": {
+        "5": 2,
+        "4": 0,
+        "3": 0,
+        "2": 0,
+        "1": 0
+      }
+    },
+    {
+      "run_at": "2026-10-08T16:25:33",
+      "itemized_this_run": 2,
+      "new_this_run": 0,
+      "histogram_this_run": {
+        "5": 2,
+        "4": 0,
+        "3": 0,
+        "2": 0,
+        "1": 0
+      }
+    }
+  ],
+  "source_used": "Google Maps",
+  "source_url": "https://www.google.com/maps/place/Kopsa+Otte+Associates+LLC/@40.8677711,-97.5902876,17z/data=!3m1!4b1!4m6!3m5!1s0x8797455fcd1efb2f:0x9ff9f165e1ba1ca0!8m2!3d40.8677711!4d-97.5902876!16s%2Fg%2F1vyk2_x4?hl=en&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D"
+}

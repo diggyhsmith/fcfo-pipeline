@@ -1,0 +1,5 @@
+# The root .gitignore excludes every cache/ dir (paywalled report text). This one holds public reviews only, so publish it.
+!cache/
+
+# built locally by build_nps_pdf.py; rebuild after editing reflection_nps.md
+nps_submission.pdf

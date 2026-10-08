@@ -1,0 +1,315 @@
+{
+  "meta": {
+    "title": "Customer Loyalty Scorer (NPS)",
+    "track": "Starting a company",
+    "segment": "Bookkeeping, tax and loan-readiness for independent estheticians and spa/suite owners",
+    "pivot_note": "Earlier deliverables (pipeline.ipynb, five_forces.ipynb) framed the project as fractional CFO services for US SMBs (NAICS 541611); the team has since narrowed it to bookkeeping, tax and loan-readiness for independent estheticians and spa/suite owners, so this NPS scores competitors in that narrower niche.",
+    "generated": "2026-10-08T16:33:49",
+    "retrieved": [
+      "2026-10-08"
+    ]
+  },
+  "method": {
+    "boundary": "5 stars = Promoter; 4 stars = Passive; 1-3 stars = Detractor. NPS = %Promoters - %Detractors, rounded to a whole number, on -100..+100.",
+    "boundary_why": "NPS counts only 9-10 out of 10 as promoters. On Google, 5 stars is the default happy rating, so withholding the fifth star signals a reservation: the satisfied-but-not-enthusiastic customer NPS calls passive. 1-3 stars map to detractor because on review sites a 3-star is already a complaint, just as NPS treats 0-6 as detractor. The alternative (4 stars = promoter) is computed for every company.",
+    "source_rule": "Trustpilot first for all four (used only if >= ~15 reviews); Google Maps fallback, read in a real headless browser because the Places API returns at most 5 reviews; Yelp checked where linked (blocked, HTTP 403). Every itemized review is cached with source URL, stars, relative date, text and Google review id; itemized counts are checked against Google's star histogram.",
+    "interval": "95% highest-density interval on NPS from a flat Dirichlet(1,1,1) prior updated with the promoter/passive/detractor counts (100,000 draws, fixed seed).",
+    "who_did_what": "Reviews retrieved by collect_reviews.py (Playwright). Scores, intervals, charts and checks computed in nps_scorer.ipynb. Prose judgments drafted by Claude Code (an LLM agent) during the build session."
+  },
+  "companies": [
+    {
+      "slug": "kopsa_otte",
+      "company": "Kopsa Otte CPAs and Advisors",
+      "stars": {
+        "5": 2,
+        "4": 0,
+        "3": 0,
+        "2": 0,
+        "1": 0
+      },
+      "histogram": {
+        "5": 2,
+        "4": 0,
+        "3": 0,
+        "2": 0,
+        "1": 0
+      },
+      "primary": {
+        "n": 2,
+        "promoters": 2,
+        "passives": 0,
+        "detractors": 0,
+        "pct_promoters": 100.0,
+        "pct_detractors": 0.0,
+        "nps": 100
+      },
+      "alt_4star_promoter": {
+        "n": 2,
+        "promoters": 2,
+        "passives": 0,
+        "detractors": 0,
+        "pct_promoters": 100.0,
+        "pct_detractors": 0.0,
+        "nps": 100
+      },
+      "ci95": [
+        -22,
+        96
+      ],
+      "alt_ci95": [
+        -22,
+        96
+      ],
+      "confidence": "very low: anecdote, not a score",
+      "selection_bias": "Two Google reviewers out of a 30-year, 25-person salon-and-spa CPA practice: clients of a niche B2B accountant almost never review it, so the two who did were people moved to praise a named staff member, not a cross-section of the client base.",
+      "with_text": 2,
+      "owner_replied": 0,
+      "source_used": "Google Maps",
+      "source_url": "https://www.google.com/maps/place/Kopsa+Otte+Associates+LLC/@40.8677711,-97.5902876,17z/data=!3m1!4b1!4m6!3m5!1s0x8797455fcd1efb2f:0x9ff9f165e1ba1ca0!8m2!3d40.8677711!4d-97.5902876!16s%2Fg%2F1vyk2_x4?hl=en&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+      "attempts": [
+        "Trustpilot: no page (404)",
+        "Google Maps: 'Kopsa Otte Associates LLC', 306 E 7th St, York, NE 68467, 2 reviews listed"
+      ],
+      "identity_note": "Google listing 'Kopsa Otte Associates LLC' at 306 E 7th St, York, NE 68467, phone (402) 362-6636, website kopsaotte.com; the same street address and phone are printed on kopsaotte.com.",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "slug": "xendoo",
+      "company": "Xendoo",
+      "stars": {
+        "5": 164,
+        "4": 1,
+        "3": 1,
+        "2": 2,
+        "1": 9
+      },
+      "histogram": {
+        "5": 164,
+        "4": 1,
+        "3": 1,
+        "2": 2,
+        "1": 9
+      },
+      "primary": {
+        "n": 177,
+        "promoters": 164,
+        "passives": 1,
+        "detractors": 12,
+        "pct_promoters": 92.7,
+        "pct_detractors": 6.8,
+        "nps": 86
+      },
+      "alt_4star_promoter": {
+        "n": 177,
+        "promoters": 165,
+        "passives": 0,
+        "detractors": 12,
+        "pct_promoters": 93.2,
+        "pct_detractors": 6.8,
+        "nps": 86
+      },
+      "ci95": [
+        77,
+        92
+      ],
+      "alt_ci95": [
+        77,
+        92
+      ],
+      "confidence": "reasonable for a review-based score (still not a survey)",
+      "selection_bias": "Firm-wide reviews (not just Beauty & Wellness clients) with the owner replying to nearly every one and a large cluster dated within the same year, which is consistent with Xendoo asking satisfied clients to review; unhappy clients surface mainly as 1-star complaints, so the 177 over-represent both the prompted-happy and the furious.",
+      "with_text": 163,
+      "owner_replied": 160,
+      "source_used": "Google Maps",
+      "source_url": "https://www.google.com/maps/place/Xendoo+Online+Accounting,+Bookkeeping+%26+Tax/@26.2090769,-80.1422203,17z/data=!3m1!4b1!4m6!3m5!1s0x88d903cf576518a5:0xb0f2c0ddeab13955!8m2!3d26.2090769!4d-80.1422203!16s%2Fg%2F11dxbm3ywr?hl=en&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+      "attempts": [
+        "Trustpilot: page exists, 0 reviews (claimed)",
+        "Google Maps: 'Xendoo Online Accounting, Bookkeeping & Tax', 6700 N Andrews Ave #300, Fort Lauderdale, FL 33309, 177 reviews listed"
+      ],
+      "identity_note": "Google listing 'Xendoo Online Accounting, Bookkeeping & Tax' at 6700 N Andrews Ave #300, Fort Lauderdale, FL (company HQ), website xendoo.com. Reviews are firm-wide, not limited to the Beauty & Wellness vertical; Google does not separate them.",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "slug": "elite_business_solutions",
+      "company": "Elite Business Solutions",
+      "stars": {
+        "5": 4,
+        "4": 0,
+        "3": 0,
+        "2": 0,
+        "1": 0
+      },
+      "histogram": {
+        "5": 4,
+        "4": 0,
+        "3": 0,
+        "2": 0,
+        "1": 0
+      },
+      "primary": {
+        "n": 4,
+        "promoters": 4,
+        "passives": 0,
+        "detractors": 0,
+        "pct_promoters": 100.0,
+        "pct_detractors": 0.0,
+        "nps": 100
+      },
+      "alt_4star_promoter": {
+        "n": 4,
+        "promoters": 4,
+        "passives": 0,
+        "detractors": 0,
+        "pct_promoters": 100.0,
+        "pct_detractors": 0.0,
+        "nps": 100
+      },
+      "ci95": [
+        8,
+        98
+      ],
+      "alt_ci95": [
+        7,
+        98
+      ],
+      "confidence": "very low: anecdote, not a score",
+      "selection_bias": "Four 5-star reviews, the newest about two years old, on a listing Google now marks permanently closed: a survivorship snapshot of the clients who chose to praise the firm before it shut, which says nothing about why it closed.",
+      "with_text": 2,
+      "owner_replied": 0,
+      "source_used": "Google Maps",
+      "source_url": "https://www.google.com/maps/place/Elite+Business+Accounting+Solutions,+Inc./@28.1883637,-82.551715,17z/data=!3m1!4b1!4m6!3m5!1s0x89de0b9896fc2475:0xb48ff44fc7875821!8m2!3d28.1883637!4d-82.551715!16s%2Fg%2F11f56ywbfd?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+      "attempts": [
+        "Trustpilot: page exists, 0 reviews (claimed)",
+        "Yelp: HTTP 403 (blocks automated browsers)",
+        "Google Maps: 'Elite Business Accounting Solutions, Inc.', 15985 Preserve Marketplace Blvd #1099, Odessa, FL 33556 [PERMANENTLY CLOSED], 4 reviews listed"
+      ],
+      "identity_note": "elitebsolutions.com now redirects to a domain-for-sale page. The archived site (Wayback Machine, 2023-06-13) lists Albany, NY and (518) 243-8722 and links its own 'leave a Google review' button to g.page/r/CSFYh8dP9I-0EAg, which resolves to 'Elite Business Accounting Solutions, Inc.' (Odessa, FL, marked Permanently closed). That self-linked listing is used. A same-name Omaha firm on Google (elitesolutionsomaha.com) is a different business and was NOT used.",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "slug": "jasmine_thomas",
+      "company": "Jasmine Thomas & Associates",
+      "stars": {
+        "5": 0,
+        "4": 0,
+        "3": 0,
+        "2": 0,
+        "1": 0
+      },
+      "histogram": null,
+      "primary": {
+        "n": 0,
+        "promoters": 0,
+        "passives": 0,
+        "detractors": 0,
+        "pct_promoters": null,
+        "pct_detractors": null,
+        "nps": null
+      },
+      "alt_4star_promoter": {
+        "n": 0,
+        "promoters": 0,
+        "passives": 0,
+        "detractors": 0,
+        "pct_promoters": null,
+        "pct_detractors": null,
+        "nps": null
+      },
+      "ci95": null,
+      "alt_ci95": null,
+      "confidence": "none: no reviews exist to score",
+      "selection_bias": "No reviews exist on any source checked, so there is no sample to be biased; the absence itself is the data point (a one-person beauty-industry practice whose website is now a parked domain).",
+      "with_text": 0,
+      "owner_replied": 0,
+      "source_used": null,
+      "source_url": null,
+      "attempts": [
+        "Trustpilot: no page (404)",
+        "Google Maps search -> ['Jasmine Thomas']",
+        "Google Maps search -> ['Statz Accounting & Tax Services LLC', 'Malone Tax and Accounting', 'Tunji-Lesi CPA, LLC']",
+        "Google Maps search -> []"
+      ],
+      "identity_note": "Madison, WI beauty-industry accountant (Brava Magazine profile, 2024-09-11; phone 779-236-6330). jasminethomasassociates.com is now a GoDaddy parked page. No Google Maps listing under the firm's name exists near Madison; the only 'Jasmine Thomas' tax listing Google returns is a permanently closed TurboTax preparer in Oakbrook Terrace, IL with no reviews, which is not this firm.",
+      "retrieved": "2026-10-08"
+    }
+  ],
+  "excerpts": [
+    {
+      "bucket": "promoter",
+      "company": "Kopsa Otte CPAs and Advisors",
+      "stars": 5,
+      "date": "a year ago",
+      "source": "Google Maps",
+      "source_url": "https://www.google.com/maps/place/Kopsa+Otte+Associates+LLC/@40.8677711,-97.5902876,17z/data=!3m1!4b1!4m6!3m5!1s0x8797455fcd1efb2f:0x9ff9f165e1ba1ca0!8m2!3d40.8677711!4d-97.5902876!16s%2Fg%2F1vyk2_x4?hl=en&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnTURnNzREeWVBEAE",
+      "quote": "We work with Theresa and I look forward to our tax meetings because she is so knowledgeable and enjoyable to work with!!",
+      "why": "Five stars and unreserved enthusiasm (the client looks forward to tax meetings): the kind of customer who recommends unprompted. It also comes from the salon-and-spa specialist, the closest match to our niche."
+    },
+    {
+      "bucket": "passive",
+      "company": "Xendoo",
+      "stars": 4,
+      "date": "a year ago",
+      "source": "Google Maps",
+      "source_url": "https://www.google.com/maps/place/Xendoo+Online+Accounting,+Bookkeeping+%26+Tax/@26.2090769,-80.1422203,17z/data=!3m1!4b1!4m6!3m5!1s0x88d903cf576518a5:0xb0f2c0ddeab13955!8m2!3d26.2090769!4d-80.1422203!16s%2Fg%2F11dxbm3ywr?hl=en&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2pKR01WRlJPUzFWY0hwUGNWUkdNSG8xVmpaaVZGRRAB",
+      "quote": "Your experience with Xendoo will completely depend on which accountant you are assigned. ...",
+      "why": "Four stars with a built-in reservation: the reviewer is happy with one accountant but warns the firm itself is a lottery. Satisfied, but not someone who would recommend the firm without caveats. That is a passive. It is the only 4-star review among all 183."
+    },
+    {
+      "bucket": "detractor",
+      "company": "Xendoo",
+      "stars": 1,
+      "date": "9 months ago",
+      "source": "Google Maps",
+      "source_url": "https://www.google.com/maps/place/Xendoo+Online+Accounting,+Bookkeeping+%26+Tax/@26.2090769,-80.1422203,17z/data=!3m1!4b1!4m6!3m5!1s0x88d903cf576518a5:0xb0f2c0ddeab13955!8m2!3d26.2090769!4d-80.1422203!16s%2Fg%2F11dxbm3ywr?hl=en&entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2tzd05UZDBja1k1YVZGdk9GZ3hkbk16ZDNoNldHYxAB",
+      "quote": "I hired this firm to prepare and file my 2023 taxes. I later started receiving multiple notices from the IRS and the State of North Carolina, including one stating that my 2023 return was not filed. When ...",
+      "why": "One star: the firm was paid to file a return that was never filed, and follow-up stopped. A customer who actively warns others is a detractor, and the failure (tax compliance and follow-through) is exactly the pain point our esthetician clients fear."
+    }
+  ],
+  "track": {
+    "xendoo_beauty_mentions": 0,
+    "xendoo_xero_migration_mentions": 25,
+    "xendoo_review_topics": [
+      "bookkeeping, mentioned in 22 reviews",
+      "tax filing, mentioned in 3 reviews",
+      "answering questions, mentioned in 30 reviews",
+      "quickbooks alternative, mentioned in 7 reviews",
+      "quick question answering, mentioned in 2 reviews",
+      "clear advice, mentioned in 4 reviews",
+      "onboarding process, mentioned in 2 reviews",
+      "pleasant staff, mentioned in 3 reviews",
+      "assigned accountant, mentioned in 3 reviews",
+      "screen sharing, mentioned in 2 reviews"
+    ],
+    "specialist_reviews_combined": 6,
+    "text": [
+      [
+        "Is there a high-volume, mediocre-NPS incumbent?",
+        "No. The only competitor with real review volume, Xendoo (n = 177), scores NPS +86 (95% interval +77 to +92). That is high, not mediocre, and even after discounting for prompted reviews it is not a firm whose customers are being served unremarkably. The classic wedge (many customers, lukewarm loyalty) is not in this data."
+      ],
+      [
+        "What the data shows instead: two different empty spaces.",
+        "(1) The beauty specialists have almost no public reputation at all: 6 Google reviews combined across three firms, one listing permanently closed and one firm's domain parked. Kopsa Otte, 30+ years in salon/spa accounting, has 2 reviews; its reputation lives in trade press and referrals, not where a new esthetician searches. (2) The firm that does have reputation volume does not speak to this customer: 0 of 177 Xendoo reviews mention a salon, spa, beauty or esthetics word, while 25 are about a QuickBooks-to-Xero migration product. Its detractors describe generalist-scale failures: a tax return that was never filed, 'unknown transaction' bookkeeping, a cash-basis method that did not fit the business, and one who was turned away because the company was not officially started yet. That last one is precisely the pre-launch esthetician."
+      ],
+      [
+        "The wedge, stated plainly.",
+        "Not 'beat an unloved incumbent' but 'occupy an empty reputational position': nobody owns visible, reviewed proof of being the bookkeeper for independent estheticians and suite owners. The bar to become the most-reviewed specialist in this niche is about five reviews. The defensible entry move is to earn reviews from esthetician clients early and make them specific to the niche's pain points (1099 vs. W-2, separating personal and business spending, showing enough profit to qualify for a loan)."
+      ],
+      [
+        "Why this could be wrong.",
+        "Thin review volume is ambiguous. It can mean an underserved niche, or it can mean this buyer simply does not choose a bookkeeper through Google reviews (referrals, Instagram, suite operators and beauty-school networks may matter more). Low volume is consistent with an opening but does not prove demand; interviews with estheticians about how they found their current bookkeeper would settle it. And Xendoo's high score means a well-reviewed generalist could defend the space quickly if it leaned into its Beauty & Wellness page."
+      ]
+    ]
+  },
+  "limits": [
+    "Bimodal review bias: people mostly review when delighted or furious and rarely when merely satisfied, so a review-derived NPS probably overstates how polarized real customers are compared with a random-sample NPS survey (passives nearly vanish: 1 four-star review out of 183).",
+    "Sample size: only Xendoo (177) clears the 50-review target; Kopsa Otte (2) and Elite (4) are anecdotes with 95% intervals spanning most of the scale, and Jasmine Thomas & Associates (0) cannot be scored.",
+    "Star-to-NPS mapping is an approximation: a 1-5 star rating is not the 0-10 'likelihood to recommend' question NPS was designed around; the 4-star sensitivity is shown for that reason.",
+    "Prompted reviews: firms can ask happy clients to review (Xendoo's owner replies to most reviews and many name a staff member), which inflates scores in a way this tool cannot measure.",
+    "Scope mismatch: Xendoo's listing covers the whole firm, not only its Beauty & Wellness vertical; many reviews are about a QuickBooks-to-Xero migration product.",
+    "Single source: Trustpilot was empty for all four and Yelp blocks automated access, so every score rests on Google Maps alone.",
+    "Google's logged-out view varies between page loads; the collector merges reviews across runs by Google review id and checks the itemized star counts against Google's own histogram (they match exactly for every listing)."
+  ]
+}

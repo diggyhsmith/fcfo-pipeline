@@ -1,0 +1,131 @@
+{
+  "company": "Elite Business Solutions",
+  "slug": "elite_business_solutions",
+  "website": "elitebsolutions.com",
+  "retrieved": "2026-10-08",
+  "identity_note": "elitebsolutions.com now redirects to a domain-for-sale page. The archived site (Wayback Machine, 2023-06-13) lists Albany, NY and (518) 243-8722 and links its own 'leave a Google review' button to g.page/r/CSFYh8dP9I-0EAg, which resolves to 'Elite Business Accounting Solutions, Inc.' (Odessa, FL, marked Permanently closed). That self-linked listing is used. A same-name Omaha firm on Google (elitesolutionsomaha.com) is a different business and was NOT used.",
+  "attempts": [
+    {
+      "source": "Trustpilot",
+      "url": "https://www.trustpilot.com/review/elitebsolutions.com",
+      "http_status": 200,
+      "exists": true,
+      "display_name": "Elite Business Solutions",
+      "claimed": true,
+      "review_count": 0,
+      "language_filter": "all"
+    },
+    {
+      "source": "Yelp",
+      "url": "https://www.yelp.com/biz/elite-business-solutions-albany",
+      "http_status": 403,
+      "note": "Yelp returns 403 to automated browsers; not worked around"
+    },
+    {
+      "source": "Google Maps",
+      "url": "https://g.page/r/CSFYh8dP9I-0EAg",
+      "listing": {
+        "name": "Elite Business Accounting Solutions, Inc.",
+        "rating_line": "5.0 (4)",
+        "address": "15985 Preserve Marketplace Blvd #1099, Odessa, FL 33556",
+        "website": "",
+        "permanently_closed": true,
+        "final_url": "https://www.google.com/maps/place/Elite+Business+Accounting+Solutions,+Inc./@28.1883637,-82.551715,17z/data=!3m1!4b1!4m6!3m5!1s0x89de0b9896fc2475:0xb48ff44fc7875821!8m2!3d28.1883637!4d-82.551715!16s%2Fg%2F11f56ywbfd?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+        "listed_review_count": 4,
+        "star_histogram": {
+          "5": 4,
+          "4": 0,
+          "3": 0,
+          "2": 0,
+          "1": 0
+        },
+        "review_topics": [],
+        "summary_snippets": []
+      },
+      "itemized_reviews_retrieved": 4
+    }
+  ],
+  "reviews": [
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNsdXRqSExnEAE",
+      "stars": 5,
+      "date_relative": "2 years ago",
+      "text": "Elite Business Accounting Solutions is second to none! Their bookkeeping and tax professionals offer a very personalized and customized support service. Professionalism, Integrity, knowledge, dependability, experience and first rate customer service! Thank you EBAS, running a business is easy with you in my corner!",
+      "owner_replied": false,
+      "how_surfaced": "Reviews tab",
+      "source": "Google Maps",
+      "source_url": "https://www.google.com/maps/place/Elite+Business+Accounting+Solutions,+Inc./@28.1883637,-82.551715,17z/data=!3m1!4b1!4m6!3m5!1s0x89de0b9896fc2475:0xb48ff44fc7875821!8m2!3d28.1883637!4d-82.551715!16s%2Fg%2F11f56ywbfd?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+      "first_retrieved": "2026-10-08T16:24:04"
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURZN2FXMVlnEAE",
+      "stars": 5,
+      "date_relative": "7 years ago",
+      "text": "If you are looking for a professional, ethical, reliable, communicative and friendly accountant, look no further.\nI highly recommend Elite Business Solutions with their team of accountants and CPAs with tax expertise. They were able to save us on our taxes more than we anticipated.",
+      "owner_replied": false,
+      "how_surfaced": "Reviews tab",
+      "source": "Google Maps",
+      "source_url": "https://www.google.com/maps/place/Elite+Business+Accounting+Solutions,+Inc./@28.1883637,-82.551715,17z/data=!3m1!4b1!4m6!3m5!1s0x89de0b9896fc2475:0xb48ff44fc7875821!8m2!3d28.1883637!4d-82.551715!16s%2Fg%2F11f56ywbfd?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+      "first_retrieved": "2026-10-08T16:24:04"
+    },
+    {
+      "review_id": "ChZDSUhNMG9nS0VJQ0FnSURZaTQzTlRnEAE",
+      "stars": 5,
+      "date_relative": "7 years ago",
+      "text": "",
+      "owner_replied": false,
+      "how_surfaced": "Reviews tab",
+      "source": "Google Maps",
+      "source_url": "https://www.google.com/maps/place/Elite+Business+Accounting+Solutions,+Inc./@28.1883637,-82.551715,17z/data=!3m1!4b1!4m6!3m5!1s0x89de0b9896fc2475:0xb48ff44fc7875821!8m2!3d28.1883637!4d-82.551715!16s%2Fg%2F11f56ywbfd?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+      "first_retrieved": "2026-10-08T16:24:04"
+    },
+    {
+      "review_id": "ChdDSUhNMG9nS0VJQ0FnSURZazVuWTNnRRAB",
+      "stars": 5,
+      "date_relative": "7 years ago",
+      "text": "",
+      "owner_replied": false,
+      "how_surfaced": "Reviews tab",
+      "source": "Google Maps",
+      "source_url": "https://www.google.com/maps/place/Elite+Business+Accounting+Solutions,+Inc./@28.1883637,-82.551715,17z/data=!3m1!4b1!4m6!3m5!1s0x89de0b9896fc2475:0xb48ff44fc7875821!8m2!3d28.1883637!4d-82.551715!16s%2Fg%2F11f56ywbfd?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D",
+      "first_retrieved": "2026-10-08T16:24:04"
+    }
+  ],
+  "star_histogram": {
+    "5": 4,
+    "4": 0,
+    "3": 0,
+    "2": 0,
+    "1": 0
+  },
+  "listed_review_count": 4,
+  "review_topics": [],
+  "runs": [
+    {
+      "run_at": "2026-10-08T16:24:04",
+      "itemized_this_run": 4,
+      "new_this_run": 4,
+      "histogram_this_run": {
+        "5": 4,
+        "4": 0,
+        "3": 0,
+        "2": 0,
+        "1": 0
+      }
+    },
+    {
+      "run_at": "2026-10-08T16:28:43",
+      "itemized_this_run": 4,
+      "new_this_run": 0,
+      "histogram_this_run": {
+        "5": 4,
+        "4": 0,
+        "3": 0,
+        "2": 0,
+        "1": 0
+      }
+    }
+  ],
+  "source_used": "Google Maps",
+  "source_url": "https://www.google.com/maps/place/Elite+Business+Accounting+Solutions,+Inc./@28.1883637,-82.551715,17z/data=!3m1!4b1!4m6!3m5!1s0x89de0b9896fc2475:0xb48ff44fc7875821!8m2!3d28.1883637!4d-82.551715!16s%2Fg%2F11f56ywbfd?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D"
+}

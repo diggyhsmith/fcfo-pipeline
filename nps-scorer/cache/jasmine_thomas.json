@@ -1,0 +1,69 @@
+{
+  "company": "Jasmine Thomas & Associates",
+  "slug": "jasmine_thomas",
+  "website": "jasminethomasassociates.com",
+  "retrieved": "2026-10-08",
+  "identity_note": "Madison, WI beauty-industry accountant (Brava Magazine profile, 2024-09-11; phone 779-236-6330). jasminethomasassociates.com is now a GoDaddy parked page. No Google Maps listing under the firm's name exists near Madison; the only 'Jasmine Thomas' tax listing Google returns is a permanently closed TurboTax preparer in Oakbrook Terrace, IL with no reviews, which is not this firm.",
+  "attempts": [
+    {
+      "source": "Trustpilot",
+      "url": "https://www.trustpilot.com/review/jasminethomasassociates.com",
+      "http_status": 404,
+      "exists": false,
+      "review_count": 0
+    },
+    {
+      "source": "Google Maps search",
+      "url": "https://www.google.com/maps/search/Jasmine+Thomas+%26+Associates/@43.0731,-89.4012,12z?hl=en",
+      "results": [
+        {
+          "name": "Jasmine Thomas",
+          "address": "1 Mid America Plaza Office 3098, Office 3025, Oakbrook Terrace, IL 60181",
+          "website": "turbotax.intuit.com"
+        }
+      ]
+    },
+    {
+      "source": "Google Maps search",
+      "url": "https://www.google.com/maps/search/Jasmine+Thomas+accountant/@43.0731,-89.4012,12z?hl=en",
+      "results": [
+        {
+          "name": "Statz Accounting & Tax Services LLC",
+          "card": "Statz Accounting & Tax Services LLC | Statz Accounting & Tax Services LLC | 4.6(10) | Tax preparation service ·  · 1102 Post Rd #2 | Closed · Opens 8 AM Fri · "
+        },
+        {
+          "name": "Malone Tax and Accounting",
+          "card": "Malone Tax and Accounting | Malone Tax and Accounting | 5.0(34) | Tax preparation service · 1410 Northport Dr | Open · Closes 9 PM · (608) 268-6222 |  | Websit"
+        },
+        {
+          "name": "Tunji-Lesi CPA, LLC",
+          "card": "Tunji-Lesi CPA, LLC | Tunji-Lesi CPA, LLC | 5.0(2) | Certified public accountant ·  · 6314 Odana Rd #14 | Closes soon · 6 PM · Opens 9 AM Fri · (608) 721-1745 "
+        },
+        {
+          "name": "LKM Accounting Services",
+          "card": "LKM Accounting Services | LKM Accounting Services | 3.7(6) | Certified public accountant · 2623 S Stoughton Rd Ste C | Closed · Opens 9 AM Fri · (608) 239-4907 "
+        },
+        {
+          "name": "Johnson & Stern Tax Solutions",
+          "card": "Johnson & Stern Tax Solutions | Johnson & Stern Tax Solutions | 4.9(149) | Tax preparation service | Open · Closes 8 PM · (608) 292-2585 |  | Website |  | Dir"
+        },
+        {
+          "name": "Middleton Accounting Services",
+          "card": "Middleton Accounting Services | Middleton Accounting Services | 5.0(4) | Accountant ·  · 6213 Middleton Springs Dr Ste 202 | Closed · Opens 8 AM Fri · (608) 83"
+        },
+        {
+          "name": "Jasmine Thomas",
+          "card": "Jasmine Thomas | Jasmine Thomas | No reviews | Tax preparation · 1 Mid America Plaza Office 3098, Office 3025 | Permanently closed · (316) 444-3284 |  | Websit"
+        }
+      ]
+    },
+    {
+      "source": "Google Maps search",
+      "url": "https://www.google.com/maps/search/Jasmine+Thomas+%26+Associates+LLC?hl=en",
+      "results": []
+    }
+  ],
+  "reviews": [],
+  "source_used": null,
+  "source_url": null
+}

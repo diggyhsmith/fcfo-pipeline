@@ -1,0 +1,9 @@
+# Python 3.9+. All free / local; no paid API and no API key.
+playwright>=1.45      # then: playwright install chromium  (only needed to re-collect reviews)
+numpy>=1.26
+matplotlib>=3.8
+nbformat>=5.9
+nbconvert>=7.0
+ipykernel>=6.0
+reportlab>=4.0
+pypdf>=4.0

@@ -3,6 +3,10 @@
 > **New: Porter's Five Forces Scorer** (second deliverable, built on this pipeline's `brief.json`):
 > [five_forces.ipynb](https://github.com/diggyhsmith/fcfo-pipeline/blob/main/five_forces.ipynb)
 > ([nbviewer](https://nbviewer.org/github/diggyhsmith/fcfo-pipeline/blob/main/five_forces.ipynb)). See the section at the end.
+>
+> **New: Customer Loyalty Scorer (NPS)** (third deliverable, in [`nps-scorer/`](nps-scorer/)):
+> [nps_scorer.ipynb](https://github.com/diggyhsmith/fcfo-pipeline/blob/main/nps-scorer/nps_scorer.ipynb)
+> ([nbviewer](https://nbviewer.org/github/diggyhsmith/fcfo-pipeline/blob/main/nps-scorer/nps_scorer.ipynb)).
 
 A class project (BYU MAcc strategy course). It takes a company description, picks an industry code from the official
 2022 NAICS Manual, ingests industry-report PDFs that were downloaded by hand, extracts seven structured signals with a
