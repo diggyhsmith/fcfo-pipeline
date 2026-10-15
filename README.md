@@ -7,6 +7,10 @@
 > **New: Customer Loyalty Scorer (NPS)** (third deliverable, in [`nps-scorer/`](nps-scorer/)):
 > [nps_scorer.ipynb](https://github.com/diggyhsmith/fcfo-pipeline/blob/main/nps-scorer/nps_scorer.ipynb)
 > ([nbviewer](https://nbviewer.org/github/diggyhsmith/fcfo-pipeline/blob/main/nps-scorer/nps_scorer.ipynb)).
+>
+> **New: Learning-Curve Calculator (H&R Block)** (fourth deliverable, in [`learning-curve/`](learning-curve/)):
+> [learning_curve.ipynb](https://github.com/diggyhsmith/fcfo-pipeline/blob/main/learning-curve/learning_curve.ipynb)
+> ([nbviewer](https://nbviewer.org/github/diggyhsmith/fcfo-pipeline/blob/main/learning-curve/learning_curve.ipynb)).
 
 A class project (BYU MAcc strategy course). It takes a company description, picks an industry code from the official
 2022 NAICS Manual, ingests industry-report PDFs that were downloaded by hand, extracts seven structured signals with a

@@ -1,0 +1,5 @@
+# The root .gitignore excludes every cache/ dir (paywalled report text). This one holds only public SEC EDGAR and FRED data, so publish it.
+!cache/
+
+# built locally by build_pdf.py; rebuild after editing reflection_learning_curve.md
+learning_curve_submission.pdf

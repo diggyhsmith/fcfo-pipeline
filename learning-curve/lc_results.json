@@ -1,0 +1,688 @@
+{
+ "ticker": "HRB",
+ "company": "H&R BLOCK INC",
+ "cik": 12659,
+ "cost_line": "COGS-type tags: CostOfRevenue, CostOfGoodsAndServicesSold",
+ "built": "2026-10-15",
+ "window": "FY2013-FY2026",
+ "rows": [
+  {
+   "fy": 2013,
+   "start": "2012-05-01",
+   "end": "2013-04-30",
+   "cost": 1530491000,
+   "units_k": 24851,
+   "cum_units_k": 24851,
+   "unit_cost": 61.58669671240594,
+   "cpi": 230.79691666666668,
+   "real_unit_cost": 87.42997062949917,
+   "cost_accession": "0001574842-15-000011",
+   "cost_tag": "CostOfRevenue",
+   "cost_restated": true,
+   "cost_first": 1604788000,
+   "units_accession": "0001574842-15-000011",
+   "units_doc_url": "https://www.sec.gov/Archives/edgar/data/12659/000157484215000011/hrb2015043010k.htm",
+   "units_index_url": "https://www.sec.gov/Archives/edgar/data/12659/000157484215000011/0001574842-15-000011-index.htm",
+   "cost_index_url": "https://www.sec.gov/Archives/edgar/data/12659/000157484215000011/0001574842-15-000011-index.htm",
+   "cost_doc_url": "https://www.sec.gov/Archives/edgar/data/12659/000157484215000011/hrb2015043010k.htm",
+   "page": 26,
+   "section": "Item 7 (MD&A), Tax Services - Operating Statistics",
+   "quote": "Tax returns prepared worldwide 24,165 24,201 24,851",
+   "note": "Restated twice. First reported as 25,433 (FY2013 10-K); restated to 24,837 in the FY2014 10-K ('Tax software return counts ... restated to primarily reflect accepted e-files'); 24,851 in the FY2015 10-K, which added an 'Other' international line. Latest used."
+  },
+  {
+   "fy": 2014,
+   "start": "2013-05-01",
+   "end": "2014-04-30",
+   "cost": 1572377000,
+   "units_k": 24201,
+   "cum_units_k": 49052,
+   "unit_cost": 64.97157142266849,
+   "cpi": 234.17141666666666,
+   "real_unit_cost": 90.90607605016008,
+   "cost_accession": "0001574842-16-000042",
+   "cost_tag": "CostOfRevenue",
+   "cost_restated": true,
+   "cost_first": 1627656000,
+   "units_accession": "0001574842-16-000042",
+   "units_doc_url": "https://www.sec.gov/Archives/edgar/data/12659/000157484216000042/hrb2016043010k.htm",
+   "units_index_url": "https://www.sec.gov/Archives/edgar/data/12659/000157484216000042/0001574842-16-000042-index.htm",
+   "cost_index_url": "https://www.sec.gov/Archives/edgar/data/12659/000157484216000042/0001574842-16-000042-index.htm",
+   "cost_doc_url": "https://www.sec.gov/Archives/edgar/data/12659/000157484216000042/hrb2016043010k.htm",
+   "page": 22,
+   "section": "Item 7 (MD&A), Operating Statistics",
+   "quote": "Tax returns prepared worldwide 23,168 24,165 24,201",
+   "note": "First reported as 24,180 (FY2014 10-K); 24,201 from the FY2015 10-K on (adds 'Other' international). Latest used."
+  },
+  {
+   "fy": 2015,
+   "start": "2014-05-01",
+   "end": "2015-04-30",
+   "cost": 1630490000,
+   "units_k": 24133,
+   "cum_units_k": 73185,
+   "unit_cost": 67.56267351759003,
+   "cpi": 236.62800000000004,
+   "real_unit_cost": 93.5500702478555,
+   "cost_accession": "0001574842-17-000019",
+   "cost_tag": "CostOfRevenue",
+   "cost_restated": false,
+   "cost_first": 1630490000,
+   "units_accession": "0001574842-17-000019",
+   "units_doc_url": "https://www.sec.gov/Archives/edgar/data/12659/000157484217000019/hrb2017043010k.htm",
+   "units_index_url": "https://www.sec.gov/Archives/edgar/data/12659/000157484217000019/0001574842-17-000019-index.htm",
+   "cost_index_url": "https://www.sec.gov/Archives/edgar/data/12659/000157484217000019/0001574842-17-000019-index.htm",
+   "cost_doc_url": "https://www.sec.gov/Archives/edgar/data/12659/000157484217000019/hrb2017043010k.htm",
+   "page": 21,
+   "section": "Item 7 (MD&A), Operating Statistics",
+   "quote": "Tax returns prepared worldwide 22,989 23,124 24,133",
+   "note": "First reported as 24,165; restated to 24,133 in the FY2017 10-K (count methodology 'adjusted ... to exclude extensions'). Latest used."
+  },
+  {
+   "fy": 2016,
+   "start": "2015-05-01",
+   "end": "2016-04-30",
+   "cost": 1685552000,
+   "units_k": 23121,
+   "cum_units_k": 96306,
+   "unit_cost": 72.90134509753038,
+   "cpi": 237.81616666666665,
+   "real_unit_cost": 100.4378925195806,
+   "cost_accession": "0001574842-18-000019",
+   "cost_tag": "CostOfRevenue",
+   "cost_restated": false,
+   "cost_first": 1685552000,
+   "units_accession": "0001574842-18-000019",
+   "units_doc_url": "https://www.sec.gov/Archives/edgar/data/12659/000157484218000019/hrb2018043010k.htm",
+   "units_index_url": "https://www.sec.gov/Archives/edgar/data/12659/000157484218000019/0001574842-18-000019-index.htm",
+   "cost_index_url": "https://www.sec.gov/Archives/edgar/data/12659/000157484218000019/0001574842-18-000019-index.htm",
+   "cost_doc_url": "https://www.sec.gov/Archives/edgar/data/12659/000157484218000019/hrb2018043010k.htm",
+   "page": 22,
+   "section": "Item 7 (MD&A), Operating Statistics",
+   "quote": "Tax returns prepared worldwide 23,332 22,977 23,121",
+   "note": "Reported 23,168, then 23,124 (FY2017 10-K), then 23,121 (FY2018 10-K). Latest used."
+  },
+  {
+   "fy": 2017,
+   "start": "2016-05-01",
+   "end": "2017-04-30",
+   "cost": 1644377000,
+   "units_k": 22977,
+   "cum_units_k": 119283,
+   "unit_cost": 71.56621839230534,
+   "cpi": 241.97616666666667,
+   "real_unit_cost": 96.90337458493653,
+   "cost_accession": "0001574842-19-000022",
+   "cost_tag": "CostOfGoodsAndServicesSold",
+   "cost_restated": false,
+   "cost_first": 1644377000,
+   "units_accession": "0001574842-18-000019",
+   "units_doc_url": "https://www.sec.gov/Archives/edgar/data/12659/000157484218000019/hrb2018043010k.htm",
+   "units_index_url": "https://www.sec.gov/Archives/edgar/data/12659/000157484218000019/0001574842-18-000019-index.htm",
+   "cost_index_url": "https://www.sec.gov/Archives/edgar/data/12659/000157484219000022/0001574842-19-000022-index.htm",
+   "cost_doc_url": "https://www.sec.gov/Archives/edgar/data/12659/000157484219000022/hrb2019043010k.htm",
+   "page": 22,
+   "section": "Item 7 (MD&A), Operating Statistics",
+   "quote": "Tax returns prepared worldwide 23,332 22,977 23,121",
+   "note": "First reported as 22,989; 22,977 in the FY2018 10-K. Latest used."
+  },
+  {
+   "fy": 2018,
+   "start": "2017-05-01",
+   "end": "2018-04-30",
+   "cost": 1739729000,
+   "units_k": 23332,
+   "cum_units_k": 142615,
+   "unit_cost": 74.56407509000515,
+   "cpi": 246.99458333333337,
+   "real_unit_cost": 98.91123632999692,
+   "cost_accession": "0001574842-20-000021",
+   "cost_tag": "CostOfGoodsAndServicesSold",
+   "cost_restated": false,
+   "cost_first": 1739729000,
+   "units_accession": "0001574842-19-000022",
+   "units_doc_url": "https://www.sec.gov/Archives/edgar/data/12659/000157484219000022/hrb2019043010k.htm",
+   "units_index_url": "https://www.sec.gov/Archives/edgar/data/12659/000157484219000022/0001574842-19-000022-index.htm",
+   "cost_index_url": "https://www.sec.gov/Archives/edgar/data/12659/000157484220000021/0001574842-20-000021-index.htm",
+   "cost_doc_url": "https://www.sec.gov/Archives/edgar/data/12659/000157484220000021/hrb2020043010k.htm",
+   "page": 24,
+   "section": "Item 7 (MD&A), Operating Statistics",
+   "quote": "Tax returns prepared worldwide 23,616 23,332",
+   "note": "Same figure in the FY2018 and FY2019 10-Ks; not restated."
+  },
+  {
+   "fy": 2019,
+   "start": "2018-05-01",
+   "end": "2019-04-30",
+   "cost": 1756922000,
+   "units_k": 23616,
+   "cum_units_k": 166231,
+   "unit_cost": 74.39540989159892,
+   "cpi": 252.5326666666667,
+   "real_unit_cost": 96.5232642273891,
+   "cost_accession": "0001838862-21-000028",
+   "cost_tag": "CostOfGoodsAndServicesSold",
+   "cost_restated": false,
+   "cost_first": 1756922000,
+   "units_accession": "0001574842-20-000021",
+   "units_doc_url": "https://www.sec.gov/Archives/edgar/data/12659/000157484220000021/hrb2020043010k.htm",
+   "units_index_url": "https://www.sec.gov/Archives/edgar/data/12659/000157484220000021/0001574842-20-000021-index.htm",
+   "cost_index_url": "https://www.sec.gov/Archives/edgar/data/12659/000183886221000028/0001838862-21-000028-index.htm",
+   "cost_doc_url": "https://www.sec.gov/Archives/edgar/data/12659/000183886221000028/hrb-20210430.htm",
+   "page": 26,
+   "section": "Item 7 (MD&A), Operating Statistics",
+   "quote": "Tax returns prepared worldwide 20,314 23,616",
+   "note": "Same figure in the FY2019 and FY2020 10-Ks; not restated."
+  },
+  {
+   "fy": 2020,
+   "start": "2019-05-01",
+   "end": "2020-04-30",
+   "cost": 1712276000,
+   "units_k": 19754,
+   "cum_units_k": 185985,
+   "unit_cost": 86.67996355168573,
+   "cpi": 257.0771666666667,
+   "real_unit_cost": 110.47363383586658,
+   "cost_accession": "0001838862-22-000028",
+   "cost_tag": "CostOfGoodsAndServicesSold",
+   "cost_restated": false,
+   "cost_first": 1712276000,
+   "units_accession": "0001838862-21-000028",
+   "units_doc_url": "https://www.sec.gov/Archives/edgar/data/12659/000183886221000028/hrb-20210430.htm",
+   "units_index_url": "https://www.sec.gov/Archives/edgar/data/12659/000183886221000028/0001838862-21-000028-index.htm",
+   "cost_index_url": "https://www.sec.gov/Archives/edgar/data/12659/000183886222000028/0001838862-22-000028-index.htm",
+   "cost_doc_url": "https://www.sec.gov/Archives/edgar/data/12659/000183886222000028/hrb-20220630.htm",
+   "page": 23,
+   "section": "Item 7 (MD&A), Operating Statistics",
+   "quote": "Tax returns prepared worldwide 25,178 19,754",
+   "note": "Restated from 20,314 to 19,754 in the FY2021 10-K, which drops the separate 'IRS Free File' line (845K) and re-defines DIY returns (DIY rose 285K). Partial season: COVID moved the 2020 filing deadline to July 15, 2020, i.e. into FY2021. Latest used."
+  },
+  {
+   "fy": 2021,
+   "start": "2020-05-01",
+   "end": "2021-04-30",
+   "cost": 1842092000,
+   "units_k": 25178,
+   "cum_units_k": 211163,
+   "unit_cost": 73.16276114067837,
+   "cpi": 260.96875000000006,
+   "real_unit_cost": 91.85546630689483,
+   "cost_accession": "0001838862-23-000027",
+   "cost_tag": "CostOfGoodsAndServicesSold",
+   "cost_restated": false,
+   "cost_first": 1842092000,
+   "units_accession": "0001838862-21-000028",
+   "units_doc_url": "https://www.sec.gov/Archives/edgar/data/12659/000183886221000028/hrb-20210430.htm",
+   "units_index_url": "https://www.sec.gov/Archives/edgar/data/12659/000183886221000028/0001838862-21-000028-index.htm",
+   "cost_index_url": "https://www.sec.gov/Archives/edgar/data/12659/000183886223000027/0001838862-23-000027-index.htm",
+   "cost_doc_url": "https://www.sec.gov/Archives/edgar/data/12659/000183886223000027/hrb-20230630.htm",
+   "page": 23,
+   "section": "Item 7 (MD&A), Operating Statistics",
+   "quote": "Tax returns prepared worldwide 25,178 19,754",
+   "note": "Two partial seasons (rest of 2020 season to July 15, 2020 + 2021 season to April 30, 2021). The FY2022 10-K shows 26,261 for '2021', but that column is the recast year ended JUNE 30, 2021, a different 12 months from the May 2020-April 2021 cost figure, so it is not a restatement of this period and is not used."
+  },
+  {
+   "fy": 2022,
+   "start": "2021-07-01",
+   "end": "2022-06-30",
+   "cost": 1881262000,
+   "units_k": 23600,
+   "cum_units_k": 234763,
+   "unit_cost": 79.71449152542372,
+   "cpi": 282.02799999999996,
+   "real_unit_cost": 92.60799399022616,
+   "cost_accession": "0001838862-24-000030",
+   "cost_tag": "CostOfGoodsAndServicesSold",
+   "cost_restated": false,
+   "cost_first": 1881262000,
+   "units_accession": "0001838862-22-000028",
+   "units_doc_url": "https://www.sec.gov/Archives/edgar/data/12659/000183886222000028/hrb-20220630.htm",
+   "units_index_url": "https://www.sec.gov/Archives/edgar/data/12659/000183886222000028/0001838862-22-000028-index.htm",
+   "cost_index_url": "https://www.sec.gov/Archives/edgar/data/12659/000183886224000030/0001838862-24-000030-index.htm",
+   "cost_doc_url": "https://www.sec.gov/Archives/edgar/data/12659/000183886224000030/hrb-20240630.htm",
+   "page": 23,
+   "section": "Item 7 (MD&A), Operating Statistics",
+   "quote": "Tax returns prepared worldwide 23,600 26,261",
+   "note": "First year on the new June 30 fiscal year (July 2021-June 2022). Not restated: later 10-Ks no longer publish the table."
+  },
+  {
+   "fy": 2023,
+   "start": "2022-07-01",
+   "end": "2023-06-30",
+   "cost": 1923452000,
+   "units_k": 23400,
+   "cum_units_k": 258163,
+   "unit_cost": 82.19880341880342,
+   "cpi": 299.6556666666666,
+   "real_unit_cost": 89.87655655948002,
+   "cost_accession": "0001605297-25-000016",
+   "cost_tag": "CostOfGoodsAndServicesSold",
+   "cost_restated": false,
+   "cost_first": 1923452000,
+   "units_accession": "0001838862-23-000027",
+   "units_doc_url": "https://www.sec.gov/Archives/edgar/data/12659/000183886223000027/hrb-20230630.htm",
+   "units_index_url": "https://www.sec.gov/Archives/edgar/data/12659/000183886223000027/0001838862-23-000027-index.htm",
+   "cost_index_url": "https://www.sec.gov/Archives/edgar/data/12659/000160529725000016/0001605297-25-000016-index.htm",
+   "cost_doc_url": "https://www.sec.gov/Archives/edgar/data/12659/000160529725000016/hrb-20250630.htm",
+   "page": 5,
+   "section": "Item 1 (Business), Competitive Conditions",
+   "quote": "23.4 million returns filed by or through H&R Block in fiscal year 2023",
+   "note": "Rounded to 0.1 million (precision about +/-0.2%). No later 10-K reports FY2023 again."
+  },
+  {
+   "fy": 2024,
+   "start": "2023-07-01",
+   "end": "2024-06-30",
+   "cost": 1991566000,
+   "units_k": 23800,
+   "cum_units_k": 281963,
+   "unit_cost": 83.679243697479,
+   "cpi": 309.567,
+   "real_unit_cost": 88.56589427831949,
+   "cost_accession": "0000012659-26-000026",
+   "cost_tag": "CostOfGoodsAndServicesSold",
+   "cost_restated": false,
+   "cost_first": 1991566000,
+   "units_accession": "0001838862-24-000030",
+   "units_doc_url": "https://www.sec.gov/Archives/edgar/data/12659/000183886224000030/hrb-20240630.htm",
+   "units_index_url": "https://www.sec.gov/Archives/edgar/data/12659/000183886224000030/0001838862-24-000030-index.htm",
+   "cost_index_url": "https://www.sec.gov/Archives/edgar/data/12659/000001265926000026/0000012659-26-000026-index.htm",
+   "cost_doc_url": "https://www.sec.gov/Archives/edgar/data/12659/000001265926000026/hrb-20260630.htm",
+   "page": 5,
+   "section": "Item 1 (Business), Competitive Conditions",
+   "quote": "23.8 million returns filed by or through H&R Block in fiscal year 2024",
+   "note": "Rounded to 0.1 million. From FY2024 the 10-K headline switched to '11.4 million U.S. assisted' + '3.8 million DIY online paid' returns; that narrower pair (15.2M, U.S. only, paid DIY only) cannot be the 23.8M total, which confirms the total still counts free and desktop DIY and international returns."
+  },
+  {
+   "fy": 2025,
+   "start": "2024-07-01",
+   "end": "2025-06-30",
+   "cost": 2086111000,
+   "units_k": 22800,
+   "cum_units_k": 304763,
+   "unit_cost": 91.49609649122807,
+   "cpi": 317.74233333333336,
+   "real_unit_cost": 94.34761148301968,
+   "cost_accession": "0000012659-26-000026",
+   "cost_tag": "CostOfGoodsAndServicesSold",
+   "cost_restated": false,
+   "cost_first": 2086111000,
+   "units_accession": "0001605297-25-000016",
+   "units_doc_url": "https://www.sec.gov/Archives/edgar/data/12659/000160529725000016/hrb-20250630.htm",
+   "units_index_url": "https://www.sec.gov/Archives/edgar/data/12659/000160529725000016/0001605297-25-000016-index.htm",
+   "cost_index_url": "https://www.sec.gov/Archives/edgar/data/12659/000001265926000026/0000012659-26-000026-index.htm",
+   "cost_doc_url": "https://www.sec.gov/Archives/edgar/data/12659/000001265926000026/hrb-20260630.htm",
+   "page": 5,
+   "section": "Item 1 (Business), Competitive Conditions",
+   "quote": "22.8 million returns filed by or through H&R Block in fiscal year 2025",
+   "note": "Rounded to 0.1 million."
+  },
+  {
+   "fy": 2026,
+   "start": "2025-07-01",
+   "end": "2026-06-30",
+   "cost": 2196407000,
+   "units_k": 22300,
+   "cum_units_k": 327063,
+   "unit_cost": 98.49358744394618,
+   "cpi": 327.6449090909091,
+   "real_unit_cost": 98.49358744394618,
+   "cost_accession": "0000012659-26-000026",
+   "cost_tag": "CostOfGoodsAndServicesSold",
+   "cost_restated": false,
+   "cost_first": 2196407000,
+   "units_accession": "0000012659-26-000026",
+   "units_doc_url": "https://www.sec.gov/Archives/edgar/data/12659/000001265926000026/hrb-20260630.htm",
+   "units_index_url": "https://www.sec.gov/Archives/edgar/data/12659/000001265926000026/0000012659-26-000026-index.htm",
+   "cost_index_url": "https://www.sec.gov/Archives/edgar/data/12659/000001265926000026/0000012659-26-000026-index.htm",
+   "cost_doc_url": "https://www.sec.gov/Archives/edgar/data/12659/000001265926000026/hrb-20260630.htm",
+   "page": 4,
+   "section": "Item 1 (Business), Competitive Conditions",
+   "quote": "22.3 million returns filed by or through H&R Block in fiscal year 2026",
+   "note": "Rounded to 0.1 million."
+  }
+ ],
+ "fit": {
+  "nominal": {
+   "b": -0.15510656380597507,
+   "cost1": 35.502129921218035,
+   "r2": 0.7891858823945762,
+   "n": 14,
+   "se_b": 0.023141939044546575,
+   "b_lo": -0.20552851749961112,
+   "b_hi": -0.10468461011233901,
+   "lr": -0.11350386348777475,
+   "lr_lo": -0.15310869975096075,
+   "lr_hi": -0.07525930059324182,
+   "t": 2.1788128296672724
+  },
+  "real": {
+   "b": -0.01860859717770131,
+   "cost1": 86.5151776634231,
+   "r2": 0.05303095616195519,
+   "n": 14,
+   "se_b": 0.022700016562246943,
+   "b_lo": -0.06806768449718452,
+   "b_hi": 0.0308504901417819,
+   "lr": -0.012982041088764218,
+   "lr_lo": -0.04831165623838052,
+   "lr_hi": 0.021156915062459425,
+   "t": 2.1788128296672724
+  }
+ },
+ "sensitivity": {
+  "Free File returns removed from FY2013-FY2019 (definition used from FY2020)": {
+   "verified": true,
+   "nominal": {
+    "b": -0.13902095242264484,
+    "cost1": 39.13444244589435,
+    "r2": 0.7668271214585513,
+    "n": 14,
+    "se_b": 0.022129923934425554,
+    "b_lo": -0.18723791461053207,
+    "b_hi": -0.0908039902347576,
+    "lr": -0.10115759021759918,
+    "lr_lo": -0.13858177693409135,
+    "lr_hi": -0.06496350377125393,
+    "t": 2.1788128296672724
+   },
+   "real": {
+    "b": -0.0028783626712690063,
+    "cost1": 94.89106752501368,
+    "r2": 0.0012208926560898226,
+    "n": 14,
+    "se_b": 0.02376571444741488,
+    "b_lo": -0.0546594062155054,
+    "b_hi": 0.04890268087296738,
+    "lr": -0.001997120564298349,
+    "lr_lo": -0.0386138767039963,
+    "lr_hi": 0.0333286968923453,
+    "t": 2.1788128296672724
+   }
+  },
+  "2.9M transition-period returns (May 1-18, 2021) added to cumulative N": {
+   "verified": true,
+   "nominal": {
+    "b": -0.15449847832906705,
+    "cost1": 35.5891399708507,
+    "r2": 0.7901980463092924,
+    "n": 14,
+    "se_b": 0.022981076666331392,
+    "b_lo": -0.2045699430092371,
+    "b_hi": -0.10442701364889702,
+    "lr": -0.11303462859668678,
+    "lr_lo": -0.15234279051739819,
+    "lr_hi": -0.07506732775160319,
+    "t": 2.1788128296672724
+   },
+   "real": {
+    "b": -0.01825997445484507,
+    "cost1": 86.65929715383177,
+    "r2": 0.05153130062372302,
+    "n": 14,
+    "se_b": 0.02261442200530296,
+    "b_lo": -0.06753256725550905,
+    "b_hi": 0.031012618345818907,
+    "lr": -0.012737286735156506,
+    "lr_lo": -0.04792289381608161,
+    "lr_hi": 0.02126691000254677,
+    "t": 2.1788128296672724
+   }
+  },
+  "COVID-distorted FY2020 and FY2021 dropped (cumulative N unchanged)": {
+   "verified": true,
+   "nominal": {
+    "b": -0.15809407017324437,
+    "cost1": 35.05767176587375,
+    "r2": 0.8594884164197373,
+    "n": 12,
+    "se_b": 0.02021397065205428,
+    "b_lo": -0.20313360353599744,
+    "b_hi": -0.1130545368104913,
+    "lr": -0.11581207589401732,
+    "lr_lo": -0.1511960951096729,
+    "lr_hi": -0.08151564620474416,
+    "t": 2.228138851986304
+   },
+   "real": {
+    "b": -0.014650662028800216,
+    "cost1": 87.4280261680427,
+    "r2": 0.06683110000651338,
+    "n": 12,
+    "se_b": 0.017312033084622477,
+    "b_lo": -0.05322427555151985,
+    "b_hi": 0.023922951493919424,
+    "lr": -0.010206802736762555,
+    "lr_lo": -0.03758122222029381,
+    "lr_hi": 0.016445399703888364,
+    "t": 2.228138851986304
+   }
+  }
+ },
+ "units_meta": {
+  "unit_name": "Tax returns prepared worldwide (assisted + DIY; U.S., Canada, Australia, other)",
+  "selection_rule": "For each fiscal year, use the most recent 10-K that reports a figure for the SAME period (latest restated). FY2013-FY2022 come from the 'Tax returns prepared worldwide' row of the Operating Statistics table in MD&A. HRB stopped publishing that table after FY2022, so FY2023-FY2026 come from the one sentence every 10-K still carries in Item 1 (Competitive Conditions): 'X million returns filed by or through H&R Block in fiscal year YYYY'. For FY2021 and FY2022 that sentence matches the table exactly (25.2 vs 25,178; 23.6 vs 23,600), which is the evidence that it is the same measure."
+ },
+ "transition_note": "HRB moved its fiscal year end from April 30 to June 30 in 2021. May 1-June 30, 2021 is a two-month transition period with no annual 10-K cost figure, so it is not a data point. Returns filed in it are missing from the cumulative count; the FY2021 10-K gives a partial figure, used only in a sensitivity check.",
+ "free_file_note": "Through FY2019 the worldwide total includes IRS Free File returns (shown on their own line); the FY2021 10-K restated FY2020 without that line. Used only in a sensitivity check that subtracts them from FY2013-FY2019 (approximate: the FY2020 restatement also moved 285K returns into DIY).",
+ "unverified_dropped": [],
+ "mix_check": {
+  "items": [
+   {
+    "fy": 2013,
+    "value": 14505,
+    "source_report_date": "2015-04-30",
+    "kind": "table",
+    "column": 3,
+    "header_quote": "Year ended April 30, 2015 2014 2013 TAX RETURNS PREPARED",
+    "quote": "Total assisted returns 13,015 13,610 14,505"
+   },
+   {
+    "fy": 2026,
+    "value": 11300,
+    "source_report_date": "2026-06-30",
+    "kind": "sentence",
+    "quote": "11.3 million U.S. assisted tax returns"
+   }
+  ],
+  "verified": true
+ },
+ "accuracy": [
+  [
+   "Direct units, not a proxy.",
+   "Units are HRB's own count of tax returns prepared (assisted + DIY, worldwide) read from each 10-K, not revenue divided by an assumed price. That removes the biggest error in most learning-curve exercises, but the figure is still not a clean 'production unit':"
+  ],
+  [
+   "The cost line is wider than production.",
+   "Cost of revenues is consolidated: besides tax-professional wages it carries office occupancy, depreciation, bad debt on fees and Emerald Advance loans, and the costs of financial products (Emerald Card, Spruce) and small-business services (Block Advisors, Wave), whose output is not a tax return. Marketing and corporate overhead sit in SG&A and are excluded."
+  ],
+  [
+   "Units mix two very different products.",
+   "An assisted return (a tax professional, an office, roughly $220-$240 of fees in company offices) and a free DIY online return are each counted as one. A shift toward DIY lowers unit cost with no learning; a shift toward assisted raises it. Here the shift ran toward DIY (U.S. assisted returns 14.5M in FY2013 vs 11.3M in FY2026, both quoted from the 10-Ks), which should have pushed unit cost down, so mix does not explain the rise."
+  ],
+  [
+   "Inflation.",
+   "Nominal cost per return moved +59.9% from FY2013 to FY2026; in FY2026 dollars it moved +12.7%. CPI-U is a consumer price index, not an index of HRB's inputs (mostly seasonal wages and rent), so the real series is an approximation."
+  ],
+  [
+   "Definition changes and timing.",
+   "Return counts were restated for several years (e-file acceptance basis, extensions excluded, Free File dropped); COVID pushed part of the 2020 season into FY2021; the 2021 change of fiscal year leaves a two-month gap; FY2023-FY2026 units are rounded to 0.1 million. The sensitivity checks above show how much each moves b."
+  ],
+  [
+   "Cumulative volume starts at the window, not at 1955.",
+   "N counts only returns since FY2013. With flat annual volume (-10.3% from first to last year) the window's cumulative count grows almost linearly, so ln N rises steeply early and flattens late: a fit on it measures how unit cost trended over 14 years, not HRB's position on a 70-year experience curve. Adding the pre-window history (not published in any filing used here) would compress all 14 points into a small slice of ln N."
+  ]
+ ],
+ "interpretation": [
+  "Nominal fit: unit cost RISES 11.4% per doubling (a negative learning rate), R\u00b2 = 0.79 over n = 14 years; inflation-adjusted: unit cost RISES 1.3% per doubling (a negative learning rate), R\u00b2 = 0.05. By the rule used here (R\u00b2 above ~0.8 = real curve, below ~0.5 = none visible) the nominal fit is between the two thresholds (a moderate fit) and the real fit is no curve visible, but what the nominal line fits is cost per return rising over time, which is the opposite of a learning curve; once inflation is removed, almost nothing is left to fit.",
+  "For comparison, manufacturing studies typically find learning rates of roughly 10-30% per doubling and labor-heavy services far less; HRB shows no positive rate at all: cost per return was $61.59 in FY2013 and $98.49 in FY2026 (+60% nominal, +13% real), while annual volume was flat and the mix moved toward cheaper DIY returns; the 95% interval for the real learning rate (-4.8% to +2.1%) does not rule out zero.",
+  "The most likely reading is that HRB is a mature firm far out on its curve, where each extra million returns teaches little, so its cost per return follows wages, rent and its non-tax products rather than accumulated experience.",
+  "For a small esthetician-focused bookkeeping and tax firm, this says HRB's scale does not come with a falling cost per return that a newcomer can never catch: its advantage is brand, office network and software, not a steep experience curve, so a small firm's own learning in its first few hundred clients (templates, intake, niche deductions) can matter more than the giant's volume."
+ ],
+ "cpi_base": 327.6449090909091,
+ "cpi_gaps": [
+  "2025-10"
+ ],
+ "cpi_source": "FRED CPIAUCSL (CPI-U, all items, seasonally adjusted), fiscal-year averages",
+ "restatement_history": {
+  "2013": [
+   [
+    "2013-04-30",
+    "0001574842-13-000010",
+    25433,
+    false
+   ],
+   [
+    "2014-04-30",
+    "0001574842-14-000031",
+    24837,
+    false
+   ],
+   [
+    "2015-04-30",
+    "0001574842-15-000011",
+    24851,
+    false
+   ]
+  ],
+  "2014": [
+   [
+    "2014-04-30",
+    "0001574842-14-000031",
+    24180,
+    false
+   ],
+   [
+    "2015-04-30",
+    "0001574842-15-000011",
+    24201,
+    false
+   ],
+   [
+    "2016-04-30",
+    "0001574842-16-000042",
+    24201,
+    false
+   ]
+  ],
+  "2015": [
+   [
+    "2015-04-30",
+    "0001574842-15-000011",
+    24165,
+    false
+   ],
+   [
+    "2016-04-30",
+    "0001574842-16-000042",
+    24165,
+    false
+   ],
+   [
+    "2017-04-30",
+    "0001574842-17-000019",
+    24133,
+    false
+   ]
+  ],
+  "2016": [
+   [
+    "2016-04-30",
+    "0001574842-16-000042",
+    23168,
+    false
+   ],
+   [
+    "2017-04-30",
+    "0001574842-17-000019",
+    23124,
+    false
+   ],
+   [
+    "2018-04-30",
+    "0001574842-18-000019",
+    23121,
+    false
+   ]
+  ],
+  "2017": [
+   [
+    "2017-04-30",
+    "0001574842-17-000019",
+    22989,
+    false
+   ],
+   [
+    "2018-04-30",
+    "0001574842-18-000019",
+    22977,
+    false
+   ]
+  ],
+  "2018": [
+   [
+    "2018-04-30",
+    "0001574842-18-000019",
+    23332,
+    false
+   ],
+   [
+    "2019-04-30",
+    "0001574842-19-000022",
+    23332,
+    false
+   ]
+  ],
+  "2019": [
+   [
+    "2019-04-30",
+    "0001574842-19-000022",
+    23616,
+    false
+   ],
+   [
+    "2020-04-30",
+    "0001574842-20-000021",
+    23616,
+    false
+   ]
+  ],
+  "2020": [
+   [
+    "2020-04-30",
+    "0001574842-20-000021",
+    20314,
+    false
+   ],
+   [
+    "2021-04-30",
+    "0001838862-21-000028",
+    19754,
+    false
+   ]
+  ],
+  "2021": [
+   [
+    "2021-04-30",
+    "0001838862-21-000028",
+    25178,
+    false
+   ],
+   [
+    "2022-06-30",
+    "0001838862-22-000028",
+    26261,
+    true
+   ]
+  ],
+  "2022": [
+   [
+    "2022-06-30",
+    "0001838862-22-000028",
+    23600,
+    false
+   ]
+  ]
+ }
+}
