@@ -11,6 +11,10 @@
 > **New: Learning-Curve Calculator (H&R Block)** (fourth deliverable, in [`learning-curve/`](learning-curve/)):
 > [learning_curve.ipynb](https://github.com/diggyhsmith/fcfo-pipeline/blob/main/learning-curve/learning_curve.ipynb)
 > ([nbviewer](https://nbviewer.org/github/diggyhsmith/fcfo-pipeline/blob/main/learning-curve/learning_curve.ipynb)).
+>
+> **New: CAGE Distance Framework Tool (US to Canada)** (fifth deliverable, in [`cage-distance/`](cage-distance/)):
+> [cage_distance.ipynb](https://github.com/diggyhsmith/fcfo-pipeline/blob/main/cage-distance/cage_distance.ipynb)
+> ([nbviewer](https://nbviewer.org/github/diggyhsmith/fcfo-pipeline/blob/main/cage-distance/cage_distance.ipynb)).
 
 A class project (BYU MAcc strategy course). It takes a company description, picks an industry code from the official
 2022 NAICS Manual, ingests industry-report PDFs that were downloaded by hand, extracts seven structured signals with a

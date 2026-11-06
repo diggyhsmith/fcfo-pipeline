@@ -1,0 +1,5 @@
+# The root .gitignore excludes every cache/ dir (paywalled report text). This one holds only public data and official government pages, so publish it.
+!cache/
+
+# built locally by build_pdf.py; rebuild after editing reflection_cage.md
+cage_distance_submission.pdf

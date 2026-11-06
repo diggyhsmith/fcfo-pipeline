@@ -1,0 +1,1157 @@
+{
+ "generated": "2026-11-05",
+ "industry": "bookkeeping, tax and loan-readiness services for estheticians and spa suites",
+ "weights": {
+  "Cultural": 0.25,
+  "Administrative": 0.4,
+  "Geographic": 0.1,
+  "Economic": 0.25
+ },
+ "weight_rationale": {
+  "Administrative": "Highest (0.40): the product is compliance with one country's tax system; returns, sales tax, payroll, preparer rules, data rules and loan programs all change at the border.",
+  "Cultural": "Medium (0.25): bookkeeping is sold on trust and referral, so cultural fit drives the sale. The Quebec French requirement is legal, so it is scored under Administrative.",
+  "Economic": "Medium (0.25): income and price levels set what an esthetician can pay per month and what staff cost.",
+  "Geographic": "Lowest (0.10), not zero: nothing ships, but time-zone overlap still governs live calls in tax season."
+ },
+ "contrast_industry": "cement (ready-mix and bagged)",
+ "contrast_weights": {
+  "Cultural": 0.1,
+  "Administrative": 0.2,
+  "Geographic": 0.45,
+  "Economic": 0.25
+ },
+ "thresholds": {
+  "low": 25,
+  "high": 50
+ },
+ "pair": {
+  "home": "US",
+  "target": "CA",
+  "home_name": "United States",
+  "target_name": "Canada",
+  "dims": {
+   "Cultural": {
+    "score": 10.3,
+    "notes": [
+     "The Kogut-Singh index across Hofstede's six dimensions is 0.11. Only 1 of the 61 other countries with all six scores are closer to United States of America than Canada is (rank 2), so this indicator scores 2. The largest single gap is individualism (-11 points).",
+     "Official languages: English vs English/French; French is also official in the target, which is where the practical language issue sits (sub-score 25).",
+     "Religion mix overlaps by 79% (Factbook shares grouped by the visible keyword rules)."
+    ],
+    "components": [
+     {
+      "key": "ksi",
+      "indicator": "Hofstede Kogut-Singh index (6 dims)",
+      "home": "0.110",
+      "target": "rank 2 of 61 closest",
+      "sub": 1.6,
+      "verified": true,
+      "sources": [
+       {
+        "publisher": "Geert Hofstede",
+        "title": "6 dimensions data matrix (2015-08-16)",
+        "url": "https://geerthofstede.com/wp-content/uploads/2016/08/6-dimensions-for-website-2015-08-16.csv",
+        "retrieved": "2026-11-05"
+       }
+      ],
+      "note": "largest gap: Individualism -11 points",
+      "weight": 0.6,
+      "eff_weight": 0.6
+     },
+     {
+      "key": "language",
+      "indicator": "Common official language",
+      "home": "English",
+      "target": "English/French",
+      "sub": 25.0,
+      "verified": true,
+      "sources": [
+       {
+        "publisher": "CEPII",
+        "title": "GeoDist: geo_cepii and dist_cepii",
+        "url": "https://www.cepii.fr/distance/dist_cepii.zip",
+        "retrieved": "2026-11-05"
+       }
+      ],
+      "note": "target also has official French",
+      "weight": 0.25,
+      "eff_weight": 0.25
+     },
+     {
+      "key": "religion",
+      "indicator": "Religion mix overlap",
+      "home": "Protestant 46.5%, Roman Catholic 20.8%, Jewish 1.9%, Church of Jesus C",
+      "target": "Christian 53.3%, Muslim 4.9%, Hindu 2.3%, Sikh 2.1%, Buddhist 1%, Jewi",
+      "sub": 20.6,
+      "verified": true,
+      "sources": [
+       {
+        "publisher": "CIA World Factbook (archived; factbook.json mirror)",
+        "title": "Religions, snapshot 2026-09-11",
+        "url": "https://github.com/factbook/factbook.json",
+        "retrieved": "2026-11-05"
+       }
+      ],
+      "note": "overlap 79%",
+      "weight": 0.15,
+      "eff_weight": 0.15
+     }
+    ]
+   },
+   "Administrative": {
+    "score": 35.6,
+    "notes": [
+     "9 industry-specific rules were verified against official pages; 5 of them need separate expertise, a registration or a licence (severity 2). The industry sub-score is 67.",
+     "Not verified and left out: Who may prepare returns and keep books for pay (quote NOT found on the fetched page at ontario.ca); Language of service and contracts (Quebec) (page not fetched: HTTPError: 403 Client Error: Forbidden at legisquebec.gouv.qc.ca).",
+     "WGI scores (home vs target): Control of corruption 65 vs 80; Regulatory quality 73 vs 80; Rule of law 72 vs 83 (2025). The mean gap of 11 points measures difference, not quality.",
+     "Trade: United States-Mexico-Canada Agreement (USMCA) (comprehensive). Comprehensive FTA, in force since July 1, 2020. Its scheduled six-year joint review and any 2025-26 tariff actions were not checked by this tool.",
+     "No active OFAC program (of 35 listed) names the target."
+    ],
+    "components": [
+     {
+      "key": "industry",
+      "indicator": "Industry rules (9 verified facts)",
+      "home": "see fact table",
+      "target": "see fact table",
+      "sub": 66.7,
+      "verified": true,
+      "sources": [
+       {
+        "publisher": "IRS",
+        "title": "Topic no. 503, Deductible taxes",
+        "url": "https://www.irs.gov/taxtopics/tc503",
+        "retrieved": "2026-11-05"
+       },
+       {
+        "publisher": "Canada Revenue Agency",
+        "title": "When to register for and start charging the GST/HST",
+        "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html",
+        "retrieved": "2026-11-05"
+       },
+       {
+        "publisher": "Canada Revenue Agency",
+        "title": "Charge and collect the tax: which rate to charge",
+        "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate.html",
+        "retrieved": "2026-11-05"
+       },
+       {
+        "publisher": "Canada Revenue Agency",
+        "title": "GST/HST for digital economy businesses: find out if you need to register",
+        "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/digital-economy-gsthst/find-out-need-register.html",
+        "retrieved": "2026-11-05"
+       },
+       {
+        "publisher": "Canada Revenue Agency",
+        "title": "GST/HST for digital economy businesses: find out if you need to register",
+        "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/digital-economy-gsthst/find-out-need-register.html",
+        "retrieved": "2026-11-05"
+       },
+       {
+        "publisher": "IRS",
+        "title": "Self-employment tax (Social Security and Medicare taxes)",
+        "url": "https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes",
+        "retrieved": "2026-11-05"
+       },
+       {
+        "publisher": "Canada Revenue Agency",
+        "title": "Completing Form T2125",
+        "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/completing-form-t2125.html",
+        "retrieved": "2026-11-05"
+       },
+       {
+        "publisher": "IRS",
+        "title": "When to file",
+        "url": "https://www.irs.gov/filing/individuals/when-to-file",
+        "retrieved": "2026-11-05"
+       },
+       {
+        "publisher": "Canada Revenue Agency",
+        "title": "Important dates for individuals",
+        "url": "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/important-dates-individuals.html",
+        "retrieved": "2026-11-05"
+       },
+       {
+        "publisher": "Canada Revenue Agency",
+        "title": "Important dates for individuals",
+        "url": "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/important-dates-individuals.html",
+        "retrieved": "2026-11-05"
+       },
+       {
+        "publisher": "IRS",
+        "title": "About Form 941",
+        "url": "https://www.irs.gov/forms-pubs/about-form-941",
+        "retrieved": "2026-11-05"
+       },
+       {
+        "publisher": "Canada Revenue Agency",
+        "title": "Payroll: calculating deductions",
+        "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/calculating-deductions.html",
+        "retrieved": "2026-11-05"
+       },
+       {
+        "publisher": "IRS",
+        "title": "Understanding tax return preparer credentials and qualifications",
+        "url": "https://www.irs.gov/tax-professionals/understanding-tax-return-preparer-credentials-and-qualifications",
+        "retrieved": "2026-11-05"
+       },
+       {
+        "publisher": "Canada Revenue Agency",
+        "title": "Help for Represent a Client",
+        "url": "https://www.canada.ca/en/revenue-agency/services/e-services/represent-a-client/help-represent-a-client.html",
+        "retrieved": "2026-11-05"
+       },
+       {
+        "publisher": "IRS",
+        "title": "Section 7216 information center",
+        "url": "https://www.irs.gov/tax-professionals/section-7216-information-center",
+        "retrieved": "2026-11-05"
+       },
+       {
+        "publisher": "Office of the Privacy Commissioner of Canada",
+        "title": "Guidelines for processing personal data across borders",
+        "url": "https://www.priv.gc.ca/en/privacy-topics/airports-and-borders/gl_dab_090127/",
+        "retrieved": "2026-11-05"
+       },
+       {
+        "publisher": "Commission d'acc\u00e8s \u00e0 l'information du Qu\u00e9bec",
+        "title": "Guide d'accompagnement: r\u00e9aliser une \u00e9valuation des facteurs relatifs \u00e0 la vie priv\u00e9e (French; the official guide)",
+        "url": "https://www.cai.gouv.qc.ca/uploads/pdfs/CAI_GU_EFVP.pdf",
+        "retrieved": "2026-11-05"
+       },
+       {
+        "publisher": "U.S. Small Business Administration",
+        "title": "7(a) loans",
+        "url": "https://www.sba.gov/funding-programs/loans/7a-loans",
+        "retrieved": "2026-11-05"
+       },
+       {
+        "publisher": "Innovation, Science and Economic Development Canada",
+        "title": "Canada Small Business Financing Program",
+        "url": "https://ised-isde.canada.ca/site/canada-small-business-financing-program/en",
+        "retrieved": "2026-11-05"
+       }
+      ],
+      "note": "5 severity-2, 4 severity-1",
+      "weight": 0.5,
+      "eff_weight": 0.5000000000000001
+     },
+     {
+      "key": "governance",
+      "indicator": "WGI governance gap (CC, RQ, RL; 0-100)",
+      "home": "65, 73, 72",
+      "target": "80, 80, 83",
+      "sub": 11.2,
+      "verified": true,
+      "sources": [
+       {
+        "publisher": "World Bank",
+        "title": "Worldwide Governance Indicators (score 0-100), API source 3",
+        "url": "https://api.worldbank.org/v2/sources/3/country/USA;CAN/series/GOV_WGI_CC.SC/time/all?format=json&per_page=1000",
+        "retrieved": "2026-11-05"
+       },
+       {
+        "publisher": "World Bank",
+        "title": "Worldwide Governance Indicators (score 0-100), API source 3",
+        "url": "https://api.worldbank.org/v2/sources/3/country/USA;CAN/series/GOV_WGI_RQ.SC/time/all?format=json&per_page=1000",
+        "retrieved": "2026-11-05"
+       },
+       {
+        "publisher": "World Bank",
+        "title": "Worldwide Governance Indicators (score 0-100), API source 3",
+        "url": "https://api.worldbank.org/v2/sources/3/country/USA;CAN/series/GOV_WGI_RL.SC/time/all?format=json&per_page=1000",
+        "retrieved": "2026-11-05"
+       }
+      ],
+      "note": "year 2025",
+      "weight": 0.2,
+      "eff_weight": 0.20000000000000004
+     },
+     {
+      "key": "trade",
+      "indicator": "Trade agreement in force",
+      "home": "",
+      "target": "United States-Mexico-Canada Agreement (USMCA)",
+      "sub": 0.0,
+      "verified": true,
+      "sources": [
+       {
+        "publisher": "Office of the U.S. Trade Representative",
+        "title": "United States-Mexico-Canada Agreement",
+        "url": "https://ustr.gov/trade-agreements/free-trade-agreements/united-states-mexico-canada-agreement",
+        "retrieved": "2026-11-05"
+       }
+      ],
+      "note": "comprehensive",
+      "weight": 0.2,
+      "eff_weight": 0.20000000000000004
+     },
+     {
+      "key": "sanctions",
+      "indicator": "OFAC sanctions program naming the target",
+      "home": "",
+      "target": "none",
+      "sub": 0.0,
+      "verified": true,
+      "sources": [
+       {
+        "publisher": "U.S. Treasury, OFAC",
+        "title": "Sanctions Programs and Country Information",
+        "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information",
+        "retrieved": "2026-11-05"
+       }
+      ],
+      "note": "35 active programs checked",
+      "weight": 0.1,
+      "eff_weight": 0.10000000000000002
+     }
+    ]
+   },
+   "Geographic": {
+    "score": 1.5,
+    "notes": [
+     "Washington, DC to Ottawa is 736 km great-circle, and the countries share a land border. Capitals are 0 h apart on average (America/New_York vs America/Toronto).",
+     "For a digitally delivered service the physical-logistics gap hardly applies (World Bank LPI 3.80 vs 4.00, 2022); what matters is that clients are online (internet users 95% vs 94%, 2024) and that working hours overlap."
+    ],
+    "components": [
+     {
+      "key": "distance",
+      "indicator": "Great-circle distance, capitals (km)",
+      "home": "Washington, DC",
+      "target": "Ottawa",
+      "sub": 3.7,
+      "verified": true,
+      "sources": [
+       {
+        "publisher": "CEPII",
+        "title": "GeoDist: geo_cepii and dist_cepii",
+        "url": "https://www.cepii.fr/distance/dist_cepii.zip",
+        "retrieved": "2026-11-05"
+       }
+      ],
+      "note": "736 km computed; CEPII distcap 737 km",
+      "weight": 0.25,
+      "eff_weight": 0.25
+     },
+     {
+      "key": "border",
+      "indicator": "Shared land border",
+      "home": "",
+      "target": "yes",
+      "sub": 0.0,
+      "verified": true,
+      "sources": [
+       {
+        "publisher": "CEPII",
+        "title": "GeoDist: geo_cepii and dist_cepii",
+        "url": "https://www.cepii.fr/distance/dist_cepii.zip",
+        "retrieved": "2026-11-05"
+       }
+      ],
+      "note": "",
+      "weight": 0.15,
+      "eff_weight": 0.15
+     },
+     {
+      "key": "timezone",
+      "indicator": "Time-zone difference, capitals (h)",
+      "home": "America/New_York",
+      "target": "America/Toronto",
+      "sub": 0.0,
+      "verified": true,
+      "sources": [
+       {
+        "publisher": "IANA tz database via timezonefinder",
+        "title": "capital coordinates -> time zone",
+        "url": "https://www.iana.org/time-zones",
+        "retrieved": "bundled with Python"
+       }
+      ],
+      "note": "0 h (Jan), 0 h (Jul)",
+      "weight": 0.35,
+      "eff_weight": 0.35
+     },
+     {
+      "key": "internet",
+      "indicator": "Internet users, % of population",
+      "home": "95%",
+      "target": "94%",
+      "sub": 0.3,
+      "verified": true,
+      "sources": [
+       {
+        "publisher": "World Bank",
+        "title": "Individuals using the Internet (% of population), IT.NET.USER.ZS",
+        "url": "https://api.worldbank.org/v2/country/US;CA/indicator/IT.NET.USER.ZS?format=json&per_page=1000&date=2000:2026",
+        "retrieved": "2026-11-05"
+       }
+      ],
+      "note": "year 2024",
+      "weight": 0.15,
+      "eff_weight": 0.15
+     },
+     {
+      "key": "lpi",
+      "indicator": "Logistics Performance Index (1-5)",
+      "home": "3.80",
+      "target": "4.00",
+      "sub": 5.0,
+      "verified": true,
+      "sources": [
+       {
+        "publisher": "World Bank",
+        "title": "Logistics Performance Index, overall (1-5), LP.LPI.OVRL.XQ",
+        "url": "https://api.worldbank.org/v2/country/US;CA/indicator/LP.LPI.OVRL.XQ?format=json&per_page=1000&date=2000:2026",
+        "retrieved": "2026-11-05"
+       }
+      ],
+      "note": "year 2022",
+      "weight": 0.1,
+      "eff_weight": 0.1
+     }
+    ]
+   },
+   "Economic": {
+    "score": 26.3,
+    "notes": [
+     "GDP per capita (PPP) is $90,027 vs $66,746 (year 2025; target/home = 0.74).",
+     "The price level ratio (1.00 vs 0.83) is the cost-structure indicator: it says what local prices and wages look like at market exchange rates, which is what sets a sustainable monthly fee."
+    ],
+    "components": [
+     {
+      "key": "gdp_ppp",
+      "indicator": "GDP per capita, PPP (current intl $)",
+      "home": "$90,027",
+      "target": "$66,746",
+      "sub": 25.9,
+      "verified": true,
+      "sources": [
+       {
+        "publisher": "World Bank",
+        "title": "GDP per capita, PPP (current intl $), NY.GDP.PCAP.PP.CD",
+        "url": "https://api.worldbank.org/v2/country/US;CA/indicator/NY.GDP.PCAP.PP.CD?format=json&per_page=1000&date=2000:2026",
+        "retrieved": "2026-11-05"
+       }
+      ],
+      "note": "year 2025; target/home = 0.74",
+      "weight": 0.4,
+      "eff_weight": 0.4
+     },
+     {
+      "key": "gni",
+      "indicator": "GNI per capita, Atlas method (current US$)",
+      "home": "$88,810",
+      "target": "$56,420",
+      "sub": 36.5,
+      "verified": true,
+      "sources": [
+       {
+        "publisher": "World Bank",
+        "title": "GNI per capita, Atlas method (current US$), NY.GNP.PCAP.CD",
+        "url": "https://api.worldbank.org/v2/country/US;CA/indicator/NY.GNP.PCAP.CD?format=json&per_page=1000&date=2000:2026",
+        "retrieved": "2026-11-05"
+       }
+      ],
+      "note": "year 2025; target/home = 0.64",
+      "weight": 0.3,
+      "eff_weight": 0.3
+     },
+     {
+      "key": "price_level",
+      "indicator": "Price level ratio (PPP factor / exchange rate, computed)",
+      "home": "1.00",
+      "target": "0.83",
+      "sub": 16.6,
+      "verified": true,
+      "sources": [
+       {
+        "publisher": "World Bank",
+        "title": "PPP conversion factor, GDP (LCU per international $), PA.NUS.PPP",
+        "url": "https://api.worldbank.org/v2/country/US;CA/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2000:2026",
+        "retrieved": "2026-11-05"
+       },
+       {
+        "publisher": "World Bank",
+        "title": "Official exchange rate (LCU per US$, period average), PA.NUS.FCRF",
+        "url": "https://api.worldbank.org/v2/country/US;CA/indicator/PA.NUS.FCRF?format=json&per_page=1000&date=2000:2026",
+        "retrieved": "2026-11-05"
+       }
+      ],
+      "note": "year 2025; target/home = 0.83",
+      "weight": 0.3,
+      "eff_weight": 0.3
+     }
+    ]
+   }
+  },
+  "facts": [
+   {
+    "id": "CA-salestax",
+    "risk_area": "Sales tax regime (GST/HST/PST)",
+    "topic": "Sales tax on the clients' services",
+    "home": "No national sales tax: sales taxes are state and local (each state sets its own rules for services).",
+    "target": "Federal GST/HST: registration is required once taxable sales pass the C$30,000 small-supplier threshold; HST provinces charge a combined rate (13% in Ontario) and non-participating provinces add a separate PST (Manitoba 7%).",
+    "severity": 2,
+    "reach": "all",
+    "why": "Every Canadian esthetician above C$30,000 must charge, file and remit GST/HST, and the rate depends on the province. US sales-tax knowledge does not transfer.",
+    "sources": [
+     {
+      "publisher": "IRS",
+      "title": "Topic no. 503, Deductible taxes",
+      "url": "https://www.irs.gov/taxtopics/tc503",
+      "quote": "State, local and foreign income taxes or state and local general sales taxes"
+     },
+     {
+      "publisher": "Canada Revenue Agency",
+      "title": "When to register for and start charging the GST/HST",
+      "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html",
+      "quote": "You are no longer a small supplier and have to charge GST/HST on the supply that made you exceed $30,000 within the calendar quarter."
+     },
+     {
+      "publisher": "Canada Revenue Agency",
+      "title": "Charge and collect the tax: which rate to charge",
+      "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate.html",
+      "quote": "The electronics store charges GST of 5% and the PST that applies in Manitoba of 7%."
+     }
+    ],
+    "checks": [
+     {
+      "url": "https://www.irs.gov/taxtopics/tc503",
+      "publisher": "IRS",
+      "title": "Topic no. 503, Deductible taxes",
+      "quote": "State, local and foreign income taxes or state and local general sales taxes",
+      "ok": true,
+      "detail": "quote found on page",
+      "retrieved": "2026-11-05"
+     },
+     {
+      "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html",
+      "publisher": "Canada Revenue Agency",
+      "title": "When to register for and start charging the GST/HST",
+      "quote": "You are no longer a small supplier and have to charge GST/HST on the supply that made you exceed $30,000 within the calendar quarter.",
+      "ok": true,
+      "detail": "quote found on page",
+      "retrieved": "2026-11-05"
+     },
+     {
+      "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate.html",
+      "publisher": "Canada Revenue Agency",
+      "title": "Charge and collect the tax: which rate to charge",
+      "quote": "The electronics store charges GST of 5% and the PST that applies in Manitoba of 7%.",
+      "ok": true,
+      "detail": "quote found on page",
+      "retrieved": "2026-11-05"
+     }
+    ],
+    "verified": true
+   },
+   {
+    "id": "CA-nonresident-gst",
+    "risk_area": "Sales tax regime (GST/HST/PST)",
+    "topic": "The firm's own GST/HST obligation as a non-resident seller",
+    "home": "The firm is not registered for any Canadian tax.",
+    "target": "Non-resident vendors selling digital or 'traditional' services to Canadian consumers and to Canadian businesses not registered for GST/HST fall under the cross-border digital rules, with a C$30,000 threshold. Many small estheticians are below the small-supplier limit and unregistered.",
+    "severity": 2,
+    "reach": "all",
+    "why": "The firm itself may have to register for simplified GST/HST and charge it to its unregistered clients. This needs confirmation by a Canadian tax professional before launch.",
+    "sources": [
+     {
+      "publisher": "Canada Revenue Agency",
+      "title": "GST/HST for digital economy businesses: find out if you need to register",
+      "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/digital-economy-gsthst/find-out-need-register.html",
+      "quote": "A non-resident vendor or a non-resident distribution platform operator vendor who sells taxable digital products or services, such as online music streaming or traditional services, to Canadian consumers and Canadian entities who are not registered under the normal GST/HST?"
+     },
+     {
+      "publisher": "Canada Revenue Agency",
+      "title": "GST/HST for digital economy businesses: find out if you need to register",
+      "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/digital-economy-gsthst/find-out-need-register.html",
+      "quote": "Does your registration threshold exceed $30,000 CAD?"
+     }
+    ],
+    "checks": [
+     {
+      "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/digital-economy-gsthst/find-out-need-register.html",
+      "publisher": "Canada Revenue Agency",
+      "title": "GST/HST for digital economy businesses: find out if you need to register",
+      "quote": "A non-resident vendor or a non-resident distribution platform operator vendor who sells taxable digital products or services, such as online music streaming or traditional services, to Canadian consumers and Canadian entities who are not registered under the normal GST/HST?",
+      "ok": true,
+      "detail": "quote found on page",
+      "retrieved": "2026-11-05"
+     },
+     {
+      "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/digital-economy-gsthst/find-out-need-register.html",
+      "publisher": "Canada Revenue Agency",
+      "title": "GST/HST for digital economy businesses: find out if you need to register",
+      "quote": "Does your registration threshold exceed $30,000 CAD?",
+      "ok": true,
+      "detail": "quote found on page",
+      "retrieved": "2026-11-05"
+     }
+    ],
+    "verified": true
+   },
+   {
+    "id": "CA-selfemployed",
+    "risk_area": "Income tax returns and deadlines",
+    "topic": "Self-employed income tax return",
+    "home": "Schedule C with Form 1040, plus self-employment tax of 15.3% (Social Security and Medicare).",
+    "target": "Form T2125 (Statement of Business or Professional Activities) attached to the T1 return; different deductions, forms and contribution rules.",
+    "severity": 2,
+    "reach": "all",
+    "why": "The core deliverable, the client's annual return, uses a different form set and rules.",
+    "sources": [
+     {
+      "publisher": "IRS",
+      "title": "Self-employment tax (Social Security and Medicare taxes)",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes",
+      "quote": "The self-employment tax rate is 15.3%."
+     },
+     {
+      "publisher": "Canada Revenue Agency",
+      "title": "Completing Form T2125",
+      "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/completing-form-t2125.html",
+      "quote": "You can use Form T2125, Statement of Business or Professional Activities , to report your business and professional income and expenses."
+     }
+    ],
+    "checks": [
+     {
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes",
+      "publisher": "IRS",
+      "title": "Self-employment tax (Social Security and Medicare taxes)",
+      "quote": "The self-employment tax rate is 15.3%.",
+      "ok": true,
+      "detail": "quote found on page",
+      "retrieved": "2026-11-05"
+     },
+     {
+      "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/completing-form-t2125.html",
+      "publisher": "Canada Revenue Agency",
+      "title": "Completing Form T2125",
+      "quote": "You can use Form T2125, Statement of Business or Professional Activities , to report your business and professional income and expenses.",
+      "ok": true,
+      "detail": "quote found on page",
+      "retrieved": "2026-11-05"
+     }
+    ],
+    "verified": true
+   },
+   {
+    "id": "CA-deadlines",
+    "risk_area": "Income tax returns and deadlines",
+    "topic": "Filing and payment deadlines",
+    "home": "Calendar-year individual returns are due April 15.",
+    "target": "Returns are due April 30; self-employed people may file by June 15, but any balance owing is still due April 30.",
+    "severity": 1,
+    "reach": "all",
+    "why": "The 'file by June 15, pay by April 30' split catches US-trained staff; it changes the busy-season calendar.",
+    "sources": [
+     {
+      "publisher": "IRS",
+      "title": "When to file",
+      "url": "https://www.irs.gov/filing/individuals/when-to-file",
+      "quote": "Calendar year filers (most common) File on: April 15, 2026"
+     },
+     {
+      "publisher": "Canada Revenue Agency",
+      "title": "Important dates for individuals",
+      "url": "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/important-dates-individuals.html",
+      "quote": "June 15, 2026 : Deadline to file your taxes if you or your spouse or common-law partner are self-employed"
+     },
+     {
+      "publisher": "Canada Revenue Agency",
+      "title": "Important dates for individuals",
+      "url": "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/important-dates-individuals.html",
+      "quote": "April 30, 2026 : Deadline to pay your taxes"
+     }
+    ],
+    "checks": [
+     {
+      "url": "https://www.irs.gov/filing/individuals/when-to-file",
+      "publisher": "IRS",
+      "title": "When to file",
+      "quote": "Calendar year filers (most common) File on: April 15, 2026",
+      "ok": true,
+      "detail": "quote found on page",
+      "retrieved": "2026-11-05"
+     },
+     {
+      "url": "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/important-dates-individuals.html",
+      "publisher": "Canada Revenue Agency",
+      "title": "Important dates for individuals",
+      "quote": "June 15, 2026 : Deadline to file your taxes if you or your spouse or common-law partner are self-employed",
+      "ok": true,
+      "detail": "quote found on page",
+      "retrieved": "2026-11-05"
+     },
+     {
+      "url": "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/important-dates-individuals.html",
+      "publisher": "Canada Revenue Agency",
+      "title": "Important dates for individuals",
+      "quote": "April 30, 2026 : Deadline to pay your taxes",
+      "ok": true,
+      "detail": "quote found on page",
+      "retrieved": "2026-11-05"
+     }
+    ],
+    "verified": true
+   },
+   {
+    "id": "CA-payroll",
+    "risk_area": "Payroll",
+    "topic": "Payroll withholding (clients with employees)",
+    "home": "Form 941 quarterly: federal income tax, Social Security and Medicare withheld.",
+    "target": "Source deductions of Canada Pension Plan (CPP), Employment Insurance (EI) and income tax, remitted to the CRA.",
+    "severity": 2,
+    "reach": "some",
+    "why": "Different contribution system and remittance rules; most suite renters are solo, so it applies to a subset (spa owners with staff).",
+    "sources": [
+     {
+      "publisher": "IRS",
+      "title": "About Form 941",
+      "url": "https://www.irs.gov/forms-pubs/about-form-941",
+      "quote": "Report federal income, social security, and Medicare taxes withheld from employee's paychecks"
+     },
+     {
+      "publisher": "Canada Revenue Agency",
+      "title": "Payroll: calculating deductions",
+      "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/calculating-deductions.html",
+      "quote": "Learn about Canada Pension Plan (CPP), Employment Insurance (EI) and the income tax deductions"
+     }
+    ],
+    "checks": [
+     {
+      "url": "https://www.irs.gov/forms-pubs/about-form-941",
+      "publisher": "IRS",
+      "title": "About Form 941",
+      "quote": "Report federal income, social security, and Medicare taxes withheld from employee's paychecks",
+      "ok": true,
+      "detail": "quote found on page",
+      "retrieved": "2026-11-05"
+     },
+     {
+      "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/calculating-deductions.html",
+      "publisher": "Canada Revenue Agency",
+      "title": "Payroll: calculating deductions",
+      "quote": "Learn about Canada Pension Plan (CPP), Employment Insurance (EI) and the income tax deductions",
+      "ok": true,
+      "detail": "quote found on page",
+      "retrieved": "2026-11-05"
+     }
+    ],
+    "verified": true
+   },
+   {
+    "id": "CA-preparer",
+    "risk_area": "Who may prepare returns and advise",
+    "topic": "Who may prepare returns and keep books for pay",
+    "home": "Anyone paid to prepare federal returns must hold a PTIN.",
+    "target": "No federal preparer-ID equivalent was found. Licensing is provincial and covers public accounting; Ontario's Act expressly exempts bookkeeping and tax-return preparation (only Ontario was checked).",
+    "severity": 1,
+    "reach": "all",
+    "why": "Entry is not harder than in the US, but the rules are provincial, so each province served needs its own check.",
+    "sources": [
+     {
+      "publisher": "IRS",
+      "title": "PTIN requirements for tax return preparers",
+      "url": "https://www.irs.gov/tax-professionals/ptin-requirements-for-tax-return-preparers",
+      "quote": "Anyone who prepares or assists in preparing federal tax returns for compensation must have a valid 2027 PTIN before preparing returns."
+     },
+     {
+      "publisher": "Government of Ontario (e-Laws)",
+      "title": "Public Accounting Act, 2004, s. 3(3)",
+      "url": "https://www.ontario.ca/laws/statute/04p08",
+      "quote": "A person is not required to be licensed in accordance with this Act for providing services as, (a) a bookkeeper or for engaging in bookkeeping"
+     }
+    ],
+    "checks": [
+     {
+      "url": "https://www.irs.gov/tax-professionals/ptin-requirements-for-tax-return-preparers",
+      "publisher": "IRS",
+      "title": "PTIN requirements for tax return preparers",
+      "quote": "Anyone who prepares or assists in preparing federal tax returns for compensation must have a valid 2027 PTIN before preparing returns.",
+      "ok": true,
+      "detail": "quote found on page",
+      "retrieved": "2026-11-05"
+     },
+     {
+      "url": "https://www.ontario.ca/laws/statute/04p08",
+      "publisher": "Government of Ontario (e-Laws)",
+      "title": "Public Accounting Act, 2004, s. 3(3)",
+      "quote": "A person is not required to be licensed in accordance with this Act for providing services as, (a) a bookkeeper or for engaging in bookkeeping",
+      "ok": false,
+      "detail": "quote NOT found on the fetched page",
+      "retrieved": "2026-11-05"
+     }
+    ],
+    "verified": false
+   },
+   {
+    "id": "CA-representation",
+    "risk_area": "Who may prepare returns and advise",
+    "topic": "Representing a client before the tax authority",
+    "home": "Only enrolled agents, CPAs and attorneys have unlimited representation rights before the IRS.",
+    "target": "A representative registers for a RepID and is authorized by the client in CRA's online services.",
+    "severity": 1,
+    "reach": "all",
+    "why": "Different authorization process; the firm needs CRA representative registration for each staff member.",
+    "sources": [
+     {
+      "publisher": "IRS",
+      "title": "Understanding tax return preparer credentials and qualifications",
+      "url": "https://www.irs.gov/tax-professionals/understanding-tax-return-preparer-credentials-and-qualifications",
+      "quote": "Enrolled agents, certified public accountants, and attorneys have unlimited representation rights before the IRS."
+     },
+     {
+      "publisher": "Canada Revenue Agency",
+      "title": "Help for Represent a Client",
+      "url": "https://www.canada.ca/en/revenue-agency/services/e-services/represent-a-client/help-represent-a-client.html",
+      "quote": "You can now give this RepID to anyone who wants to authorize you as their representative to access their tax information online."
+     }
+    ],
+    "checks": [
+     {
+      "url": "https://www.irs.gov/tax-professionals/understanding-tax-return-preparer-credentials-and-qualifications",
+      "publisher": "IRS",
+      "title": "Understanding tax return preparer credentials and qualifications",
+      "quote": "Enrolled agents, certified public accountants, and attorneys have unlimited representation rights before the IRS.",
+      "ok": true,
+      "detail": "quote found on page",
+      "retrieved": "2026-11-05"
+     },
+     {
+      "url": "https://www.canada.ca/en/revenue-agency/services/e-services/represent-a-client/help-represent-a-client.html",
+      "publisher": "Canada Revenue Agency",
+      "title": "Help for Represent a Client",
+      "quote": "You can now give this RepID to anyone who wants to authorize you as their representative to access their tax information online.",
+      "ok": true,
+      "detail": "quote found on page",
+      "retrieved": "2026-11-05"
+     }
+    ],
+    "verified": true
+   },
+   {
+    "id": "CA-privacy",
+    "risk_area": "Privacy and data residency",
+    "topic": "Client data stored or processed in the US",
+    "home": "IRC section 7216 restricts use and disclosure of tax-return information, with criminal and civil penalties.",
+    "target": "PIPEDA does not prohibit transferring personal information outside Canada for processing, but the organization stays accountable for it.",
+    "severity": 1,
+    "reach": "all",
+    "why": "No federal data-residency rule blocks US hosting, but contracts and client notices must change.",
+    "sources": [
+     {
+      "publisher": "IRS",
+      "title": "Section 7216 information center",
+      "url": "https://www.irs.gov/tax-professionals/section-7216-information-center",
+      "quote": "criminal and civil penalties under Internal Revenue Code sections 7216 and 6713"
+     },
+     {
+      "publisher": "Office of the Privacy Commissioner of Canada",
+      "title": "Guidelines for processing personal data across borders",
+      "url": "https://www.priv.gc.ca/en/privacy-topics/airports-and-borders/gl_dab_090127/",
+      "quote": "PIPEDA does not prohibit organizations in Canada from transferring personal information to an organization in another jurisdiction for processing. However, under PIPEDA, organizations are held accountable"
+     }
+    ],
+    "checks": [
+     {
+      "url": "https://www.irs.gov/tax-professionals/section-7216-information-center",
+      "publisher": "IRS",
+      "title": "Section 7216 information center",
+      "quote": "criminal and civil penalties under Internal Revenue Code sections 7216 and 6713",
+      "ok": true,
+      "detail": "quote found on page",
+      "retrieved": "2026-11-05"
+     },
+     {
+      "url": "https://www.priv.gc.ca/en/privacy-topics/airports-and-borders/gl_dab_090127/",
+      "publisher": "Office of the Privacy Commissioner of Canada",
+      "title": "Guidelines for processing personal data across borders",
+      "quote": "PIPEDA does not prohibit organizations in Canada from transferring personal information to an organization in another jurisdiction for processing. However, under PIPEDA, organizations are held accountable",
+      "ok": true,
+      "detail": "quote found on page",
+      "retrieved": "2026-11-05"
+     }
+    ],
+    "verified": true
+   },
+   {
+    "id": "CA-quebec-privacy",
+    "risk_area": "Privacy and data residency",
+    "topic": "Quebec private-sector privacy law (Law 25) on transfers outside Quebec",
+    "home": "No equivalent state rule checked.",
+    "target": "Quebec's private-sector privacy act (as amended by Law 25, s. 17) requires a privacy impact assessment before an enterprise communicates personal information outside Quebec, e.g. to a US bookkeeping firm.",
+    "severity": 2,
+    "reach": "some",
+    "why": "Adds a privacy assessment and a written agreement for every Quebec client whose data goes to the US.",
+    "sources": [
+     {
+      "publisher": "Commission d'acc\u00e8s \u00e0 l'information du Qu\u00e9bec",
+      "title": "Guide d'accompagnement: r\u00e9aliser une \u00e9valuation des facteurs relatifs \u00e0 la vie priv\u00e9e (French; the official guide)",
+      "url": "https://www.cai.gouv.qc.ca/uploads/pdfs/CAI_GU_EFVP.pdf",
+      "quote": "Vous projetez de communiquer des renseignements personnels \u00e0 l\u2019ext\u00e9rieur du Qu\u00e9bec."
+     }
+    ],
+    "checks": [
+     {
+      "url": "https://www.cai.gouv.qc.ca/uploads/pdfs/CAI_GU_EFVP.pdf",
+      "publisher": "Commission d'acc\u00e8s \u00e0 l'information du Qu\u00e9bec",
+      "title": "Guide d'accompagnement: r\u00e9aliser une \u00e9valuation des facteurs relatifs \u00e0 la vie priv\u00e9e (French; the official guide)",
+      "quote": "Vous projetez de communiquer des renseignements personnels \u00e0 l\u2019ext\u00e9rieur du Qu\u00e9bec.",
+      "ok": true,
+      "detail": "quote found on page",
+      "retrieved": "2026-11-05"
+     }
+    ],
+    "verified": true
+   },
+   {
+    "id": "CA-quebec-french",
+    "risk_area": "Quebec French-language requirements",
+    "topic": "Language of service and contracts (Quebec)",
+    "home": "The firm serves clients in English only.",
+    "target": "Quebec's Charter of the French language gives consumers the right to be informed and served in French and limits contracts of adhesion in another language.",
+    "severity": 2,
+    "reach": "some",
+    "why": "Serving Quebec estheticians needs French-language contracts, onboarding and service.",
+    "sources": [
+     {
+      "publisher": "L\u00e9gis Qu\u00e9bec",
+      "title": "Charter of the French language (C-11), s. 5",
+      "url": "https://www.legisquebec.gouv.qc.ca/en/document/cs/c-11",
+      "quote": "Consumers of goods and services have a right to be informed and served in French."
+     },
+     {
+      "publisher": "L\u00e9gis Qu\u00e9bec",
+      "title": "Charter of the French language (C-11), s. 55",
+      "url": "https://www.legisquebec.gouv.qc.ca/en/document/cs/c-11",
+      "quote": "make the other party adhere to a contract of adhesion drawn up in a language other than French"
+     }
+    ],
+    "checks": [
+     {
+      "url": "https://www.legisquebec.gouv.qc.ca/en/document/cs/c-11",
+      "publisher": "L\u00e9gis Qu\u00e9bec",
+      "title": "Charter of the French language (C-11), s. 5",
+      "quote": "Consumers of goods and services have a right to be informed and served in French.",
+      "ok": false,
+      "detail": "page not fetched: HTTPError: 403 Client Error: Forbidden for url: https://www.legisquebec.gouv.qc.ca/en/document/cs/c-11",
+      "retrieved": "not fetched (HTTPError: 403 Client Error: Forbidden for url: https://www.legisquebec.gouv.qc.ca/en/document/cs/c-11, tried 2026-11-05)"
+     },
+     {
+      "url": "https://www.legisquebec.gouv.qc.ca/en/document/cs/c-11",
+      "publisher": "L\u00e9gis Qu\u00e9bec",
+      "title": "Charter of the French language (C-11), s. 55",
+      "quote": "make the other party adhere to a contract of adhesion drawn up in a language other than French",
+      "ok": false,
+      "detail": "page not fetched: HTTPError: 403 Client Error: Forbidden for url: https://www.legisquebec.gouv.qc.ca/en/document/cs/c-11",
+      "retrieved": "not fetched (HTTPError: 403 Client Error: Forbidden for url: https://www.legisquebec.gouv.qc.ca/en/document/cs/c-11, tried 2026-11-05)"
+     }
+    ],
+    "verified": false
+   },
+   {
+    "id": "CA-loans",
+    "risk_area": "Loan-readiness programs",
+    "topic": "Government-backed small business loans",
+    "home": "SBA 7(a): SBA guarantees part of the lender's loan.",
+    "target": "Canada Small Business Financing Program: the government shares the risk with lenders; different eligibility and paperwork.",
+    "severity": 1,
+    "reach": "all",
+    "why": "The loan-readiness package has to be rebuilt around a different program and lender expectations.",
+    "sources": [
+     {
+      "publisher": "U.S. Small Business Administration",
+      "title": "7(a) loans",
+      "url": "https://www.sba.gov/funding-programs/loans/7a-loans",
+      "quote": "The 7(a) loan program, SBA\u2019s primary business loan program, provides a loan guarantee to lenders"
+     },
+     {
+      "publisher": "Innovation, Science and Economic Development Canada",
+      "title": "Canada Small Business Financing Program",
+      "url": "https://ised-isde.canada.ca/site/canada-small-business-financing-program/en",
+      "quote": "makes it easier for small businesses to get loans from financial institutions by sharing the risk with lenders"
+     }
+    ],
+    "checks": [
+     {
+      "url": "https://www.sba.gov/funding-programs/loans/7a-loans",
+      "publisher": "U.S. Small Business Administration",
+      "title": "7(a) loans",
+      "quote": "The 7(a) loan program, SBA\u2019s primary business loan program, provides a loan guarantee to lenders",
+      "ok": true,
+      "detail": "quote found on page",
+      "retrieved": "2026-11-05"
+     },
+     {
+      "url": "https://ised-isde.canada.ca/site/canada-small-business-financing-program/en",
+      "publisher": "Innovation, Science and Economic Development Canada",
+      "title": "Canada Small Business Financing Program",
+      "quote": "makes it easier for small businesses to get loans from financial institutions by sharing the risk with lenders",
+      "ok": true,
+      "detail": "quote found on page",
+      "retrieved": "2026-11-05"
+     }
+    ],
+    "verified": true
+   }
+  ]
+ },
+ "scores": {
+  "Cultural": 10.3,
+  "Administrative": 35.6,
+  "Geographic": 1.5,
+  "Economic": 26.3
+ },
+ "total": 23.54,
+ "rating": "low",
+ "equal_total": 18.425,
+ "contrast_total": 15.400000000000002,
+ "recommendation": {
+  "total": 23.54,
+  "rating": "low",
+  "top_dimension": "Administrative",
+  "risk": "Sales tax regime (GST/HST/PST)",
+  "risk_facts": [
+   "CA-salestax",
+   "CA-nonresident-gst"
+  ],
+  "q1": "Total weighted distance is 23.5/100, a **low** distance, but **borderline**: it sits 1.5 points from the 25-point threshold, so small changes in the weights move it (see the sensitivity analysis). Administrative distance supplies 60% of it; the other three dimensions add 9.3 points together. The market is close enough that the firm's model transfers, provided the specific rules below are rebuilt for the target country.",
+  "q2": "Be most cautious about **Sales tax regime (GST/HST/PST)** (administrative distance). Federal GST/HST: registration is required once taxable sales pass the C$30,000 small-supplier threshold; HST provinces charge a combined rate (13% in Ontario) and non-participating provinces add a separate PST (Manitoba 7%). Every Canadian esthetician above C$30,000 must charge, file and remit GST/HST, and the rate depends on the province. US sales-tax knowledge does not transfer. Non-resident vendors selling digital or 'traditional' services to Canadian consumers and to Canadian businesses not registered for GST/HST fall under the cross-border digital rules, with a C$30,000 threshold. Many small estheticians are below the small-supplier limit and unregistered. The firm itself may have to register for simplified GST/HST and charge it to its unregistered clients. This needs confirmation by a Canadian tax professional before launch."
+ },
+ "sensitivity": [
+  {
+   "scenario": "Industry default",
+   "w_C": 0.25,
+   "w_A": 0.4,
+   "w_G": 0.1,
+   "w_E": 0.25,
+   "total": 23.5,
+   "rating": "low",
+   "top_dimension": "Administrative",
+   "largest_risk": "Sales tax regime (GST/HST/PST)"
+  },
+  {
+   "scenario": "Equal weights",
+   "w_C": 0.25,
+   "w_A": 0.25,
+   "w_G": 0.25,
+   "w_E": 0.25,
+   "total": 18.4,
+   "rating": "low",
+   "top_dimension": "Administrative",
+   "largest_risk": "Sales tax regime (GST/HST/PST)"
+  },
+  {
+   "scenario": "Cultural-heavy",
+   "w_C": 0.7,
+   "w_A": 0.1,
+   "w_G": 0.1,
+   "w_E": 0.1,
+   "total": 13.6,
+   "rating": "low",
+   "top_dimension": "Cultural",
+   "largest_risk": "Common official language"
+  },
+  {
+   "scenario": "Administrative-heavy",
+   "w_C": 0.1,
+   "w_A": 0.7,
+   "w_G": 0.1,
+   "w_E": 0.1,
+   "total": 28.7,
+   "rating": "moderate",
+   "top_dimension": "Administrative",
+   "largest_risk": "Sales tax regime (GST/HST/PST)"
+  },
+  {
+   "scenario": "Geographic-heavy",
+   "w_C": 0.1,
+   "w_A": 0.1,
+   "w_G": 0.7,
+   "w_E": 0.1,
+   "total": 8.3,
+   "rating": "low",
+   "top_dimension": "Administrative",
+   "largest_risk": "Sales tax regime (GST/HST/PST)"
+  },
+  {
+   "scenario": "Economic-heavy",
+   "w_C": 0.1,
+   "w_A": 0.1,
+   "w_G": 0.1,
+   "w_E": 0.7,
+   "total": 23.2,
+   "rating": "low",
+   "top_dimension": "Economic",
+   "largest_risk": "GNI per capita, Atlas method (current US$)"
+  },
+  {
+   "scenario": "Cement (contrast)",
+   "w_C": 0.1,
+   "w_A": 0.2,
+   "w_G": 0.45,
+   "w_E": 0.25,
+   "total": 15.4,
+   "rating": "low",
+   "top_dimension": "Administrative",
+   "largest_risk": "Sales tax regime (GST/HST/PST)"
+  }
+ ],
+ "flip_text": [
+  "The rating changes in: Administrative-heavy. The single largest risk changes in: Cultural-heavy, Economic-heavy (Cultural-heavy: Common official language; Economic-heavy: GNI per capita, Atlas method (current US$)).",
+  "Every possible weighting gives a total between 1.5 (all weight on the lowest dimension) and 35.6 (all weight on the highest).",
+  "Across all 1,771 weight combinations on a 0.05 grid: 83% low, 17% moderate, 0% high.",
+  "The closest weighting to the default that changes the rating to **moderate** is Cultural 0.25, Administrative 0.45, Geographic 0.05, Economic 0.25 (total 25.2; L1 distance 0.10 from the default).",
+  "Raising the Administrative weight from 0.40 to 0.47 (taking weight proportionally from the others) moves the total to the 25-point threshold.",
+  "Raising the Economic weight from 0.25 to 0.65 (taking weight proportionally from the others) moves the total to the 25-point threshold."
+ ],
+ "flip": {
+  "Cultural": 0.25,
+  "Administrative": 0.45,
+  "Geographic": 0.05,
+  "Economic": 0.25,
+  "total": 25.244999999999997,
+  "rating": "moderate",
+  "L1_from_default": 0.09999999999999999
+ },
+ "grid_share": {
+  "low": 0.828,
+  "moderate": 0.172
+ },
+ "contrast_pairs": {
+  "US-GB": {
+   "names": [
+    "United States",
+    "United Kingdom"
+   ],
+   "scores": {
+    "Cultural": 6.4,
+    "Administrative": 41.9,
+    "Geographic": 37.3,
+    "Economic": 26.1
+   },
+   "total": 28.615000000000002,
+   "rating": "moderate",
+   "risk": "Income tax returns and deadlines"
+  },
+  "US-JP": {
+   "names": [
+    "United States",
+    "Japan"
+   ],
+   "scores": {
+    "Cultural": 87.9,
+    "Administrative": 53.5,
+    "Geographic": 60.9,
+    "Economic": 42.9
+   },
+   "total": 60.190000000000005,
+   "rating": "high",
+   "risk": "Hofstede Kogut-Singh index (6 dims)"
+  }
+ },
+ "unverified": [
+  "US-CA Administrative fact 'Who may prepare returns and keep books for pay': quote NOT found on the fetched page <https://www.ontario.ca/laws/statute/04p08>",
+  "US-CA Administrative fact 'Language of service and contracts (Quebec)': page not fetched: HTTPError: 403 Client Error: Forbidden <https://www.legisquebec.gouv.qc.ca/en/document/cs/c-11>"
+ ],
+ "factbook_snapshot": "2026-09-11"
+}

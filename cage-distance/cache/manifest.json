@@ -1,0 +1,345 @@
+{
+ "https://api.github.com/repos/factbook/factbook.json/commits?per_page=1": {
+  "file": "cache/factbook/last_commit.json",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://api.github.com/repos/factbook/factbook.json/git/trees/master?recursive=1": {
+  "file": "cache/factbook/tree.json",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://api.worldbank.org/v2/country/US;CA/indicator/IT.NET.USER.ZS?format=json&per_page=1000&date=2000:2026": {
+  "file": "cache/wb/IT.NET.USER.ZS_US_CA.json",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://api.worldbank.org/v2/country/US;CA/indicator/LP.LPI.OVRL.XQ?format=json&per_page=1000&date=2000:2026": {
+  "file": "cache/wb/LP.LPI.OVRL.XQ_US_CA.json",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://api.worldbank.org/v2/country/US;CA/indicator/NY.GDP.PCAP.PP.CD?format=json&per_page=1000&date=2000:2026": {
+  "file": "cache/wb/NY.GDP.PCAP.PP.CD_US_CA.json",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://api.worldbank.org/v2/country/US;CA/indicator/NY.GNP.PCAP.CD?format=json&per_page=1000&date=2000:2026": {
+  "file": "cache/wb/NY.GNP.PCAP.CD_US_CA.json",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://api.worldbank.org/v2/country/US;CA/indicator/PA.NUS.FCRF?format=json&per_page=1000&date=2000:2026": {
+  "file": "cache/wb/PA.NUS.FCRF_US_CA.json",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://api.worldbank.org/v2/country/US;CA/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2000:2026": {
+  "file": "cache/wb/PA.NUS.PPP_US_CA.json",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://api.worldbank.org/v2/country/US;CA/indicator/PA.NUS.PPPC.RF?format=json&per_page=1000&date=2000:2026": {
+  "file": "cache/wb/PA.NUS.PPPC.RF_US_CA.json",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://api.worldbank.org/v2/country/US;GB/indicator/IT.NET.USER.ZS?format=json&per_page=1000&date=2000:2026": {
+  "file": "cache/wb/IT.NET.USER.ZS_US_GB.json",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://api.worldbank.org/v2/country/US;GB/indicator/LP.LPI.OVRL.XQ?format=json&per_page=1000&date=2000:2026": {
+  "file": "cache/wb/LP.LPI.OVRL.XQ_US_GB.json",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://api.worldbank.org/v2/country/US;GB/indicator/NY.GDP.PCAP.PP.CD?format=json&per_page=1000&date=2000:2026": {
+  "file": "cache/wb/NY.GDP.PCAP.PP.CD_US_GB.json",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://api.worldbank.org/v2/country/US;GB/indicator/NY.GNP.PCAP.CD?format=json&per_page=1000&date=2000:2026": {
+  "file": "cache/wb/NY.GNP.PCAP.CD_US_GB.json",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://api.worldbank.org/v2/country/US;GB/indicator/PA.NUS.FCRF?format=json&per_page=1000&date=2000:2026": {
+  "file": "cache/wb/PA.NUS.FCRF_US_GB.json",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://api.worldbank.org/v2/country/US;GB/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2000:2026": {
+  "file": "cache/wb/PA.NUS.PPP_US_GB.json",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://api.worldbank.org/v2/country/US;GB/indicator/PA.NUS.PPPC.RF?format=json&per_page=1000&date=2000:2026": {
+  "file": "cache/wb/PA.NUS.PPPC.RF_US_GB.json",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://api.worldbank.org/v2/country/US;JP/indicator/IT.NET.USER.ZS?format=json&per_page=1000&date=2000:2026": {
+  "file": "cache/wb/IT.NET.USER.ZS_US_JP.json",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://api.worldbank.org/v2/country/US;JP/indicator/LP.LPI.OVRL.XQ?format=json&per_page=1000&date=2000:2026": {
+  "file": "cache/wb/LP.LPI.OVRL.XQ_US_JP.json",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://api.worldbank.org/v2/country/US;JP/indicator/NY.GDP.PCAP.PP.CD?format=json&per_page=1000&date=2000:2026": {
+  "file": "cache/wb/NY.GDP.PCAP.PP.CD_US_JP.json",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://api.worldbank.org/v2/country/US;JP/indicator/NY.GNP.PCAP.CD?format=json&per_page=1000&date=2000:2026": {
+  "file": "cache/wb/NY.GNP.PCAP.CD_US_JP.json",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://api.worldbank.org/v2/country/US;JP/indicator/PA.NUS.FCRF?format=json&per_page=1000&date=2000:2026": {
+  "file": "cache/wb/PA.NUS.FCRF_US_JP.json",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://api.worldbank.org/v2/country/US;JP/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2000:2026": {
+  "file": "cache/wb/PA.NUS.PPP_US_JP.json",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://api.worldbank.org/v2/country/US;JP/indicator/PA.NUS.PPPC.RF?format=json&per_page=1000&date=2000:2026": {
+  "file": "cache/wb/PA.NUS.PPPC.RF_US_JP.json",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://api.worldbank.org/v2/country?format=json&per_page=400": {
+  "file": "cache/wb/countries.json",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://api.worldbank.org/v2/sources/3/country/USA;CAN/series/GOV_WGI_CC.SC/time/all?format=json&per_page=1000": {
+  "file": "cache/wb/GOV_WGI_CC.SC_US_CA.json",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://api.worldbank.org/v2/sources/3/country/USA;CAN/series/GOV_WGI_RL.SC/time/all?format=json&per_page=1000": {
+  "file": "cache/wb/GOV_WGI_RL.SC_US_CA.json",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://api.worldbank.org/v2/sources/3/country/USA;CAN/series/GOV_WGI_RQ.SC/time/all?format=json&per_page=1000": {
+  "file": "cache/wb/GOV_WGI_RQ.SC_US_CA.json",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://api.worldbank.org/v2/sources/3/country/USA;GBR/series/GOV_WGI_CC.SC/time/all?format=json&per_page=1000": {
+  "file": "cache/wb/GOV_WGI_CC.SC_US_GB.json",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://api.worldbank.org/v2/sources/3/country/USA;GBR/series/GOV_WGI_RL.SC/time/all?format=json&per_page=1000": {
+  "file": "cache/wb/GOV_WGI_RL.SC_US_GB.json",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://api.worldbank.org/v2/sources/3/country/USA;GBR/series/GOV_WGI_RQ.SC/time/all?format=json&per_page=1000": {
+  "file": "cache/wb/GOV_WGI_RQ.SC_US_GB.json",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://api.worldbank.org/v2/sources/3/country/USA;JPN/series/GOV_WGI_CC.SC/time/all?format=json&per_page=1000": {
+  "file": "cache/wb/GOV_WGI_CC.SC_US_JP.json",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://api.worldbank.org/v2/sources/3/country/USA;JPN/series/GOV_WGI_RL.SC/time/all?format=json&per_page=1000": {
+  "file": "cache/wb/GOV_WGI_RL.SC_US_JP.json",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://api.worldbank.org/v2/sources/3/country/USA;JPN/series/GOV_WGI_RQ.SC/time/all?format=json&per_page=1000": {
+  "file": "cache/wb/GOV_WGI_RQ.SC_US_JP.json",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://geerthofstede.com/wp-content/uploads/2016/08/6-dimensions-for-website-2015-08-16.csv": {
+  "file": "cache/hofstede_6d_2015-08-16.csv",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://ised-isde.canada.ca/site/canada-small-business-financing-program/en": {
+  "file": "cache/pages/ised_isde_canada_ca_site_canada_small_business_financing_program_en_50b394.html",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://ofac.treasury.gov/sanctions-programs-and-country-information": {
+  "file": "cache/pages/ofac_treasury_gov_sanctions_programs_and_country_information_54cf17.html",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://ustr.gov/countries-regions/japan-korea-apec/japan/us-japan-trade-agreement-negotiations": {
+  "file": "cache/pages/ustr_gov_countries_regions_japan_korea_apec_japan_us_japan_trade_agreement_negot_40ceb1.html",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://ustr.gov/trade-agreements/free-trade-agreements/united-states-mexico-canada-agreement": {
+  "file": "cache/pages/ustr_gov_trade_agreements_free_trade_agreements_united_states_mexico_canada_agre_2500b0.html",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://www.cai.gouv.qc.ca/uploads/pdfs/CAI_GU_EFVP.pdf": {
+  "file": "cache/pages/cai_gouv_qc_ca_uploads_pdfs_CAI_GU_EFVP_pdf_40fa0c.pdf",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://www.canada.ca/en/revenue-agency/services/e-services/represent-a-client/help-represent-a-client.html": {
+  "file": "cache/pages/canada_ca_en_revenue_agency_services_e_services_represent_a_client_help_represen_7be4c1.html",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate.html": {
+  "file": "cache/pages/canada_ca_en_revenue_agency_services_tax_businesses_topics_gst_hst_businesses_ch_4d6bca.html",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/digital-economy-gsthst/find-out-need-register.html": {
+  "file": "cache/pages/canada_ca_en_revenue_agency_services_tax_businesses_topics_gst_hst_businesses_di_d7c01b.html",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html": {
+  "file": "cache/pages/canada_ca_en_revenue_agency_services_tax_businesses_topics_gst_hst_businesses_wh_60d19a.html",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/calculating-deductions.html": {
+  "file": "cache/pages/canada_ca_en_revenue_agency_services_tax_businesses_topics_payroll_calculating_d_95709a.html",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/completing-form-t2125.html": {
+  "file": "cache/pages/canada_ca_en_revenue_agency_services_tax_businesses_topics_sole_proprietorships__c4c50a.html",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/important-dates-individuals.html": {
+  "file": "cache/pages/canada_ca_en_revenue_agency_services_tax_individuals_topics_important_dates_indi_8596ad.html",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://www.cepii.fr/distance/dist_cepii.zip": {
+  "file": "cache/dist_cepii.zip",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://www.cepii.fr/distance/geo_cepii.xls": {
+  "file": "cache/geo_cepii.xls",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://www.gov.uk/government/publications/uk-us-data-bridge-supporting-documents": {
+  "file": "cache/pages/gov_uk_government_publications_uk_us_data_bridge_supporting_documents_aec97e.html",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://www.gov.uk/government/publications/us-uk-economic-prosperity-deal-epd": {
+  "file": "cache/pages/gov_uk_government_publications_us_uk_economic_prosperity_deal_epd_a98cfa.html",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://www.gov.uk/guidance/find-out-if-and-when-you-need-to-use-making-tax-digital-for-income-tax": {
+  "file": "cache/pages/gov_uk_guidance_find_out_if_and_when_you_need_to_use_making_tax_digital_for_inco_4ea52e.html",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://www.gov.uk/guidance/money-laundering-regulations-accountancy-service-provider-registration": {
+  "file": "cache/pages/gov_uk_guidance_money_laundering_regulations_accountancy_service_provider_regist_1b7169.html",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://www.gov.uk/self-assessment-tax-returns/deadlines": {
+  "file": "cache/pages/gov_uk_self_assessment_tax_returns_deadlines_0ffbe8.html",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://www.gov.uk/vat-registration/when-to-register": {
+  "file": "cache/pages/gov_uk_vat_registration_when_to_register_9abd2b.html",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes": {
+  "file": "cache/pages/irs_gov_businesses_small_businesses_self_employed_self_employment_tax_social_sec_29e3c0.html",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://www.irs.gov/filing/individuals/when-to-file": {
+  "file": "cache/pages/irs_gov_filing_individuals_when_to_file_51f392.html",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://www.irs.gov/forms-pubs/about-form-941": {
+  "file": "cache/pages/irs_gov_forms_pubs_about_form_941_0b752a.html",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://www.irs.gov/tax-professionals/ptin-requirements-for-tax-return-preparers": {
+  "file": "cache/pages/irs_gov_tax_professionals_ptin_requirements_for_tax_return_preparers_8eb5b7.html",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://www.irs.gov/tax-professionals/section-7216-information-center": {
+  "file": "cache/pages/irs_gov_tax_professionals_section_7216_information_center_026020.html",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://www.irs.gov/tax-professionals/understanding-tax-return-preparer-credentials-and-qualifications": {
+  "file": "cache/pages/irs_gov_tax_professionals_understanding_tax_return_preparer_credentials_and_qual_a1cf80.html",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://www.irs.gov/taxtopics/tc503": {
+  "file": "cache/pages/irs_gov_taxtopics_tc503_5824cc.html",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://www.legisquebec.gouv.qc.ca/en/document/cs/P-39.1": {
+  "attempted": "2026-11-05",
+  "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.legisquebec.gouv.qc.ca/en/document/cs/P-39.1"
+ },
+ "https://www.legisquebec.gouv.qc.ca/en/document/cs/c-11": {
+  "attempted": "2026-11-05",
+  "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.legisquebec.gouv.qc.ca/en/document/cs/c-11"
+ },
+ "https://www.nta.go.jp/english/Report_pdf/2026e_04.pdf": {
+  "file": "cache/pages/nta_go_jp_english_Report_pdf_2026e_04_pdf_968917.pdf",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://www.nta.go.jp/english/taxes/individual/pdf/incometax_2023/02.pdf": {
+  "file": "cache/pages/nta_go_jp_english_taxes_individual_pdf_incometax_2023_02_pdf_408d20.pdf",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://www.ontario.ca/laws/statute/04p08": {
+  "file": "cache/pages/ontario_ca_laws_statute_04p08_cc4887.html",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://www.ppc.go.jp/files/pdf/Act_on_the_Protection_of_Personal_Information.pdf": {
+  "file": "cache/pages/ppc_go_jp_files_pdf_Act_on_the_Protection_of_Personal_Information_pdf_f375ad.pdf",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://www.priv.gc.ca/en/privacy-topics/airports-and-borders/gl_dab_090127/": {
+  "file": "cache/pages/priv_gc_ca_en_privacy_topics_airports_and_borders_gl_dab_090127_164c0c.html",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ },
+ "https://www.sba.gov/funding-programs/loans/7a-loans": {
+  "file": "cache/pages/sba_gov_funding_programs_loans_7a_loans_c383a3.html",
+  "http": 200,
+  "retrieved": "2026-11-05"
+ }
+}

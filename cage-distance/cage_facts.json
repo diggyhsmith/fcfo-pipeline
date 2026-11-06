@@ -1,0 +1,500 @@
+{
+  "_readme": [
+    "Curated, cited fact table for the CAGE Distance tool. Written by hand (Claude Code during the build session); every quote is re-checked in code",
+    "against the cached text of its official source page (cache/pages/). A fact whose quote cannot be found, or whose page could not be fetched, is",
+    "printed as 'not verified' and left OUT of the score. Nothing here is scored by an LLM at run time.",
+    "severity: 0 = same rule or no practical difference; 1 = different rule, same skill set (a date, a form, a threshold);",
+    "          2 = a different system that needs separate expertise, a registration, or a licence before the firm can serve the client.",
+    "reach:    'all' = applies to every client in the target country (weight 1.0); 'some' = only a subset, e.g. Quebec clients or clients with employees (weight 0.5).",
+    "risk_area groups facts for the 'single largest risk' rule (largest summed severity x reach)."
+  ],
+  "industry": "bookkeeping, tax and loan-readiness services for estheticians and spa suites",
+  "trade_agreements": {
+    "_scale": "comprehensive FTA in force = 0; limited or sectoral agreement / general terms only = 50; none = 100",
+    "US-CA": {
+      "level": "comprehensive",
+      "name": "United States-Mexico-Canada Agreement (USMCA)",
+      "note": "Comprehensive FTA, in force since July 1, 2020. Its scheduled six-year joint review and any 2025-26 tariff actions were not checked by this tool.",
+      "sources": [
+        {
+          "publisher": "Office of the U.S. Trade Representative",
+          "title": "United States-Mexico-Canada Agreement",
+          "url": "https://ustr.gov/trade-agreements/free-trade-agreements/united-states-mexico-canada-agreement",
+          "quote": "The United States-Mexico-Canada Agreement (USMCA) entered into force on July 1, 2020."
+        }
+      ]
+    },
+    "US-GB": {
+      "level": "limited",
+      "name": "UK-US Economic Prosperity Deal (general terms, May 2025)",
+      "note": "General terms of a trade deal, not a comprehensive FTA; USTR does not list the UK among U.S. free trade agreements.",
+      "sources": [
+        {
+          "publisher": "UK Department for Business and Trade (GOV.UK)",
+          "title": "UK-US Economic Prosperity Deal (EPD)",
+          "url": "https://www.gov.uk/government/publications/us-uk-economic-prosperity-deal-epd",
+          "quote": "General terms of a new trade deal between the UK and US"
+        }
+      ]
+    },
+    "US-JP": {
+      "level": "limited",
+      "name": "U.S.-Japan Trade Agreement and U.S.-Japan Digital Trade Agreement",
+      "note": "Limited goods agreement plus a digital trade agreement (relevant to a digitally delivered service); not a comprehensive FTA.",
+      "sources": [
+        {
+          "publisher": "Office of the U.S. Trade Representative",
+          "title": "U.S.-Japan Trade Agreement Negotiations",
+          "url": "https://ustr.gov/countries-regions/japan-korea-apec/japan/us-japan-trade-agreement-negotiations",
+          "quote": "Following the finalization of domestic procedures, both agreements entered into force on January 1, 2020."
+        }
+      ]
+    }
+  },
+  "industry_facts": {
+    "US-CA": [
+      {
+        "id": "CA-salestax",
+        "risk_area": "Sales tax regime (GST/HST/PST)",
+        "topic": "Sales tax on the clients' services",
+        "home": "No national sales tax: sales taxes are state and local (each state sets its own rules for services).",
+        "target": "Federal GST/HST: registration is required once taxable sales pass the C$30,000 small-supplier threshold; HST provinces charge a combined rate (13% in Ontario) and non-participating provinces add a separate PST (Manitoba 7%).",
+        "severity": 2,
+        "reach": "all",
+        "why": "Every Canadian esthetician above C$30,000 must charge, file and remit GST/HST, and the rate depends on the province. US sales-tax knowledge does not transfer.",
+        "sources": [
+          {
+            "publisher": "IRS",
+            "title": "Topic no. 503, Deductible taxes",
+            "url": "https://www.irs.gov/taxtopics/tc503",
+            "quote": "State, local and foreign income taxes or state and local general sales taxes"
+          },
+          {
+            "publisher": "Canada Revenue Agency",
+            "title": "When to register for and start charging the GST/HST",
+            "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html",
+            "quote": "You are no longer a small supplier and have to charge GST/HST on the supply that made you exceed $30,000 within the calendar quarter."
+          },
+          {
+            "publisher": "Canada Revenue Agency",
+            "title": "Charge and collect the tax: which rate to charge",
+            "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate.html",
+            "quote": "The electronics store charges GST of 5% and the PST that applies in Manitoba of 7%."
+          }
+        ]
+      },
+      {
+        "id": "CA-nonresident-gst",
+        "risk_area": "Sales tax regime (GST/HST/PST)",
+        "topic": "The firm's own GST/HST obligation as a non-resident seller",
+        "home": "The firm is not registered for any Canadian tax.",
+        "target": "Non-resident vendors selling digital or 'traditional' services to Canadian consumers and to Canadian businesses not registered for GST/HST fall under the cross-border digital rules, with a C$30,000 threshold. Many small estheticians are below the small-supplier limit and unregistered.",
+        "severity": 2,
+        "reach": "all",
+        "why": "The firm itself may have to register for simplified GST/HST and charge it to its unregistered clients. This needs confirmation by a Canadian tax professional before launch.",
+        "sources": [
+          {
+            "publisher": "Canada Revenue Agency",
+            "title": "GST/HST for digital economy businesses: find out if you need to register",
+            "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/digital-economy-gsthst/find-out-need-register.html",
+            "quote": "A non-resident vendor or a non-resident distribution platform operator vendor who sells taxable digital products or services, such as online music streaming or traditional services, to Canadian consumers and Canadian entities who are not registered under the normal GST/HST?"
+          },
+          {
+            "publisher": "Canada Revenue Agency",
+            "title": "GST/HST for digital economy businesses: find out if you need to register",
+            "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/digital-economy-gsthst/find-out-need-register.html",
+            "quote": "Does your registration threshold exceed $30,000 CAD?"
+          }
+        ]
+      },
+      {
+        "id": "CA-selfemployed",
+        "risk_area": "Income tax returns and deadlines",
+        "topic": "Self-employed income tax return",
+        "home": "Schedule C with Form 1040, plus self-employment tax of 15.3% (Social Security and Medicare).",
+        "target": "Form T2125 (Statement of Business or Professional Activities) attached to the T1 return; different deductions, forms and contribution rules.",
+        "severity": 2,
+        "reach": "all",
+        "why": "The core deliverable, the client's annual return, uses a different form set and rules.",
+        "sources": [
+          {
+            "publisher": "IRS",
+            "title": "Self-employment tax (Social Security and Medicare taxes)",
+            "url": "https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes",
+            "quote": "The self-employment tax rate is 15.3%."
+          },
+          {
+            "publisher": "Canada Revenue Agency",
+            "title": "Completing Form T2125",
+            "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/completing-form-t2125.html",
+            "quote": "You can use Form T2125, Statement of Business or Professional Activities , to report your business and professional income and expenses."
+          }
+        ]
+      },
+      {
+        "id": "CA-deadlines",
+        "risk_area": "Income tax returns and deadlines",
+        "topic": "Filing and payment deadlines",
+        "home": "Calendar-year individual returns are due April 15.",
+        "target": "Returns are due April 30; self-employed people may file by June 15, but any balance owing is still due April 30.",
+        "severity": 1,
+        "reach": "all",
+        "why": "The 'file by June 15, pay by April 30' split catches US-trained staff; it changes the busy-season calendar.",
+        "sources": [
+          {
+            "publisher": "IRS",
+            "title": "When to file",
+            "url": "https://www.irs.gov/filing/individuals/when-to-file",
+            "quote": "Calendar year filers (most common) File on: April 15, 2026"
+          },
+          {
+            "publisher": "Canada Revenue Agency",
+            "title": "Important dates for individuals",
+            "url": "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/important-dates-individuals.html",
+            "quote": "June 15, 2026 : Deadline to file your taxes if you or your spouse or common-law partner are self-employed"
+          },
+          {
+            "publisher": "Canada Revenue Agency",
+            "title": "Important dates for individuals",
+            "url": "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/important-dates-individuals.html",
+            "quote": "April 30, 2026 : Deadline to pay your taxes"
+          }
+        ]
+      },
+      {
+        "id": "CA-payroll",
+        "risk_area": "Payroll",
+        "topic": "Payroll withholding (clients with employees)",
+        "home": "Form 941 quarterly: federal income tax, Social Security and Medicare withheld.",
+        "target": "Source deductions of Canada Pension Plan (CPP), Employment Insurance (EI) and income tax, remitted to the CRA.",
+        "severity": 2,
+        "reach": "some",
+        "why": "Different contribution system and remittance rules; most suite renters are solo, so it applies to a subset (spa owners with staff).",
+        "sources": [
+          {
+            "publisher": "IRS",
+            "title": "About Form 941",
+            "url": "https://www.irs.gov/forms-pubs/about-form-941",
+            "quote": "Report federal income, social security, and Medicare taxes withheld from employee's paychecks"
+          },
+          {
+            "publisher": "Canada Revenue Agency",
+            "title": "Payroll: calculating deductions",
+            "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/calculating-deductions.html",
+            "quote": "Learn about Canada Pension Plan (CPP), Employment Insurance (EI) and the income tax deductions"
+          }
+        ]
+      },
+      {
+        "id": "CA-preparer",
+        "risk_area": "Who may prepare returns and advise",
+        "topic": "Who may prepare returns and keep books for pay",
+        "home": "Anyone paid to prepare federal returns must hold a PTIN.",
+        "target": "No federal preparer-ID equivalent was found. Licensing is provincial and covers public accounting; Ontario's Act expressly exempts bookkeeping and tax-return preparation (only Ontario was checked).",
+        "severity": 1,
+        "reach": "all",
+        "why": "Entry is not harder than in the US, but the rules are provincial, so each province served needs its own check.",
+        "sources": [
+          {
+            "publisher": "IRS",
+            "title": "PTIN requirements for tax return preparers",
+            "url": "https://www.irs.gov/tax-professionals/ptin-requirements-for-tax-return-preparers",
+            "quote": "Anyone who prepares or assists in preparing federal tax returns for compensation must have a valid 2027 PTIN before preparing returns."
+          },
+          {
+            "publisher": "Government of Ontario (e-Laws)",
+            "title": "Public Accounting Act, 2004, s. 3(3)",
+            "url": "https://www.ontario.ca/laws/statute/04p08",
+            "quote": "A person is not required to be licensed in accordance with this Act for providing services as, (a) a bookkeeper or for engaging in bookkeeping"
+          }
+        ]
+      },
+      {
+        "id": "CA-representation",
+        "risk_area": "Who may prepare returns and advise",
+        "topic": "Representing a client before the tax authority",
+        "home": "Only enrolled agents, CPAs and attorneys have unlimited representation rights before the IRS.",
+        "target": "A representative registers for a RepID and is authorized by the client in CRA's online services.",
+        "severity": 1,
+        "reach": "all",
+        "why": "Different authorization process; the firm needs CRA representative registration for each staff member.",
+        "sources": [
+          {
+            "publisher": "IRS",
+            "title": "Understanding tax return preparer credentials and qualifications",
+            "url": "https://www.irs.gov/tax-professionals/understanding-tax-return-preparer-credentials-and-qualifications",
+            "quote": "Enrolled agents, certified public accountants, and attorneys have unlimited representation rights before the IRS."
+          },
+          {
+            "publisher": "Canada Revenue Agency",
+            "title": "Help for Represent a Client",
+            "url": "https://www.canada.ca/en/revenue-agency/services/e-services/represent-a-client/help-represent-a-client.html",
+            "quote": "You can now give this RepID to anyone who wants to authorize you as their representative to access their tax information online."
+          }
+        ]
+      },
+      {
+        "id": "CA-privacy",
+        "risk_area": "Privacy and data residency",
+        "topic": "Client data stored or processed in the US",
+        "home": "IRC section 7216 restricts use and disclosure of tax-return information, with criminal and civil penalties.",
+        "target": "PIPEDA does not prohibit transferring personal information outside Canada for processing, but the organization stays accountable for it.",
+        "severity": 1,
+        "reach": "all",
+        "why": "No federal data-residency rule blocks US hosting, but contracts and client notices must change.",
+        "sources": [
+          {
+            "publisher": "IRS",
+            "title": "Section 7216 information center",
+            "url": "https://www.irs.gov/tax-professionals/section-7216-information-center",
+            "quote": "criminal and civil penalties under Internal Revenue Code sections 7216 and 6713"
+          },
+          {
+            "publisher": "Office of the Privacy Commissioner of Canada",
+            "title": "Guidelines for processing personal data across borders",
+            "url": "https://www.priv.gc.ca/en/privacy-topics/airports-and-borders/gl_dab_090127/",
+            "quote": "PIPEDA does not prohibit organizations in Canada from transferring personal information to an organization in another jurisdiction for processing. However, under PIPEDA, organizations are held accountable"
+          }
+        ]
+      },
+      {
+        "id": "CA-quebec-privacy",
+        "risk_area": "Privacy and data residency",
+        "topic": "Quebec private-sector privacy law (Law 25) on transfers outside Quebec",
+        "home": "No equivalent state rule checked.",
+        "target": "Quebec's private-sector privacy act (as amended by Law 25, s. 17) requires a privacy impact assessment before an enterprise communicates personal information outside Quebec, e.g. to a US bookkeeping firm.",
+        "severity": 2,
+        "reach": "some",
+        "why": "Adds a privacy assessment and a written agreement for every Quebec client whose data goes to the US.",
+        "sources": [
+          {
+            "publisher": "Commission d'accès à l'information du Québec",
+            "title": "Guide d'accompagnement: réaliser une évaluation des facteurs relatifs à la vie privée (French; the official guide)",
+            "url": "https://www.cai.gouv.qc.ca/uploads/pdfs/CAI_GU_EFVP.pdf",
+            "quote": "Vous projetez de communiquer des renseignements personnels à l’extérieur du Québec."
+          }
+        ]
+      },
+      {
+        "id": "CA-quebec-french",
+        "risk_area": "Quebec French-language requirements",
+        "topic": "Language of service and contracts (Quebec)",
+        "home": "The firm serves clients in English only.",
+        "target": "Quebec's Charter of the French language gives consumers the right to be informed and served in French and limits contracts of adhesion in another language.",
+        "severity": 2,
+        "reach": "some",
+        "why": "Serving Quebec estheticians needs French-language contracts, onboarding and service.",
+        "sources": [
+          {
+            "publisher": "Légis Québec",
+            "title": "Charter of the French language (C-11), s. 5",
+            "url": "https://www.legisquebec.gouv.qc.ca/en/document/cs/c-11",
+            "quote": "Consumers of goods and services have a right to be informed and served in French."
+          },
+          {
+            "publisher": "Légis Québec",
+            "title": "Charter of the French language (C-11), s. 55",
+            "url": "https://www.legisquebec.gouv.qc.ca/en/document/cs/c-11",
+            "quote": "make the other party adhere to a contract of adhesion drawn up in a language other than French"
+          }
+        ]
+      },
+      {
+        "id": "CA-loans",
+        "risk_area": "Loan-readiness programs",
+        "topic": "Government-backed small business loans",
+        "home": "SBA 7(a): SBA guarantees part of the lender's loan.",
+        "target": "Canada Small Business Financing Program: the government shares the risk with lenders; different eligibility and paperwork.",
+        "severity": 1,
+        "reach": "all",
+        "why": "The loan-readiness package has to be rebuilt around a different program and lender expectations.",
+        "sources": [
+          {
+            "publisher": "U.S. Small Business Administration",
+            "title": "7(a) loans",
+            "url": "https://www.sba.gov/funding-programs/loans/7a-loans",
+            "quote": "The 7(a) loan program, SBA’s primary business loan program, provides a loan guarantee to lenders"
+          },
+          {
+            "publisher": "Innovation, Science and Economic Development Canada",
+            "title": "Canada Small Business Financing Program",
+            "url": "https://ised-isde.canada.ca/site/canada-small-business-financing-program/en",
+            "quote": "makes it easier for small businesses to get loans from financial institutions by sharing the risk with lenders"
+          }
+        ]
+      }
+    ],
+    "US-GB": [
+      {
+        "id": "GB-vat",
+        "risk_area": "Sales tax regime (VAT)",
+        "topic": "Sales tax on the clients' services",
+        "home": "Sales taxes are state and local.",
+        "target": "VAT registration is required once taxable turnover exceeds £90,000 in 12 months.",
+        "severity": 2,
+        "reach": "some",
+        "why": "Only larger salons pass the threshold, but VAT is a separate system.",
+        "sources": [
+          {
+            "publisher": "IRS",
+            "title": "Topic no. 503, Deductible taxes",
+            "url": "https://www.irs.gov/taxtopics/tc503",
+            "quote": "State, local and foreign income taxes or state and local general sales taxes"
+          },
+          {
+            "publisher": "HM Revenue & Customs (GOV.UK)",
+            "title": "VAT registration: when to register",
+            "url": "https://www.gov.uk/vat-registration/when-to-register",
+            "quote": "your total taxable turnover for the last 12 months goes over £90,000 (the VAT threshold)"
+          }
+        ]
+      },
+      {
+        "id": "GB-deadline",
+        "risk_area": "Income tax returns and deadlines",
+        "topic": "Self Assessment deadline",
+        "home": "Calendar-year individual returns are due April 15.",
+        "target": "Online Self Assessment returns are due 31 January after the tax year (which ends 5 April).",
+        "severity": 1,
+        "reach": "all",
+        "why": "Different tax year and filing calendar.",
+        "sources": [
+          {
+            "publisher": "IRS",
+            "title": "When to file",
+            "url": "https://www.irs.gov/filing/individuals/when-to-file",
+            "quote": "Calendar year filers (most common) File on: April 15, 2026"
+          },
+          {
+            "publisher": "HM Revenue & Customs (GOV.UK)",
+            "title": "Self Assessment tax returns: deadlines",
+            "url": "https://www.gov.uk/self-assessment-tax-returns/deadlines",
+            "quote": "You must submit your online tax return by 11:59pm on 31 January 2027"
+          }
+        ]
+      },
+      {
+        "id": "GB-mtd",
+        "risk_area": "Income tax returns and deadlines",
+        "topic": "Making Tax Digital for Income Tax",
+        "home": "Annual return.",
+        "target": "Sole traders with qualifying income over £50,000 had to keep digital records and file under Making Tax Digital from 6 April 2026.",
+        "severity": 2,
+        "reach": "some",
+        "why": "Quarterly digital reporting through approved software changes the bookkeeping workflow.",
+        "sources": [
+          {
+            "publisher": "HM Revenue & Customs (GOV.UK)",
+            "title": "Find out if and when you need to use Making Tax Digital for Income Tax",
+            "url": "https://www.gov.uk/guidance/find-out-if-and-when-you-need-to-use-making-tax-digital-for-income-tax",
+            "quote": "£50,000 for the 2024 to 2025 tax year, you should’ve started using Making Tax Digital for Income Tax from 6 April 2026"
+          }
+        ]
+      },
+      {
+        "id": "GB-aml",
+        "risk_area": "Who may prepare returns and advise",
+        "topic": "Anti-money-laundering supervision of bookkeepers",
+        "home": "PTIN required for paid federal preparers; no bookkeeper AML registration was found in the sources used.",
+        "target": "Accountancy service providers, including professional bookkeeping and help with tax returns, may have to register with HMRC for money-laundering supervision.",
+        "severity": 2,
+        "reach": "all",
+        "why": "A registration (or professional-body supervision) is needed before offering the service.",
+        "sources": [
+          {
+            "publisher": "IRS",
+            "title": "PTIN requirements for tax return preparers",
+            "url": "https://www.irs.gov/tax-professionals/ptin-requirements-for-tax-return-preparers",
+            "quote": "Anyone who prepares or assists in preparing federal tax returns for compensation must have a valid 2027 PTIN before preparing returns."
+          },
+          {
+            "publisher": "HM Revenue & Customs (GOV.UK)",
+            "title": "Check if you need to register for money laundering supervision if you're an accountancy service provider",
+            "url": "https://www.gov.uk/guidance/money-laundering-regulations-accountancy-service-provider-registration",
+            "quote": "You may have to register with HMRC if your business operates as an accountancy service provider."
+          }
+        ]
+      },
+      {
+        "id": "GB-data",
+        "risk_area": "Privacy and data residency",
+        "topic": "Client data transferred to the US",
+        "home": "IRC section 7216 restricts use of tax-return information.",
+        "target": "UK GDPR applies; the UK has US adequacy regulations (the 'UK-US data bridge'), which a US firm can rely on only under its conditions.",
+        "severity": 1,
+        "reach": "all",
+        "why": "Transfers are possible but need a lawful basis the firm must set up.",
+        "sources": [
+          {
+            "publisher": "Department for Science, Innovation and Technology (GOV.UK)",
+            "title": "UK-US data bridge: supporting documents",
+            "url": "https://www.gov.uk/government/publications/uk-us-data-bridge-supporting-documents",
+            "quote": "The Data Protection (Adequacy) (United States of America) Regulations 2023"
+          }
+        ]
+      }
+    ],
+    "US-JP": [
+      {
+        "id": "JP-cpta",
+        "risk_area": "Who may prepare returns and advise",
+        "topic": "Who may provide tax-agent services",
+        "home": "Anyone with a PTIN may prepare returns for pay.",
+        "target": "Tax-agent services are a licensed profession (Certified Public Tax Accountants, zeirishi); the NTA prosecutes unlicensed 'fake CPTAs'.",
+        "severity": 2,
+        "reach": "all",
+        "why": "A US firm could not prepare Japanese returns itself; it would need licensed partners.",
+        "sources": [
+          {
+            "publisher": "National Tax Agency Japan",
+            "title": "National Tax Agency Report 2026, section 4",
+            "url": "https://www.nta.go.jp/english/Report_pdf/2026e_04.pdf",
+            "quote": "take strict action against CPTAs etc. who violate the Certified Public Tax Accountant Act and so-called \"fake CPTAs\""
+          }
+        ]
+      },
+      {
+        "id": "JP-deadline",
+        "risk_area": "Income tax returns and deadlines",
+        "topic": "Filing period for final returns",
+        "home": "Calendar-year individual returns are due April 15.",
+        "target": "Final returns are filed from February 16 to March 15 (NTA English guide for 2023 income).",
+        "severity": 1,
+        "reach": "all",
+        "why": "Different busy season, a month earlier.",
+        "sources": [
+          {
+            "publisher": "IRS",
+            "title": "When to file",
+            "url": "https://www.irs.gov/filing/individuals/when-to-file",
+            "quote": "Calendar year filers (most common) File on: April 15, 2026"
+          },
+          {
+            "publisher": "National Tax Agency Japan",
+            "title": "2023 Income Tax Guide for foreigners",
+            "url": "https://www.nta.go.jp/english/taxes/individual/pdf/incometax_2023/02.pdf",
+            "quote": "From February 16 (Fri.) through March 15 (Fri.), 2024"
+          }
+        ]
+      },
+      {
+        "id": "JP-appi",
+        "risk_area": "Privacy and data residency",
+        "topic": "Personal data provided to a firm abroad",
+        "home": "IRC section 7216 restricts use of tax-return information.",
+        "target": "The APPI restricts providing personal data to a third party in a foreign country (consent or an equivalent system required).",
+        "severity": 2,
+        "reach": "all",
+        "why": "Every client's data would flow to a foreign third party.",
+        "sources": [
+          {
+            "publisher": "Personal Information Protection Commission, Japan",
+            "title": "Act on the Protection of Personal Information (English translation)",
+            "url": "https://www.ppc.go.jp/files/pdf/Act_on_the_Protection_of_Personal_Information.pdf",
+            "quote": "(Restriction on Provision to a Third Party in a Foreign Country)"
+          }
+        ]
+      }
+    ]
+  }
+}
