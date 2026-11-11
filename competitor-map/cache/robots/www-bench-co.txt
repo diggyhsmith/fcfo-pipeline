@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+User-agent: FemtosearchBot
+Disallow: *
+
+Sitemap: https://www.bench.co/sitemap.xml

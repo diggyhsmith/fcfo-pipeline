@@ -1,0 +1,10 @@
+
+User-agent:*
+Disallow: /contact-us-thank-you
+Disallow: /signup-thank-you
+Disallow: /success
+Disallow: /archive
+Disallow: /archive/**
+Disallow: /**/*.pdf$
+Disallow: /**/*.xlsx$
+Sitemap: https://kruzeconsulting.com/sitemap.xml

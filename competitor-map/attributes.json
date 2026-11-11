@@ -1,0 +1,168 @@
+{
+  "_about": "Hand-read attribute values for competitor_map.ipynb. Every value carries the URL it was read from and, where the value rests on wording, a short verbatim quote; the notebook re-checks every quote against the cached page text (whitespace-normalised) and treats a value whose quote is not found as MISSING. Retrieval dates come from cache/manifest.json. Service breadth is NOT in this file: it is computed in code from the page text with the checklist defined in the notebook. Review figures marked via='firm site' are the firm's own display of a third-party rating (self-selected), and are labelled so.",
+  "firms": {
+    "kopsa_otte": {
+      "price": {"status": "not_available", "url": "https://www.kopsaotte.com/", "note": "Homepage lists no prices; the services page answered HTTP 403, so a published price cannot be ruled out."},
+      "files_tax": {"value": true, "url": "https://www.kopsaotte.com/", "quote": "In addition to tax planning and preparation, clients rely on Kopsa Otte"},
+      "niche": {"value": true, "url": "https://www.kopsaotte.com/", "quote": "working with salons, spas & distributors"},
+      "channel": {"value": "hybrid", "url": "https://www.kopsaotte.com/", "quote": "work with beauty-based businesses in 45 states", "note": "One street office (York, NE) serving clients in 45 states, so most service is remote."},
+      "footprint": {"value": 1, "url": "https://www.kopsaotte.com/", "quote": "306 East Seventh Street York, NE 68467", "note": "One office address printed on the site."},
+      "reviews": {"score": 5.0, "count": 2, "platform": "Google Maps", "via": "nps-scorer (Google Maps, read 2026-10-08)", "url": "nps-scorer/nps_data.json"}
+    },
+    "bench": {
+      "price": {"status": "published", "value": 199, "url": "https://www.bench.co/pricing", "quote": "Bookkeeping Light Reliable bookkeeping for your micro business.* *For businesses doing $250K a year or less in revenue. $199 /mo"},
+      "files_tax": {"value": true, "url": "https://www.bench.co/small-business-tax", "quote": "They prep and file your income taxes."},
+      "niche": {"value": false, "url": "https://www.bench.co/industry/local-business", "quote": "Built for local businesses with a front door", "note": "Salons, spas and nail salons are named, but on a general local-business page among restaurants, dry cleaners and pet groomers; no beauty-specific page or offer."},
+      "channel": {"value": "online", "url": "https://www.bench.co/about", "quote": "Bench is an online bookkeeping service for U.S.-based businesses"},
+      "footprint": {"value": 0, "url": "https://www.bench.co/about", "quote": "Bench is an online bookkeeping service for U.S.-based businesses", "note": "Online service; no client office listed."},
+      "reviews": {"score": null, "count": null, "platform": "Trustpilot", "via": "firm site", "url": "https://www.bench.co/", "quote": "1,000 five-star reviews on Trustpilot", "note": "Only a count of five-star reviews is shown, not an average or a total; Trustpilot itself answers HTTP 403. Treated as missing."}
+    },
+    "pilot": {
+      "price": {"status": "published", "value": 99, "url": "https://pilot.com/pricing", "quote": "Essentials $99 /month Up to $100,000 in monthly expenses"},
+      "files_tax": {"value": true, "url": "https://pilot.com/tax", "quote": "We'll take care of your federal and state income tax filing"},
+      "niche": {"value": false, "url": "https://pilot.com/about", "quote": "Pilot powers the financial back office for startups and small businesses."},
+      "channel": {"value": "online", "url": "https://pilot.com/tax", "quote": "Streamlined online process", "note": "Two corporate offices (San Francisco, Nashville) but no walk-in client offices."},
+      "footprint": {"value": 0, "url": "https://pilot.com/about", "quote": "We have offices in both San Francisco & Nashville", "note": "Corporate offices, not client walk-in locations; counted as 0 client-facing locations."},
+      "reviews": {"score": 4.8, "count": 200, "platform": "G2", "via": "firm site", "url": "https://pilot.com/cfo-services", "quote": "4.8 on G2 200+ reviews", "note": "Count is a lower bound (200+)."}
+    },
+    "bookkeeper360": {
+      "price": {"status": "published", "value": 400, "url": "https://bookkeeper360.com/pricing/", "quote": "Bookkeeping Monthly & weekly books, done for you. From $400 / month"},
+      "files_tax": {"value": true, "url": "https://bookkeeper360.com/services/tax/", "quote": "We handle federal and state returns so every entity type is filed accurately"},
+      "niche": {"value": false, "url": "https://bookkeeper360.com/"},
+      "channel": {"value": "online", "url": "https://bookkeeper360.com/about/", "quote": "has been recognized as a leading online"},
+      "footprint": {"value": 0, "url": "https://bookkeeper360.com/about/", "note": "Online firm; no client office listed on the pages read."},
+      "reviews": {"score": 4.8, "count": 230, "platform": "Google", "via": "firm site", "url": "https://bookkeeper360.com/", "quote": "4.8 / 5 across 230+ verified Google reviews"}
+    },
+    "1800accountant": {
+      "price": {"status": "published", "value": 209, "url": "https://1800accountant.com/pricing", "quote": "$209 /mo* *Billed Annually"},
+      "files_tax": {"value": true, "url": "https://1800accountant.com/services/business-tax-prep", "quote": "we file your business taxes with the IRS and applicable state agencies for you"},
+      "niche": {"value": false, "url": "https://1800accountant.com/industry"},
+      "channel": {"value": "online", "url": "https://1800accountant.com/services/locations", "quote": "1-800Accountant is a fully virtual accounting firm. We do not have walk-in offices or local storefronts."},
+      "footprint": {"value": 0, "url": "https://1800accountant.com/services/locations", "quote": "We do not have walk-in offices or local storefronts."},
+      "reviews": {"score": null, "count": null, "platform": "Trustpilot", "via": "firm site", "url": "https://1800accountant.com/services/locations", "note": "Trustpilot badge has no readable score or count in the page text; Trustpilot itself answers HTTP 403."}
+    },
+    "indinero": {
+      "price": {"status": "published", "value": 750, "url": "https://www.indinero.com/", "quote": "Pricing starts at $750/mo."},
+      "files_tax": {"value": true, "url": "https://www.indinero.com/about/", "quote": "Indinero provides outsourced accounting, bookkeeping, tax, and CFO services for growing businesses."},
+      "niche": {"value": false, "url": "https://www.indinero.com/", "note": "Industries page answered HTTP 403; no beauty term on the pages read."},
+      "channel": {"value": "online", "url": "https://www.indinero.com/about/", "quote": "Indinero is a remote-first company"},
+      "footprint": {"value": 0, "url": "https://www.indinero.com/about/", "quote": "Indinero is a remote-first company", "note": "Remote-first; no client office listed."},
+      "reviews": {"score": null, "count": null, "note": "No review figure on the pages read."}
+    },
+    "ignite_spot": {
+      "price": {"status": "quote_only", "url": "https://www.ignitespot.com/", "quote": "We’ll put together a custom quote based on the accounting support you need."},
+      "files_tax": {"value": true, "url": "https://www.ignitespot.com/business-tax-services", "quote": "Preparation of federal and applicable state business tax returns"},
+      "niche": {"value": false, "url": "https://www.ignitespot.com/", "quote": "particularly service companies such as marketing agencies, consulting firms, IT companies"},
+      "channel": {"value": "online", "url": "https://www.ignitespot.com/about-us", "quote": "Today, our team serves businesses across the country.", "note": "Utah-based team; markets 'Virtual Bookkeeping'; no client office listed."},
+      "footprint": {"value": 0, "url": "https://www.ignitespot.com/", "note": "Virtual service; no client office listed on the pages read."},
+      "reviews": {"score": 4.7, "count": null, "platform": "Google", "via": "firm site", "url": "https://www.ignitespot.com/", "quote": "Rated 4.7 out of 5 on Google."}
+    },
+    "merritt": {
+      "price": {"status": "published", "value": 250, "url": "https://merrittbookkeeping.com/", "quote": "$250 per month No pricing tiers"},
+      "files_tax": {"value": false, "url": "https://merrittbookkeeping.com/", "quote": "We could sell you tax prep, payroll, and other services. But being the best means staying focused."},
+      "niche": {"value": false, "url": "https://merrittbookkeeping.com/"},
+      "channel": {"value": "online", "url": "https://merrittbookkeeping.com/", "basis": "inferred", "note": "No office or in-person service on the homepage (the only page that could be read; about and pricing pages answered HTTP 403). Inferred online."},
+      "footprint": {"value": 0, "url": "https://merrittbookkeeping.com/", "basis": "inferred", "note": "No client office listed."},
+      "reviews": {"score": null, "count": null, "via": "firm site", "url": "https://merrittbookkeeping.com/", "quote": "Hundreds of 5 star reviews", "note": "No platform, average or exact count given. Treated as missing."}
+    },
+    "qb_live": {
+      "price": {"status": "not_available", "url": "https://quickbooks.intuit.com/experts/full-service-bookkeeping/", "quote": "For pricing and subscription details, see Important pricing details and product information below.", "note": "The price is not in the page HTML (it loads by script), so it is treated as not published."},
+      "files_tax": {"value": true, "url": "https://quickbooks.intuit.com/live/", "quote": "are available to be purchased separately via Intuit Expert Assisted Business Tax, powered by TurboTax."},
+      "niche": {"value": false, "url": "https://quickbooks.intuit.com/live/"},
+      "channel": {"value": "hybrid", "url": "https://quickbooks.intuit.com/experts/expert-tax/", "quote": "Connect online or at a TurboTax office near you.", "note": "Bookkeeping is virtual; the tax add-on can be done at a TurboTax office."},
+      "footprint": {"value": null, "url": "https://quickbooks.intuit.com/experts/expert-tax/", "note": "TurboTax offices exist but no count is printed on the pages read: MISSING."},
+      "reviews": {"score": null, "count": null, "note": "No review figure for the bookkeeping service on the pages read."}
+    },
+    "jackson_hewitt": {
+      "price": {"status": "no_monthly_plan", "url": "https://www.jacksonhewitt.com/tax-services/", "note": "Priced per tax return; no monthly plan or monthly price is listed."},
+      "files_tax": {"value": true, "url": "https://www.jacksonhewitt.com/tax-services/", "quote": "We can help you file an amendment with the IRS"},
+      "niche": {"value": false, "url": "https://www.jacksonhewitt.com/"},
+      "channel": {"value": "office", "url": "https://www.jacksonhewitt.com/tax-services/", "quote": "With over 5,100 locations nationwide, including inside more than 2,600 Walmart stores", "note": "Office network is the main channel; online filing is also offered."},
+      "footprint": {"value": 5100, "url": "https://www.jacksonhewitt.com/tax-services/", "quote": "With over 5,100 locations nationwide", "note": "Lower bound ('over'). A second page says 'Over 5,200 locations nationally'; the lower figure is used."},
+      "reviews": {"score": 4.8, "count": 465068, "platform": "Google", "via": "firm site", "url": "https://www.jacksonhewitt.com/", "quote": "4.8/5 star rating. 465,068 customer reviews", "note": "Firm-wide total over all franchise listings; the site dates it 'as of 8/5/25'."}
+    },
+    "liberty_tax": {
+      "price": {"status": "no_monthly_plan", "url": "https://www.libertytax.com/", "note": "Priced per tax return; no monthly plan or monthly price is listed."},
+      "files_tax": {"value": true, "url": "https://www.libertytax.com/about-us", "quote": "our tax return preparation franchise"},
+      "niche": {"value": false, "url": "https://www.libertytax.com/"},
+      "channel": {"value": "office", "url": "https://www.libertytax.com/", "quote": "File Taxes In-Person", "note": "Franchise office network is the main channel; online filing is also offered."},
+      "footprint": {"value": 2000, "url": "https://www.libertytax.com/", "quote": "2,000+ LOCATIONS Across the U.S.", "note": "Lower bound."},
+      "reviews": {"score": null, "count": null, "via": "firm site", "url": "https://www.libertytax.com/", "quote": "Check out our over 125,000 five-star Google reviews.", "note": "Only a five-star count, no average. Treated as missing."}
+    },
+    "collective": {
+      "price": {"status": "published", "value": 199, "url": "https://www.collective.com/plans-and-pricing", "quote": "Best for early-stage businesses looking to operate effectively LLC $199/month", "note": "LLC plan; the page also offers a 15% discount for annual billing."},
+      "files_tax": {"value": true, "url": "https://www.collective.com/plans-and-pricing", "quote": "Annual business tax return (Form 1120-S)"},
+      "niche": {"value": false, "url": "https://www.collective.com/", "quote": "stylists", "note": "'Stylists' appears once in a rotating list of self-employed professions (nutritionists, doctors, consultants, artists...); no beauty-specific page or offer."},
+      "channel": {"value": "online", "url": "https://www.collective.com/", "basis": "inferred", "quote": "Collective provides a suite of tools, back-office support, and general information.", "note": "Software platform plus remote back-office team; no office listed."},
+      "footprint": {"value": 0, "url": "https://www.collective.com/", "basis": "inferred", "note": "No client office listed."},
+      "reviews": {"score": null, "count": 600, "platform": "not named", "via": "firm site", "url": "https://www.collective.com/", "quote": "600+ reviews", "note": "No average and no platform given."}
+    },
+    "remote_books": {
+      "price": {"status": "published", "value": 150, "url": "https://www.remotebooksonline.com/", "quote": "Plans start from $150/mo."},
+      "files_tax": {"value": true, "url": "https://www.remotebooksonline.com/about", "quote": "RemoteBooksOnline provides bookkeeping, tax preparation, tax filing, and accounting services for small businesses", "note": "Stated in a site-wide disclaimer; the pricing page itself sells bookkeeping, payroll and sales-tax filing."},
+      "niche": {"value": true, "url": "https://www.remotebooksonline.com/salon-bookkeeping", "quote": "Bookkeeping Services for Salons and Spas – Flat-Rate. CPA-Reviewed."},
+      "channel": {"value": "online", "url": "https://www.remotebooksonline.com/salon-bookkeeping", "quote": "CPA-reviewed, flat-rate pricing, fully remote"},
+      "footprint": {"value": 0, "url": "https://www.remotebooksonline.com/salon-bookkeeping", "quote": "fully remote"},
+      "reviews": {"score": null, "count": null, "note": "Testimonials only; no rating or count on the pages read."}
+    },
+    "complete_controller": {
+      "price": {"status": "published", "value": 85, "url": "https://www.completecontroller.com/pricing-sign-up/", "quote": "Platform + $85 Per Month On-Demand", "note": "Lowest tier is platform access plus bookkeeping by appointment; full-service tiers are higher and need a setup fee."},
+      "files_tax": {"value": false, "url": "https://www.completecontroller.com/services/", "quote": "How do I send my financial information to my tax preparer, banker or investors?", "note": "Bookkeeping only; the service gives the client's own tax preparer access to the books ('Tax Preparer Access')."},
+      "niche": {"value": null, "url": "https://www.completecontroller.com/salon-and-spa-bookkeeping-clarity/", "note": "A salon-and-spa page exists but answered HTTP 403, so it could not be read: MISSING."},
+      "channel": {"value": "online", "url": "https://www.completecontroller.com/services/", "quote": "We protect your virtual accounting department"},
+      "footprint": {"value": 0, "url": "https://www.completecontroller.com/services/", "note": "Virtual service; no client office listed."},
+      "reviews": {"score": null, "count": null, "note": "No review figure on the pages read."}
+    },
+    "acuity": {
+      "price": {"status": "published", "value": 699, "url": "https://acuity.co/pricing/", "quote": "Essentials Employee Count 5 Revenue $375,000 Monthly Cost $699", "note": "Lowest monthly cost among the example clients on the pricing page (no list price is printed)."},
+      "files_tax": {"value": true, "url": "https://acuity.co/tax-services/", "quote": "We’ll prepare and file both your business and personal tax returns together."},
+      "niche": {"value": true, "url": "https://acuity.co/retail/health-and-beauty/", "quote": "Accounting Services for Health & Beauty Businesses"},
+      "channel": {"value": "online", "url": "https://acuity.co/", "quote": "Online Accounting & Bookkeeping Services"},
+      "footprint": {"value": 0, "url": "https://acuity.co/", "note": "Online service; no client office listed."},
+      "reviews": {"score": 4.9, "count": 40, "platform": "not named", "via": "firm site", "url": "https://acuity.co/", "quote": "4.9 (40+ Reviews)"}
+    },
+    "fiducial": {
+      "price": {"status": "no_monthly_plan", "url": "https://fiducial.com/services", "note": "No prices published."},
+      "files_tax": {"value": true, "url": "https://fiducial.com/services", "quote": "Our division and branch managers oversee day-to-day tax preparation for their clients."},
+      "niche": {"value": false, "url": "https://fiducial.com/industries", "quote": "Since 1925, Federated Fiducial has provided business services to those specializing in the funeral business.", "note": "Industry niches are funeral homes and family offices, not beauty."},
+      "channel": {"value": "office", "url": "https://fiducial.com/about", "quote": "In the United States, Fiducial currently maintains a growing network of over thirty offices."},
+      "footprint": {"value": 30, "url": "https://fiducial.com/about", "quote": "In the United States, Fiducial currently maintains a growing network of over thirty offices.", "note": "US offices only (the group has 850+ across Europe and North America); lower bound."},
+      "reviews": {"score": null, "count": null, "note": "No review figure on the pages read."}
+    },
+    "decimal": {
+      "price": {"status": "quote_only", "url": "https://www.decimal.com/pricing", "note": "Pricing page shows revenue bands only; no dollar price in the page HTML."},
+      "files_tax": {"value": true, "url": "https://www.decimal.com/services/tax", "quote": "We don't just file your taxes."},
+      "niche": {"value": false, "url": "https://www.decimal.com/industries"},
+      "channel": {"value": "online", "url": "https://www.decimal.com/", "basis": "inferred", "note": "No office or in-person service on the pages read. Inferred online."},
+      "footprint": {"value": 0, "url": "https://www.decimal.com/", "basis": "inferred", "note": "No client office listed."},
+      "reviews": {"score": null, "count": null, "note": "No review figure on the pages read."}
+    },
+    "kruze": {
+      "price": {"status": "published", "value": 650, "url": "https://kruzeconsulting.com/pricing/", "quote": "$650 - $850 per month", "note": "Lowest tier's range; lower end used."},
+      "files_tax": {"value": true, "url": "https://kruzeconsulting.com/about/", "quote": "We offer startup tax filings, monthly bookkeeping, payroll, 409A valuations, R&D tax credits, and fractional CFO services"},
+      "niche": {"value": false, "url": "https://kruzeconsulting.com/", "note": "Niche is VC-funded startups, not beauty."},
+      "channel": {"value": "online", "url": "https://kruzeconsulting.com/about/", "basis": "inferred", "quote": "the go-to partner for hundreds of startups nationwide", "note": "Serves startups nationwide; no client walk-in office listed. Inferred online."},
+      "footprint": {"value": 0, "url": "https://kruzeconsulting.com/about/", "basis": "inferred", "note": "No client office listed."},
+      "reviews": {"score": null, "count": null, "note": "No review figure in the page text."}
+    },
+    "taxfyle": {
+      "price": {"status": "no_monthly_plan", "url": "https://www.taxfyle.com/taxfiling", "quote": "per 30-minute call", "note": "Per-return and per-call pricing; no monthly plan."},
+      "files_tax": {"value": true, "url": "https://www.taxfyle.com/taxfiling", "quote": "prepare and file your individual or business return"},
+      "niche": {"value": false, "url": "https://www.taxfyle.com/"},
+      "channel": {"value": "online", "url": "https://www.taxfyle.com/about", "quote": "Taxfyle is a real-time tax filing app that connects you to a tax professional within minutes."},
+      "footprint": {"value": 0, "url": "https://www.taxfyle.com/about", "quote": "real-time tax filing app"},
+      "reviews": {"score": null, "count": null, "note": "No review figure on the pages read."}
+    },
+    "monaco_cpa": {
+      "price": {"status": "published", "value": 300, "url": "https://www.monacocpa.cpa/pricing", "quote": "Monthly Bookkeeping Starting at $300/mo"},
+      "files_tax": {"value": true, "url": "https://www.monacocpa.cpa/pricing", "quote": "Personal tax returns for W-2, freelance, and self-employed filers."},
+      "niche": {"value": true, "url": "https://www.monacocpa.cpa/industries/salons-spas", "quote": "Accounting & Tax for Salons and Spas"},
+      "channel": {"value": "online", "url": "https://www.monacocpa.cpa/locations/new-jersey-cpa", "quote": "Based in Livingston, NJ (virtual practice; no walk-in office)."},
+      "footprint": {"value": 0, "url": "https://www.monacocpa.cpa/locations/new-jersey-cpa", "quote": "no walk-in office"},
+      "reviews": {"score": null, "count": null, "note": "No review figure on the pages read."}
+    },
+    "xendoo": {
+      "reviews": {"score": null, "count": 177, "platform": "Google Maps", "via": "nps-scorer (Google Maps, read 2026-10-08)", "url": "nps-scorer/nps_data.json", "note": "Average computed in the notebook from the itemised star counts."}
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+ "url": "https://www.completecontroller.com/us/",
+ "retrieved": "2026-11-10",
+ "user_agent": "python-requests/2.32.5",
+ "robots": "robots.txt not readable",
+ "status": 200,
+ "final_url": "https://www.completecontroller.com/us/",
+ "chars": 2653,
+ "kept_lines": [
+  "Complete Controller provides small business owners with ongoing bookkeeping and accounting support designed to deliver clear, timely financial visibility, without the need to hire in-house staff. Founded by a former CFO, the company was built to help entrepreneurs make confident decisions using accurate, easy-to-understand financial information. Complete Controller supports service-based businesses, retail and ecommerce companies, and growing teams that need consistent support, predictable flat-rate pricing, and dedicated accounting professionals. The focus is simple: reduce financial uncertainty, support smarter decision-making, and help small businesses operate with clarity, not complexity."
+ ]
+}

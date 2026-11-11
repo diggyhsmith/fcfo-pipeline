@@ -1,0 +1,13 @@
+{
+ "url": "https://www.taxfyle.com/about",
+ "retrieved": "2026-11-10",
+ "user_agent": "python-requests/2.32.5",
+ "robots": "allowed",
+ "status": 200,
+ "final_url": "https://www.taxfyle.com/about",
+ "chars": 2774,
+ "kept_lines": [
+  "Trusted by over 200 CPA firms and 100,000 users, Taxfyle is a real-time tax filing app that connects you to a tax professional within minutes. We're here to make filing taxes easy, efficient, and more affordable.",
+  "Copyright \u00a9 2026 Tickmark, Inc."
+ ]
+}

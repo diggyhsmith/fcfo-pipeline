@@ -1,0 +1,12 @@
+{
+ "url": "https://elitebsolutions.com/",
+ "retrieved": "2026-11-10",
+ "user_agent": "python-requests/2.32.5",
+ "robots": "allowed",
+ "status": 200,
+ "final_url": "https://expireddomains.com/domain/elitebsolutions.com?utm_source=redi",
+ "note": "parked / for-sale / empty page: firm treated as not operating at this domain",
+ "parked": true,
+ "chars": 3040,
+ "kept_lines": []
+}

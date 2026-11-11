@@ -1,0 +1,12 @@
+{
+ "url": "https://www.jacksonhewitt.com/about-us/our-company/",
+ "retrieved": "2026-11-10",
+ "user_agent": "python-requests/2.32.5",
+ "robots": "allowed",
+ "status": 200,
+ "final_url": "https://www.jacksonhewitt.com/about-us/our-company/",
+ "chars": 9742,
+ "kept_lines": [
+  "\u00a9 2026 Jackson Hewitt Inc. All rights reserved. Most offices are independently owned and operated by Jackson Hewitt franchisees. All other offices are owned and operated by Jackson Hewitt Inc. or its affiliated entities."
+ ]
+}

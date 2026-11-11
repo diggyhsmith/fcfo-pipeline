@@ -1,0 +1,24 @@
+{
+ "url": "https://www.decimal.com/industries",
+ "retrieved": "2026-11-10",
+ "user_agent": "python-requests/2.32.5",
+ "robots": "allowed",
+ "status": 200,
+ "final_url": "https://www.decimal.com/industries",
+ "chars": 2880,
+ "kept_lines": [
+  "Bookkeeping",
+  "Bill Pay",
+  "Invoicing",
+  "Payroll Support",
+  "Bookkeeping",
+  "Bill Pay",
+  "Invoicing",
+  "Payroll Support",
+  "Bookkeeping",
+  "Bill Pay",
+  "Invoicing",
+  "Payroll Support",
+  "\u00a9 2026 Decimal. All rights reserved."
+ ]
+}

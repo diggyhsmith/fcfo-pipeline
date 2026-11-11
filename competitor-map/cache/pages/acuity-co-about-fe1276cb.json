@@ -1,0 +1,14 @@
+{
+ "url": "https://acuity.co/about/",
+ "retrieved": "2026-11-10",
+ "user_agent": "python-requests/2.32.5",
+ "robots": "allowed",
+ "status": 200,
+ "final_url": "https://acuity.co/about/",
+ "chars": 5363,
+ "kept_lines": [
+  "2025",
+  "Acuity has earned national recognition for our innovation, culture, and commitment to excellence. From being named one of the Best Midsized and Large Firms to Work For in 2020, to winning Community Champion in 2024, and landing on the list of Top 50 Modern Firms in 2025 \u2013 each honor reflects our drive to transform accounting and create a standout experience for our team and clients alike.",
+  "2025 \u201cSorren\u201d"
+ ]
+}

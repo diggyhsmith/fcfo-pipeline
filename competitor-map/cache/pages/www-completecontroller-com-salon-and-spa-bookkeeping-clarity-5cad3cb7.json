@@ -1,0 +1,9 @@
+{
+ "url": "https://www.completecontroller.com/salon-and-spa-bookkeeping-clarity/",
+ "retrieved": "2026-11-10",
+ "user_agent": "python-requests/2.32.5",
+ "robots": "robots.txt not readable",
+ "status": 403,
+ "final_url": "https://www.completecontroller.com/salon-and-spa-bookkeeping-clarity/",
+ "note": "HTTP 403: not available (not retried with another client)"
+}

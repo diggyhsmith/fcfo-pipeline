@@ -1,0 +1,13 @@
+{
+ "url": "https://www.collective.com/about-us",
+ "retrieved": "2026-11-10",
+ "user_agent": "python-requests/2.32.5",
+ "robots": "allowed",
+ "status": 200,
+ "final_url": "https://www.collective.com/about-us",
+ "chars": 2438,
+ "kept_lines": [
+  "** Based on data sourced from Shopify blog, QBO Essentials, QBO Live, Gusto, Taxfyle, Intuit \"Tax Pro\" Research, LegalZoom and JustAnswer.com as of August 2025.",
+  "2026"
+ ]
+}

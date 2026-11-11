@@ -1,0 +1,15 @@
+{
+ "url": "https://www.bench.co/about",
+ "retrieved": "2026-11-10",
+ "user_agent": "python-requests/2.32.5",
+ "robots": "allowed",
+ "status": 200,
+ "final_url": "https://www.bench.co/about",
+ "chars": 4350,
+ "kept_lines": [
+  "Bench is an online bookkeeping service for U.S.-based businesses, small and growing \u2014 operating today as an Employer.com company.",
+  "January 2025",
+  "Bench paused operations in December 2024 and was acquired within days by Employer.com, resuming service in January 2025.",
+  "Is Bench still operating in 2026?"
+ ]
+}

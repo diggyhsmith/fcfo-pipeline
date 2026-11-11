@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /partner
+Disallow: /partner/*
+Disallow: /offer
+Disallow: /offer/*
+Disallow: /bookkeeping-policies
+Disallow: /**/*.pdf$
+Disallow: /**/*.xlsx$
+
+Sitemap: https://pilot.com/sitemap.xml

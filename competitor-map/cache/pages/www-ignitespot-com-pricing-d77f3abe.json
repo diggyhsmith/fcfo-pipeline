@@ -1,0 +1,9 @@
+{
+ "url": "https://www.ignitespot.com/pricing",
+ "retrieved": "2026-11-10",
+ "user_agent": "python-requests/2.32.5",
+ "robots": "allowed",
+ "status": 404,
+ "final_url": "https://www.ignitespot.com/pricing",
+ "note": "HTTP 404: not available (not retried with another client)"
+}

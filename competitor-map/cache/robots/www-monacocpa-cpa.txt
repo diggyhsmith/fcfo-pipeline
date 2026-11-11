@@ -1,0 +1,168 @@
+User-Agent: *
+Allow: /
+Allow: /_next/static/
+Disallow: /api/
+Disallow: /_next/data/
+
+User-Agent: GPTBot
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /llms
+Allow: /ai.txt
+Allow: /ai-sitemap.xml
+Disallow: /api/
+Disallow: /_next/data/
+
+User-Agent: OAI-SearchBot
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /llms
+Allow: /ai.txt
+Allow: /ai-sitemap.xml
+Disallow: /api/
+Disallow: /_next/data/
+
+User-Agent: Google-Extended
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /llms
+Allow: /ai.txt
+Allow: /ai-sitemap.xml
+Disallow: /api/
+Disallow: /_next/data/
+
+User-Agent: ClaudeBot
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /llms
+Allow: /ai.txt
+Allow: /ai-sitemap.xml
+Disallow: /api/
+Disallow: /_next/data/
+
+User-Agent: Claude-SearchBot
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /llms
+Allow: /ai.txt
+Allow: /ai-sitemap.xml
+Disallow: /api/
+Disallow: /_next/data/
+
+User-Agent: Claude-User
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /llms
+Allow: /ai.txt
+Allow: /ai-sitemap.xml
+Disallow: /api/
+Disallow: /_next/data/
+
+User-Agent: PerplexityBot
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /llms
+Allow: /ai.txt
+Allow: /ai-sitemap.xml
+Disallow: /api/
+Disallow: /_next/data/
+
+User-Agent: Perplexity-User
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /llms
+Allow: /ai.txt
+Allow: /ai-sitemap.xml
+Disallow: /api/
+Disallow: /_next/data/
+
+User-Agent: Applebot-Extended
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /llms
+Allow: /ai.txt
+Allow: /ai-sitemap.xml
+Disallow: /api/
+Disallow: /_next/data/
+
+User-Agent: ChatGPT-User
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /llms
+Allow: /ai.txt
+Allow: /ai-sitemap.xml
+Disallow: /api/
+Disallow: /_next/data/
+
+User-Agent: anthropic-ai
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /llms
+Allow: /ai.txt
+Allow: /ai-sitemap.xml
+Disallow: /api/
+Disallow: /_next/data/
+
+User-Agent: Bytespider
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /llms
+Allow: /ai.txt
+Allow: /ai-sitemap.xml
+Disallow: /api/
+Disallow: /_next/data/
+
+User-Agent: cohere-ai
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /llms
+Allow: /ai.txt
+Allow: /ai-sitemap.xml
+Disallow: /api/
+Disallow: /_next/data/
+
+User-Agent: Meta-ExternalAgent
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /llms
+Allow: /ai.txt
+Allow: /ai-sitemap.xml
+Disallow: /api/
+Disallow: /_next/data/
+
+User-Agent: CCBot
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /llms
+Allow: /ai.txt
+Allow: /ai-sitemap.xml
+Disallow: /api/
+Disallow: /_next/data/
+
+User-Agent: iai-web
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /llms
+Allow: /ai.txt
+Allow: /ai-sitemap.xml
+Disallow: /api/
+Disallow: /_next/data/
+
+Sitemap: https://www.monacocpa.cpa/sitemap.xml
+Sitemap: https://www.monacocpa.cpa/ai-sitemap.xml

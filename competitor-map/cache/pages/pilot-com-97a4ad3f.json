@@ -1,0 +1,29 @@
+{
+ "url": "https://pilot.com/",
+ "retrieved": "2026-11-10",
+ "user_agent": "python-requests/2.32.5",
+ "robots": "allowed",
+ "status": 200,
+ "final_url": "https://pilot.com/",
+ "chars": 10197,
+ "kept_lines": [
+  "Pilot: Bookkeeping & Accounting Services for Startups & Small Businesses",
+  "Bookkeeping",
+  "CFO Services",
+  "Bookkeeping",
+  "CFO Services",
+  "If you're buried in bookkeeping, who's leading the company?",
+  "We handle bookkeeping, tax, and advisory work for startups and small businesses.",
+  "These complex questions require expertise that the average bookkeeping firm can\u2019t provide. We've helped companies navigate everything from raising capital to valuations to international expansion.",
+  "Switched from cash to accrual accounting for true visibility, worked through $1M invoice backlog, and provided CFO modeling for cash planning.",
+  "\"The growth almost killed us multiple times. We had an additional million dollars in invoices that weren't coming in and the CFO team was there with strategies. One year later, consultants are booking 20% more revenue.\" - Jay Boyer, General Partner",
+  "Business owner was personally pulling and analyzing every financial number, running bookkeeping and KPI analysis\u2014becoming the bottleneck preventing growth focus.",
+  "Streamlined bookkeeping workflow, built financial models for securing capital, and created KPI dashboards tracking marketing funnels to supply chain performance.",
+  "Pilot\u2019s bookkeepers helped Ravi produce triple-checked, accurate financials. They were so effective, they caught unpaid invoices and errors from vendors.",
+  "Forecast your cash flow",
+  "Bookkeeping",
+  "CFO Services",
+  "Franchise Bookkeeping",
+  "Pilot is a provider of back-office services, including bookkeeping, controller services, and CFO services."
+ ]
+}

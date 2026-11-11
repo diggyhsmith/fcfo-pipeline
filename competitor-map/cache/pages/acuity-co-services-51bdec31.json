@@ -1,0 +1,30 @@
+{
+ "url": "https://acuity.co/services/",
+ "retrieved": "2026-11-10",
+ "user_agent": "python-requests/2.32.5",
+ "robots": "allowed",
+ "status": 200,
+ "final_url": "https://acuity.co/services/",
+ "chars": 5465,
+ "kept_lines": [
+  "Ask A CFO Anything \u2014>",
+  "Cleanup My Books",
+  "Bookkeeping",
+  "CFO",
+  "CLEANUP",
+  "Your books shouldn\u2019t hold you back. We\u2019ll clean up past transactions, fix inconsistencies, and get your finances back in shape, so you can move forward with confidence (and accurate numbers).",
+  "BOOKKEEPING",
+  "Know your numbers at a glance. Your dedicated bookkeeper keeps your accounts organized, up-to-date, and tax-ready, giving you the ability to make better business decisions year-round.",
+  "CFO",
+  "Think beyond the weekly or monthly numbers. Our fractional CFOs help you forecast, budget, and make strategic calls that drive growth, without the cost of a full-time hire.",
+  "Our financial planning and forecasting help you manage spend, optimize cash flow, and strengthen your business\u2019s financial foundation.",
+  "Cleanup Services",
+  "Bookkeeping Services",
+  "CFO Services",
+  "Controller Services",
+  "2025 \u201cSorren\u201d",
+  "Cleanup My Books",
+  "Bookkeeping",
+  "CFO"
+ ]
+}

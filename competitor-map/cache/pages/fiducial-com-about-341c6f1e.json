@@ -1,0 +1,20 @@
+{
+ "url": "https://fiducial.com/about",
+ "retrieved": "2026-11-10",
+ "user_agent": "python-requests/2.32.5",
+ "robots": "allowed",
+ "status": 200,
+ "final_url": "https://fiducial.com/about",
+ "chars": 4937,
+ "kept_lines": [
+  "2026 Federal Tax Calendar",
+  "2025 Federal Tax Calendar",
+  "2026 Federal Tax Calendar",
+  "2025 Federal Tax Calendar",
+  "2026 Federal Tax Calendar",
+  "2025 Federal Tax Calendar",
+  "2026 Federal Tax Calendar",
+  "2025 Federal Tax Calendar",
+  "In Europe, Fiducial\u2019s network of over 1200 offices with over 17,700 people allows close relationships with the firm\u2019s growing list of 322,000 clients. In the United States, Fiducial currently maintains a growing network of over thirty offices. This proximity strategy enables a combination of the longevity and power of an international firm with the flexibility and reactivity of a local partner."
+ ]
+}

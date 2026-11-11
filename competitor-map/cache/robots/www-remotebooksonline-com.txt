@@ -1,0 +1,17 @@
+User-agent:*
+Disallow: /gjotq/
+Disallow: /hwsa/
+Disallow: /mywq/
+Disallow: /qwtn/
+Disallow: /rbo/
+Disallow: /rnqd/
+Disallow: /s-solutions/
+Disallow: /tax-preparation-services/
+Disallow: /urelx/
+Disallow: /xxra/
+Disallow: /zcwsu/
+Disallow: /email/
+Disallow: /uat/
+Allow:/
+
+Sitemap: https://www.remotebooksonline.com/sitemap.xml

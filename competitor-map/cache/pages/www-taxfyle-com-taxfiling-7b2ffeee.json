@@ -1,0 +1,22 @@
+{
+ "url": "https://www.taxfyle.com/taxfiling",
+ "retrieved": "2026-11-10",
+ "user_agent": "python-requests/2.32.5",
+ "robots": "allowed",
+ "status": 200,
+ "final_url": "https://www.taxfyle.com/taxfiling",
+ "chars": 6294,
+ "kept_lines": [
+  "Already filed an extension? Get matched with a licensed Tax Pro who can prepare and file your individual or business return before the extended deadline.",
+  "File your extended individual return, including self-employment income, by October 15",
+  "For business owners who need both business and personal taxes filed:",
+  "per 30-minute call",
+  "Get tax advisory",
+  "When is the 2026 tax extension deadline for individuals?",
+  "When is the 2026 extension deadline for partnerships and S-Corps?",
+  "Tax Advisory",
+  "Copyright \u00a9 2026 Tickmark, Inc.",
+  "File your extended individual return, including self-employment income, by October 15",
+  "For business owners who need both business and personal taxes filed:"
+ ]
+}

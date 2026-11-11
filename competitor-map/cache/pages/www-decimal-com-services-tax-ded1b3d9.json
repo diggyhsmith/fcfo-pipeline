@@ -1,0 +1,32 @@
+{
+ "url": "https://www.decimal.com/services/tax",
+ "retrieved": "2026-11-10",
+ "user_agent": "python-requests/2.32.5",
+ "robots": "allowed",
+ "status": 200,
+ "final_url": "https://www.decimal.com/services/tax",
+ "chars": 5224,
+ "kept_lines": [
+  "Bookkeeping",
+  "Bill Pay",
+  "Invoicing",
+  "Payroll Support",
+  "Bookkeeping",
+  "Bill Pay",
+  "Invoicing",
+  "Payroll Support",
+  "Business tax preparation",
+  "Tax planning & strategy",
+  "We forecast what you owe and keep you ahead of deadlines so there are no surprises or penalties at year-end.",
+  "When paired with our bookkeeping, your books are always tax-ready. No scrambling, no missed deductions, no fire drills.",
+  "Does my business have to use Decimal for bookkeeping to get tax services?",
+  "No. While pairing tax with bookkeeping makes things easier, our tax team can work with businesses that already have their books in good shape.",
+  "Yes. We forecast what you owe and keep you ahead of deadlines so there are no surprises or penalties at year-end.",
+  "We combine real people, proven processes, and smart technology. We don't just file your taxes. We guide you through planning, strategy, and ongoing optimization.",
+  "Bookkeeping",
+  "Bill Pay",
+  "Invoicing",
+  "Payroll Support",
+  "\u00a9 2026 Decimal. All rights reserved."
+ ]
+}

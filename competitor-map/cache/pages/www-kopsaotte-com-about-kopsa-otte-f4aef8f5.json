@@ -1,0 +1,9 @@
+{
+ "url": "https://www.kopsaotte.com/about-kopsa-otte/",
+ "retrieved": "2026-11-10",
+ "user_agent": "python-requests/2.32.5",
+ "robots": "allowed",
+ "status": 403,
+ "final_url": "https://www.kopsaotte.com/about-kopsa-otte/",
+ "note": "HTTP 403: not available (not retried with another client)"
+}

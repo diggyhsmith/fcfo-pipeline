@@ -1,0 +1,13 @@
+{
+ "url": "https://www.ignitespot.com/about-us",
+ "retrieved": "2026-11-10",
+ "user_agent": "python-requests/2.32.5",
+ "robots": "allowed",
+ "status": 200,
+ "final_url": "https://www.ignitespot.com/about-us",
+ "chars": 18936,
+ "kept_lines": [
+  "Today, our team serves businesses across the country. The purpose remains practical: keep your books organized, explain your numbers, and help you plan your next move.",
+  "\u00a9 2026 Ignite Spot, All Rights Reserved."
+ ]
+}

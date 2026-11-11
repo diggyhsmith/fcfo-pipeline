@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /EPiServer/CMS/
+Disallow: /Util/
+Sitemap: https://office.jacksonhewitt.com/sitemap.xml

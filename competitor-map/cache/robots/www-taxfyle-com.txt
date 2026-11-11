@@ -1,0 +1,6 @@
+User-Agent: *
+Allow: /
+Disallow: /author/
+
+Host: https://www.taxfyle.com
+Sitemap: https://www.taxfyle.com/sitemap.xml

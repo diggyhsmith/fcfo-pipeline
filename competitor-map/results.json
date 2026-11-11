@@ -1,0 +1,1427 @@
+{
+ "generated": "2026-11-10",
+ "retrieved": [
+  "2026-11-10"
+ ],
+ "n_input": 26,
+ "n_fit": 20,
+ "k": 3,
+ "silhouette": {
+  "2": 0.367,
+  "3": 0.382,
+  "4": 0.342,
+  "5": 0.321,
+  "6": 0.328,
+  "7": 0.359,
+  "8": 0.391
+ },
+ "eligible_k": [
+  2,
+  3,
+  4,
+  5,
+  6
+ ],
+ "k_best_any": 8,
+ "evr": [
+  0.3857,
+  0.2408,
+  0.1234,
+  0.1027,
+  0.0814,
+  0.0532,
+  0.0128
+ ],
+ "features": [
+  "log10 starting monthly price",
+  "publishes a monthly price",
+  "service breadth (count)",
+  "log10(1 + walk-in locations)",
+  "channel (0 online, 1 hybrid, 2 office)",
+  "beauty niche (yes=1)",
+  "files tax returns (yes=1)"
+ ],
+ "loadings": {
+  "log10 starting monthly price": {
+   "PC1": -0.144,
+   "PC2": 0.486
+  },
+  "publishes a monthly price": {
+   "PC1": -0.48,
+   "PC2": -0.154
+  },
+  "service breadth (count)": {
+   "PC1": -0.353,
+   "PC2": 0.413
+  },
+  "log10(1 + walk-in locations)": {
+   "PC1": 0.53,
+   "PC2": 0.123
+  },
+  "channel (0 online, 1 hybrid, 2 office)": {
+   "PC1": 0.55,
+   "PC2": 0.181
+  },
+  "beauty niche (yes=1)": {
+   "PC1": -0.192,
+   "PC2": 0.333
+  },
+  "files tax returns (yes=1)": {
+   "PC1": 0.064,
+   "PC2": 0.641
+  }
+ },
+ "axis": [
+  "online, posted monthly price  \u2192  office network, priced per return",
+  "bookkeeping only, cheaper  \u2192  files tax returns, pricier"
+ ],
+ "ari_hc": 1.0,
+ "hc_diff": [],
+ "ari_hand": 0.093,
+ "seed_same_1start": 0.15,
+ "seed_same_50": 1.0,
+ "seed_median_ari": 0.31377913976140964,
+ "drop": [
+  {
+   "attribute dropped": "breadth",
+   "ARI vs full fit": 1.0,
+   "firms that switch group": "none",
+   "k the silhouette would pick": 7
+  },
+  {
+   "attribute dropped": "channel",
+   "ARI vs full fit": 0.67,
+   "firms that switch group": "Decimal, Taxfyle",
+   "k the silhouette would pick": 8
+  },
+  {
+   "attribute dropped": "files_tax",
+   "ARI vs full fit": 0.28,
+   "firms that switch group": "Bookkeeper360, inDinero, Merritt Bookkeeping, Complete Controller, Acuity, Kruze Consulting, Monaco CPA",
+   "k the silhouette would pick": 2
+  },
+  {
+   "attribute dropped": "footprint",
+   "ARI vs full fit": 0.34,
+   "firms that switch group": "Kopsa Otte CPAs & Advisors, Ignite Spot, QuickBooks Live (Intuit), Decimal, Taxfyle",
+   "k the silhouette would pick": 8
+  },
+  {
+   "attribute dropped": "niche",
+   "ARI vs full fit": 1.0,
+   "firms that switch group": "none",
+   "k the silhouette would pick": 3
+  },
+  {
+   "attribute dropped": "price",
+   "ARI vs full fit": 1.0,
+   "firms that switch group": "none",
+   "k the silhouette would pick": 4
+  }
+ ],
+ "hold": 0.5,
+ "switch": {
+  "Kopsa Otte CPAs & Advisors": 1,
+  "Bookkeeper360": 1,
+  "inDinero": 1,
+  "Ignite Spot": 1,
+  "Merritt Bookkeeping": 1,
+  "QuickBooks Live (Intuit)": 1,
+  "Complete Controller": 1,
+  "Acuity": 1,
+  "Decimal": 2,
+  "Kruze Consulting": 1,
+  "Taxfyle": 2,
+  "Monaco CPA": 1
+ },
+ "groups": [
+  {
+   "id": 1,
+   "name": "online bookkeeping + tax filing",
+   "firms": [
+    "Kopsa Otte CPAs & Advisors",
+    "Bench",
+    "Pilot",
+    "Bookkeeper360",
+    "1-800Accountant",
+    "inDinero",
+    "Ignite Spot",
+    "QuickBooks Live (Intuit)",
+    "Collective",
+    "Remote Books Online",
+    "Acuity",
+    "Decimal",
+    "Kruze Consulting",
+    "Taxfyle",
+    "Monaco CPA"
+   ],
+   "profile": {
+    "log_price": 2.43,
+    "price_published": 0.67,
+    "breadth": 7.67,
+    "log_locations": 0.02,
+    "channel": 0.13,
+    "niche": 0.27,
+    "files_tax": 1.0
+   }
+  },
+  {
+   "id": 2,
+   "name": "bookkeeping only (no tax filing)",
+   "firms": [
+    "Merritt Bookkeeping",
+    "Complete Controller"
+   ],
+   "profile": {
+    "log_price": 2.16,
+    "price_published": 1.0,
+    "breadth": 4.5,
+    "log_locations": 0.0,
+    "channel": 0.0,
+    "niche": 0.0,
+    "files_tax": 0.0
+   }
+  },
+  {
+   "id": 3,
+   "name": "office-network tax preparers",
+   "firms": [
+    "Jackson Hewitt",
+    "Liberty Tax",
+    "Fiducial"
+   ],
+   "profile": {
+    "log_price": 2.36,
+    "price_published": 0.0,
+    "breadth": 4.67,
+    "log_locations": 2.83,
+    "channel": 2.0,
+    "niche": 0.0,
+    "files_tax": 1.0
+   }
+  }
+ ],
+ "hand": {
+  "rows": [
+   "Advisory / CFO firms",
+   "Beauty-niche specialists",
+   "National online bookkeeping",
+   "Tax-prep chains"
+  ],
+  "cols": [
+   "Group 1",
+   "Group 2",
+   "Group 3"
+  ],
+  "values": [
+   [
+    4,
+    0,
+    0
+   ],
+   [
+    3,
+    0,
+    0
+   ],
+   [
+    7,
+    2,
+    0
+   ],
+   [
+    1,
+    0,
+    3
+   ]
+  ]
+ },
+ "mine": [
+  {
+   "price": 125,
+   "pc1": -0.7460881989824791,
+   "pc2": -2.7987569026253825,
+   "group": 1,
+   "neighbours": [
+    "Merritt Bookkeeping",
+    "Complete Controller",
+    "Remote Books Online"
+   ],
+   "nn_dist": [
+    2.84,
+    3.06,
+    3.56
+   ],
+   "group_name": "bookkeeping only (no tax filing)",
+   "d_centres": [
+    4.54,
+    2.59,
+    6.13
+   ]
+  },
+  {
+   "price": 200,
+   "pc1": -0.8709552259223095,
+   "pc2": -2.378662229283297,
+   "group": 1,
+   "neighbours": [
+    "Merritt Bookkeeping",
+    "Complete Controller",
+    "Remote Books Online"
+   ],
+   "nn_dist": [
+    2.57,
+    3.37,
+    3.59
+   ],
+   "group_name": "bookkeeping only (no tax filing)",
+   "d_centres": [
+    4.34,
+    2.64,
+    6.03
+   ]
+  },
+  {
+   "price": 350,
+   "pc1": -1.019629736755825,
+   "pc2": -1.8784711732970245,
+   "group": 1,
+   "neighbours": [
+    "Merritt Bookkeeping",
+    "Remote Books Online",
+    "Complete Controller"
+   ],
+   "nn_dist": [
+    2.61,
+    3.88,
+    3.96
+   ],
+   "group_name": "bookkeeping only (no tax filing)",
+   "d_centres": [
+    4.33,
+    3.04,
+    6.08
+   ]
+  }
+ ],
+ "my_breadth": 3,
+ "nn_median": 1.3,
+ "imputed": [
+  {
+   "firm": "Kopsa Otte CPAs & Advisors",
+   "feature": "log10 starting monthly price",
+   "filled with": 2.359,
+   "why missing": "not_available"
+  },
+  {
+   "firm": "Ignite Spot",
+   "feature": "log10 starting monthly price",
+   "filled with": 2.359,
+   "why missing": "quote_only"
+  },
+  {
+   "firm": "QuickBooks Live (Intuit)",
+   "feature": "log10 starting monthly price",
+   "filled with": 2.359,
+   "why missing": "not_available"
+  },
+  {
+   "firm": "Jackson Hewitt",
+   "feature": "log10 starting monthly price",
+   "filled with": 2.359,
+   "why missing": "no_monthly_plan"
+  },
+  {
+   "firm": "Liberty Tax",
+   "feature": "log10 starting monthly price",
+   "filled with": 2.359,
+   "why missing": "no_monthly_plan"
+  },
+  {
+   "firm": "Fiducial",
+   "feature": "log10 starting monthly price",
+   "filled with": 2.359,
+   "why missing": "no_monthly_plan"
+  },
+  {
+   "firm": "Decimal",
+   "feature": "log10 starting monthly price",
+   "filled with": 2.359,
+   "why missing": "quote_only"
+  },
+  {
+   "firm": "Taxfyle",
+   "feature": "log10 starting monthly price",
+   "filled with": 2.359,
+   "why missing": "no_monthly_plan"
+  },
+  {
+   "firm": "Kopsa Otte CPAs & Advisors",
+   "feature": "service breadth (count)",
+   "filled with": 7.0,
+   "why missing": "not readable (see attribute table)"
+  },
+  {
+   "firm": "inDinero",
+   "feature": "service breadth (count)",
+   "filled with": 7.0,
+   "why missing": "not readable (see attribute table)"
+  },
+  {
+   "firm": "QuickBooks Live (Intuit)",
+   "feature": "log10(1 + walk-in locations)",
+   "filled with": 0.0,
+   "why missing": "not readable (see attribute table)"
+  },
+  {
+   "firm": "Complete Controller",
+   "feature": "beauty niche (yes=1)",
+   "filled with": 0.0,
+   "why missing": "not readable (see attribute table)"
+  }
+ ],
+ "attr_share": {
+  "price": 0.1,
+  "breadth": 0.1,
+  "footprint": 0.05,
+  "channel": 0.0,
+  "niche": 0.05,
+  "files_tax": 0.0,
+  "reviews": 0.7
+ },
+ "dropped_attr": [
+  "reviews"
+ ],
+ "limits": [
+  "**Small n.** 20 fitted firms. Silhouette scores are noisy at this size, and one firm can move a group boundary: single-start k-means matched the final groups in only 15% of 100 seeds, so 50 starts per fit were needed for a stable answer.",
+  "**The attributes were chosen by me.** A different checklist, or weights on its items, would change the breadth counts. There are only seven features, and two of them (files tax returns, walk-in footprint) carry the grouping.",
+  "**Sources are dated and public only.** Every value was read on its retrieval date (2026-11-10; NPS reviews 2026-10-08) from the firm's own public pages. Prices change, and these pages are marketing; review figures shown on a firm's own site are self-selected. Pages that refused a plain request (Xendoo, Block Advisors, Padgett, Straight Talk CPAs and some subpages) are recorded as missing, not estimated.",
+  "**Missing values.** The quality signal (reviews) was missing for 70% of operating firms and is left out of the fit. 8 firms with no posted monthly price were given the median price plus a flag, and 4 other cells were imputed. Each one is listed in the notebook's imputation table and starred in the attribute table.",
+  "**Clustering is sensitive to scaling and encoding.** Standardizing gives every feature, including each yes/no flag, equal say; the log transforms and the 0/1/2 channel scale are choices. Dropping a single feature changed the groups in 50% of the drop-one runs (the stability table).",
+  "**Fine Line Financials' points are hypothetical.** They are assumed values, projected after fitting; they are not data and did not affect the groups."
+ ],
+ "status": {
+  "Kopsa Otte CPAs & Advisors": {
+   "status": "operating (no current date seen)",
+   "basis": "1 of 4 pages read"
+  },
+  "Xendoo": {
+   "status": "not readable",
+   "basis": "every page answered 403 to a plain request; not retried with another client"
+  },
+  "Elite Business Solutions": {
+   "status": "dropped: defunct",
+   "basis": "homepage is a parked / for-sale page (https://expireddomains.com/domain/elitebsolutions.com?utm_source=redi)"
+  },
+  "Jasmine Thomas & Associates": {
+   "status": "dropped: defunct",
+   "basis": "homepage is a parked / for-sale page (https://jasminethomasassociates.com/)"
+  },
+  "Bench": {
+   "status": "operating",
+   "basis": "5 of 5 pages read; a 2025/2026 date appears in the text"
+  },
+  "Pilot": {
+   "status": "operating",
+   "basis": "5 of 5 pages read; a 2025/2026 date appears in the text"
+  },
+  "Bookkeeper360": {
+   "status": "operating",
+   "basis": "4 of 4 pages read; a 2025/2026 date appears in the text"
+  },
+  "1-800Accountant": {
+   "status": "operating",
+   "basis": "6 of 6 pages read; a 2025/2026 date appears in the text"
+  },
+  "inDinero": {
+   "status": "operating",
+   "basis": "3 of 5 pages read; a 2025/2026 date appears in the text"
+  },
+  "Ignite Spot": {
+   "status": "operating",
+   "basis": "4 of 5 pages read; a 2025/2026 date appears in the text"
+  },
+  "Merritt Bookkeeping": {
+   "status": "operating",
+   "basis": "1 of 3 pages read; a 2025/2026 date appears in the text"
+  },
+  "QuickBooks Live (Intuit)": {
+   "status": "operating",
+   "basis": "3 of 3 pages read; a 2025/2026 date appears in the text"
+  },
+  "Block Advisors (H&R Block)": {
+   "status": "not readable",
+   "basis": "every page answered 403 to a plain request; not retried with another client"
+  },
+  "Jackson Hewitt": {
+   "status": "operating",
+   "basis": "4 of 4 pages read; a 2025/2026 date appears in the text"
+  },
+  "Liberty Tax": {
+   "status": "operating",
+   "basis": "4 of 4 pages read; a 2025/2026 date appears in the text"
+  },
+  "Collective": {
+   "status": "operating",
+   "basis": "4 of 4 pages read; a 2025/2026 date appears in the text"
+  },
+  "Remote Books Online": {
+   "status": "operating",
+   "basis": "5 of 5 pages read; a 2025/2026 date appears in the text"
+  },
+  "Complete Controller": {
+   "status": "operating (no current date seen)",
+   "basis": "4 of 5 pages read"
+  },
+  "Acuity": {
+   "status": "operating",
+   "basis": "6 of 6 pages read; a 2025/2026 date appears in the text"
+  },
+  "Fiducial": {
+   "status": "operating",
+   "basis": "5 of 5 pages read; a 2025/2026 date appears in the text"
+  },
+  "Decimal": {
+   "status": "operating",
+   "basis": "5 of 5 pages read; a 2025/2026 date appears in the text"
+  },
+  "Kruze Consulting": {
+   "status": "operating",
+   "basis": "4 of 4 pages read; a 2025/2026 date appears in the text"
+  },
+  "Taxfyle": {
+   "status": "operating",
+   "basis": "3 of 3 pages read; a 2025/2026 date appears in the text"
+  },
+  "Monaco CPA": {
+   "status": "operating",
+   "basis": "5 of 5 pages read; a 2025/2026 date appears in the text"
+  },
+  "Padgett Business Services": {
+   "status": "not readable",
+   "basis": "every page answered 403 to a plain request; not retried with another client"
+  },
+  "Straight Talk CPAs": {
+   "status": "not readable",
+   "basis": "every page answered 403 to a plain request; not retried with another client"
+  }
+ },
+ "checklist": [
+  "Monthly bookkeeping",
+  "Catch-up / cleanup",
+  "Payroll",
+  "Business tax return prep / filing",
+  "Individual tax returns",
+  "Tax planning / advisory",
+  "CFO / FP&A advisory",
+  "Sales-tax filing",
+  "Entity formation / business setup",
+  "Loan-readiness / financing support",
+  "Bill pay / AP-AR / invoicing",
+  "1099 / information returns",
+  "IRS notices / audit support",
+  "HR / benefits",
+  "R&D tax credits"
+ ],
+ "pages_total": 99,
+ "pages_read": 83,
+ "quotes_checked": 82,
+ "table": [
+  {
+   "slug": "kopsa_otte",
+   "firm": "Kopsa Otte CPAs & Advisors",
+   "status": "operating (no current date seen)",
+   "fitted": true,
+   "group": 1,
+   "price_status": "not_available",
+   "price": NaN,
+   "breadth": null,
+   "locations": 1,
+   "channel": "hybrid",
+   "channel_basis": "stated",
+   "niche": 1,
+   "files_tax": 1,
+   "review_score": 5.0,
+   "review_count": 2,
+   "review_source": "Google Maps via nps-scorer (Google Maps, read 2026-10-08)",
+   "missing": "price, breadth",
+   "imputed": [
+    "log10 starting monthly price",
+    "service breadth (count)"
+   ],
+   "sources": [
+    {
+     "url": "https://www.kopsaotte.com/",
+     "retrieved": "2026-11-10"
+    }
+   ]
+  },
+  {
+   "slug": "xendoo",
+   "firm": "Xendoo",
+   "status": "not readable",
+   "fitted": false,
+   "group": null,
+   "price_status": "not_available",
+   "price": NaN,
+   "breadth": null,
+   "locations": null,
+   "channel": null,
+   "channel_basis": null,
+   "niche": null,
+   "files_tax": null,
+   "review_score": 4.75,
+   "review_count": 177,
+   "review_source": "Google Maps via nps-scorer (Google Maps, read 2026-10-08)",
+   "missing": "price, breadth, footprint, channel, niche, files_tax",
+   "imputed": [],
+   "sources": []
+  },
+  {
+   "slug": "elite",
+   "firm": "Elite Business Solutions",
+   "status": "dropped: defunct",
+   "fitted": false,
+   "group": null,
+   "price_status": "not_available",
+   "price": NaN,
+   "breadth": null,
+   "locations": null,
+   "channel": null,
+   "channel_basis": null,
+   "niche": null,
+   "files_tax": null,
+   "review_score": null,
+   "review_count": null,
+   "review_source": null,
+   "missing": "price, breadth, footprint, channel, niche, files_tax, reviews",
+   "imputed": [],
+   "sources": []
+  },
+  {
+   "slug": "jasmine_thomas",
+   "firm": "Jasmine Thomas & Associates",
+   "status": "dropped: defunct",
+   "fitted": false,
+   "group": null,
+   "price_status": "not_available",
+   "price": NaN,
+   "breadth": null,
+   "locations": null,
+   "channel": null,
+   "channel_basis": null,
+   "niche": null,
+   "files_tax": null,
+   "review_score": null,
+   "review_count": null,
+   "review_source": null,
+   "missing": "price, breadth, footprint, channel, niche, files_tax, reviews",
+   "imputed": [],
+   "sources": []
+  },
+  {
+   "slug": "bench",
+   "firm": "Bench",
+   "status": "operating",
+   "fitted": true,
+   "group": 1,
+   "price_status": "published",
+   "price": 199.0,
+   "breadth": 5,
+   "locations": 0,
+   "channel": "online",
+   "channel_basis": "stated",
+   "niche": 0,
+   "files_tax": 1,
+   "review_score": null,
+   "review_count": null,
+   "review_source": "Trustpilot via firm site",
+   "missing": "reviews",
+   "imputed": [],
+   "sources": [
+    {
+     "url": "https://www.bench.co/",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://www.bench.co/about",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://www.bench.co/industry/local-business",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://www.bench.co/pricing",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://www.bench.co/small-business-tax",
+     "retrieved": "2026-11-10"
+    }
+   ]
+  },
+  {
+   "slug": "pilot",
+   "firm": "Pilot",
+   "status": "operating",
+   "fitted": true,
+   "group": 1,
+   "price_status": "published",
+   "price": 99.0,
+   "breadth": 8,
+   "locations": 0,
+   "channel": "online",
+   "channel_basis": "stated",
+   "niche": 0,
+   "files_tax": 1,
+   "review_score": 4.8,
+   "review_count": 200,
+   "review_source": "G2 via firm site",
+   "missing": "",
+   "imputed": [],
+   "sources": [
+    {
+     "url": "https://pilot.com/",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://pilot.com/about",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://pilot.com/cfo-services",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://pilot.com/pricing",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://pilot.com/tax",
+     "retrieved": "2026-11-10"
+    }
+   ]
+  },
+  {
+   "slug": "bookkeeper360",
+   "firm": "Bookkeeper360",
+   "status": "operating",
+   "fitted": true,
+   "group": 1,
+   "price_status": "published",
+   "price": 400.0,
+   "breadth": 11,
+   "locations": 0,
+   "channel": "online",
+   "channel_basis": "stated",
+   "niche": 0,
+   "files_tax": 1,
+   "review_score": 4.8,
+   "review_count": 230,
+   "review_source": "Google via firm site",
+   "missing": "",
+   "imputed": [],
+   "sources": [
+    {
+     "url": "https://bookkeeper360.com/",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://bookkeeper360.com/about/",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://bookkeeper360.com/pricing/",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://bookkeeper360.com/services/tax/",
+     "retrieved": "2026-11-10"
+    }
+   ]
+  },
+  {
+   "slug": "1800accountant",
+   "firm": "1-800Accountant",
+   "status": "operating",
+   "fitted": true,
+   "group": 1,
+   "price_status": "published",
+   "price": 209.0,
+   "breadth": 10,
+   "locations": 0,
+   "channel": "online",
+   "channel_basis": "stated",
+   "niche": 0,
+   "files_tax": 1,
+   "review_score": null,
+   "review_count": null,
+   "review_source": "Trustpilot via firm site",
+   "missing": "reviews",
+   "imputed": [],
+   "sources": [
+    {
+     "url": "https://1800accountant.com/",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://1800accountant.com/industry",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://1800accountant.com/pricing",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://1800accountant.com/services/business-tax-prep",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://1800accountant.com/services/locations",
+     "retrieved": "2026-11-10"
+    }
+   ]
+  },
+  {
+   "slug": "indinero",
+   "firm": "inDinero",
+   "status": "operating",
+   "fitted": true,
+   "group": 1,
+   "price_status": "published",
+   "price": 750.0,
+   "breadth": null,
+   "locations": 0,
+   "channel": "online",
+   "channel_basis": "stated",
+   "niche": 0,
+   "files_tax": 1,
+   "review_score": null,
+   "review_count": null,
+   "review_source": null,
+   "missing": "breadth, reviews",
+   "imputed": [
+    "service breadth (count)"
+   ],
+   "sources": [
+    {
+     "url": "https://www.indinero.com/",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://www.indinero.com/about/",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://www.indinero.com/pricing/",
+     "retrieved": "2026-11-10"
+    }
+   ]
+  },
+  {
+   "slug": "ignite_spot",
+   "firm": "Ignite Spot",
+   "status": "operating",
+   "fitted": true,
+   "group": 1,
+   "price_status": "quote_only",
+   "price": NaN,
+   "breadth": 9,
+   "locations": 0,
+   "channel": "online",
+   "channel_basis": "stated",
+   "niche": 0,
+   "files_tax": 1,
+   "review_score": 4.7,
+   "review_count": null,
+   "review_source": "Google via firm site",
+   "missing": "",
+   "imputed": [
+    "log10 starting monthly price"
+   ],
+   "sources": [
+    {
+     "url": "https://www.ignitespot.com/",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://www.ignitespot.com/about-us",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://www.ignitespot.com/bookkeeping-and-cfo-services",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://www.ignitespot.com/business-tax-services",
+     "retrieved": "2026-11-10"
+    }
+   ]
+  },
+  {
+   "slug": "merritt",
+   "firm": "Merritt Bookkeeping",
+   "status": "operating",
+   "fitted": true,
+   "group": 2,
+   "price_status": "published",
+   "price": 250.0,
+   "breadth": 2,
+   "locations": 0,
+   "channel": "online",
+   "channel_basis": "inferred",
+   "niche": 0,
+   "files_tax": 0,
+   "review_score": null,
+   "review_count": null,
+   "review_source": "via firm site",
+   "missing": "reviews",
+   "imputed": [],
+   "sources": [
+    {
+     "url": "https://merrittbookkeeping.com/",
+     "retrieved": "2026-11-10"
+    }
+   ]
+  },
+  {
+   "slug": "qb_live",
+   "firm": "QuickBooks Live (Intuit)",
+   "status": "operating",
+   "fitted": true,
+   "group": 1,
+   "price_status": "not_available",
+   "price": NaN,
+   "breadth": 9,
+   "locations": null,
+   "channel": "hybrid",
+   "channel_basis": "stated",
+   "niche": 0,
+   "files_tax": 1,
+   "review_score": null,
+   "review_count": null,
+   "review_source": null,
+   "missing": "price, footprint, reviews",
+   "imputed": [
+    "log10 starting monthly price",
+    "log10(1 + walk-in locations)"
+   ],
+   "sources": [
+    {
+     "url": "https://quickbooks.intuit.com/experts/expert-tax/",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://quickbooks.intuit.com/experts/full-service-bookkeeping/",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://quickbooks.intuit.com/live/",
+     "retrieved": "2026-11-10"
+    }
+   ]
+  },
+  {
+   "slug": "block_advisors",
+   "firm": "Block Advisors (H&R Block)",
+   "status": "not readable",
+   "fitted": false,
+   "group": null,
+   "price_status": "not_available",
+   "price": NaN,
+   "breadth": null,
+   "locations": null,
+   "channel": null,
+   "channel_basis": null,
+   "niche": null,
+   "files_tax": null,
+   "review_score": null,
+   "review_count": null,
+   "review_source": null,
+   "missing": "price, breadth, footprint, channel, niche, files_tax, reviews",
+   "imputed": [],
+   "sources": []
+  },
+  {
+   "slug": "jackson_hewitt",
+   "firm": "Jackson Hewitt",
+   "status": "operating",
+   "fitted": true,
+   "group": 3,
+   "price_status": "no_monthly_plan",
+   "price": NaN,
+   "breadth": 5,
+   "locations": 5100,
+   "channel": "office",
+   "channel_basis": "stated",
+   "niche": 0,
+   "files_tax": 1,
+   "review_score": 4.8,
+   "review_count": 465068,
+   "review_source": "Google via firm site",
+   "missing": "",
+   "imputed": [
+    "log10 starting monthly price"
+   ],
+   "sources": [
+    {
+     "url": "https://www.jacksonhewitt.com/",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://www.jacksonhewitt.com/tax-services/",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://www.jacksonhewitt.com/tax-services/self-employment-tax/",
+     "retrieved": "2026-11-10"
+    }
+   ]
+  },
+  {
+   "slug": "liberty_tax",
+   "firm": "Liberty Tax",
+   "status": "operating",
+   "fitted": true,
+   "group": 3,
+   "price_status": "no_monthly_plan",
+   "price": NaN,
+   "breadth": 4,
+   "locations": 2000,
+   "channel": "office",
+   "channel_basis": "stated",
+   "niche": 0,
+   "files_tax": 1,
+   "review_score": null,
+   "review_count": null,
+   "review_source": "via firm site",
+   "missing": "reviews",
+   "imputed": [
+    "log10 starting monthly price"
+   ],
+   "sources": [
+    {
+     "url": "https://www.libertytax.com/",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://www.libertytax.com/about-us",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://www.libertytax.com/bookkeeping",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://www.libertytax.com/income-tax-preparation-locations",
+     "retrieved": "2026-11-10"
+    }
+   ]
+  },
+  {
+   "slug": "collective",
+   "firm": "Collective",
+   "status": "operating",
+   "fitted": true,
+   "group": 1,
+   "price_status": "published",
+   "price": 199.0,
+   "breadth": 7,
+   "locations": 0,
+   "channel": "online",
+   "channel_basis": "inferred",
+   "niche": 0,
+   "files_tax": 1,
+   "review_score": null,
+   "review_count": 600,
+   "review_source": "not named via firm site",
+   "missing": "reviews",
+   "imputed": [],
+   "sources": [
+    {
+     "url": "https://www.collective.com/",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://www.collective.com/plans-and-pricing",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://www.collective.com/products/taxes-self-employed",
+     "retrieved": "2026-11-10"
+    }
+   ]
+  },
+  {
+   "slug": "remote_books",
+   "firm": "Remote Books Online",
+   "status": "operating",
+   "fitted": true,
+   "group": 1,
+   "price_status": "published",
+   "price": 150.0,
+   "breadth": 6,
+   "locations": 0,
+   "channel": "online",
+   "channel_basis": "stated",
+   "niche": 1,
+   "files_tax": 1,
+   "review_score": null,
+   "review_count": null,
+   "review_source": null,
+   "missing": "reviews",
+   "imputed": [],
+   "sources": [
+    {
+     "url": "https://www.remotebooksonline.com/",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://www.remotebooksonline.com/about",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://www.remotebooksonline.com/accounting-services",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://www.remotebooksonline.com/pricing",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://www.remotebooksonline.com/salon-bookkeeping",
+     "retrieved": "2026-11-10"
+    }
+   ]
+  },
+  {
+   "slug": "complete_controller",
+   "firm": "Complete Controller",
+   "status": "operating (no current date seen)",
+   "fitted": true,
+   "group": 2,
+   "price_status": "published",
+   "price": 85.0,
+   "breadth": 7,
+   "locations": 0,
+   "channel": "online",
+   "channel_basis": "stated",
+   "niche": null,
+   "files_tax": 0,
+   "review_score": null,
+   "review_count": null,
+   "review_source": null,
+   "missing": "niche, reviews",
+   "imputed": [
+    "beauty niche (yes=1)"
+   ],
+   "sources": [
+    {
+     "url": "https://www.completecontroller.com/",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://www.completecontroller.com/pricing-sign-up/",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://www.completecontroller.com/salon-and-spa-bookkeeping-clarity/",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://www.completecontroller.com/services/",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://www.completecontroller.com/us/",
+     "retrieved": "2026-11-10"
+    }
+   ]
+  },
+  {
+   "slug": "acuity",
+   "firm": "Acuity",
+   "status": "operating",
+   "fitted": true,
+   "group": 1,
+   "price_status": "published",
+   "price": 699.0,
+   "breadth": 11,
+   "locations": 0,
+   "channel": "online",
+   "channel_basis": "stated",
+   "niche": 1,
+   "files_tax": 1,
+   "review_score": 4.9,
+   "review_count": 40,
+   "review_source": "not named via firm site",
+   "missing": "",
+   "imputed": [],
+   "sources": [
+    {
+     "url": "https://acuity.co/",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://acuity.co/pricing/",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://acuity.co/retail/health-and-beauty/",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://acuity.co/services/",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://acuity.co/tax-services/",
+     "retrieved": "2026-11-10"
+    }
+   ]
+  },
+  {
+   "slug": "fiducial",
+   "firm": "Fiducial",
+   "status": "operating",
+   "fitted": true,
+   "group": 3,
+   "price_status": "no_monthly_plan",
+   "price": NaN,
+   "breadth": 5,
+   "locations": 30,
+   "channel": "office",
+   "channel_basis": "stated",
+   "niche": 0,
+   "files_tax": 1,
+   "review_score": null,
+   "review_count": null,
+   "review_source": null,
+   "missing": "reviews",
+   "imputed": [
+    "log10 starting monthly price"
+   ],
+   "sources": [
+    {
+     "url": "https://fiducial.com/",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://fiducial.com/about",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://fiducial.com/industries",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://fiducial.com/locations",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://fiducial.com/services",
+     "retrieved": "2026-11-10"
+    }
+   ]
+  },
+  {
+   "slug": "decimal",
+   "firm": "Decimal",
+   "status": "operating",
+   "fitted": true,
+   "group": 1,
+   "price_status": "quote_only",
+   "price": NaN,
+   "breadth": 5,
+   "locations": 0,
+   "channel": "online",
+   "channel_basis": "inferred",
+   "niche": 0,
+   "files_tax": 1,
+   "review_score": null,
+   "review_count": null,
+   "review_source": null,
+   "missing": "reviews",
+   "imputed": [
+    "log10 starting monthly price"
+   ],
+   "sources": [
+    {
+     "url": "https://www.decimal.com/",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://www.decimal.com/industries",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://www.decimal.com/pricing",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://www.decimal.com/services/tax",
+     "retrieved": "2026-11-10"
+    }
+   ]
+  },
+  {
+   "slug": "kruze",
+   "firm": "Kruze Consulting",
+   "status": "operating",
+   "fitted": true,
+   "group": 1,
+   "price_status": "published",
+   "price": 650.0,
+   "breadth": 8,
+   "locations": 0,
+   "channel": "online",
+   "channel_basis": "inferred",
+   "niche": 0,
+   "files_tax": 1,
+   "review_score": null,
+   "review_count": null,
+   "review_source": null,
+   "missing": "reviews",
+   "imputed": [],
+   "sources": [
+    {
+     "url": "https://kruzeconsulting.com/",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://kruzeconsulting.com/about/",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://kruzeconsulting.com/pricing/",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://kruzeconsulting.com/startup-tax-services/",
+     "retrieved": "2026-11-10"
+    }
+   ]
+  },
+  {
+   "slug": "taxfyle",
+   "firm": "Taxfyle",
+   "status": "operating",
+   "fitted": true,
+   "group": 1,
+   "price_status": "no_monthly_plan",
+   "price": NaN,
+   "breadth": 3,
+   "locations": 0,
+   "channel": "online",
+   "channel_basis": "stated",
+   "niche": 0,
+   "files_tax": 1,
+   "review_score": null,
+   "review_count": null,
+   "review_source": null,
+   "missing": "reviews",
+   "imputed": [
+    "log10 starting monthly price"
+   ],
+   "sources": [
+    {
+     "url": "https://www.taxfyle.com/",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://www.taxfyle.com/about",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://www.taxfyle.com/taxfiling",
+     "retrieved": "2026-11-10"
+    }
+   ]
+  },
+  {
+   "slug": "monaco_cpa",
+   "firm": "Monaco CPA",
+   "status": "operating",
+   "fitted": true,
+   "group": 1,
+   "price_status": "published",
+   "price": 300.0,
+   "breadth": 9,
+   "locations": 0,
+   "channel": "online",
+   "channel_basis": "stated",
+   "niche": 1,
+   "files_tax": 1,
+   "review_score": null,
+   "review_count": null,
+   "review_source": null,
+   "missing": "reviews",
+   "imputed": [],
+   "sources": [
+    {
+     "url": "https://www.monacocpa.cpa/",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://www.monacocpa.cpa/industries/salons-spas",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://www.monacocpa.cpa/locations/new-jersey-cpa",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://www.monacocpa.cpa/pricing",
+     "retrieved": "2026-11-10"
+    },
+    {
+     "url": "https://www.monacocpa.cpa/services",
+     "retrieved": "2026-11-10"
+    }
+   ]
+  },
+  {
+   "slug": "padgett",
+   "firm": "Padgett Business Services",
+   "status": "not readable",
+   "fitted": false,
+   "group": null,
+   "price_status": "not_available",
+   "price": NaN,
+   "breadth": null,
+   "locations": null,
+   "channel": null,
+   "channel_basis": null,
+   "niche": null,
+   "files_tax": null,
+   "review_score": null,
+   "review_count": null,
+   "review_source": null,
+   "missing": "price, breadth, footprint, channel, niche, files_tax, reviews",
+   "imputed": [],
+   "sources": []
+  },
+  {
+   "slug": "straight_talk",
+   "firm": "Straight Talk CPAs",
+   "status": "not readable",
+   "fitted": false,
+   "group": null,
+   "price_status": "not_available",
+   "price": NaN,
+   "breadth": null,
+   "locations": null,
+   "channel": null,
+   "channel_basis": null,
+   "niche": null,
+   "files_tax": null,
+   "review_score": null,
+   "review_count": null,
+   "review_source": null,
+   "missing": "price, breadth, footprint, channel, niche, files_tax, reviews",
+   "imputed": [],
+   "sources": []
+  }
+ ]
+}

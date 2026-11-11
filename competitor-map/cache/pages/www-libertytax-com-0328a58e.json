@@ -1,0 +1,20 @@
+{
+ "url": "https://www.libertytax.com/",
+ "retrieved": "2026-11-10",
+ "user_agent": "python-requests/2.32.5",
+ "robots": "allowed",
+ "status": 200,
+ "final_url": "https://www.libertytax.com/",
+ "chars": 3635,
+ "kept_lines": [
+  "We take pride in the products and services we provide and are willing to go the extra mile for you and your family. Find out why our clients choose us year after year for tax planning and preparation.",
+  "Check out our over 125,000 five-star Google reviews. Read what local people are saying in your area.",
+  "2,000+",
+  "LOCATIONS",
+  "Across the U.S.",
+  "File Taxes In-Person",
+  "Small Business Bookkeeping",
+  "Tax Debt Resolution",
+  "\u00a92021-2026 Liberty Tax. All Rights Reserved."
+ ]
+}

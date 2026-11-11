@@ -1,0 +1,8 @@
+# Content Signals (https://contentsignals.org) declare how this content may be
+# used once it has been fetched. We treat AI surfaces as a referral channel, so
+# search indexing, AI answer grounding, and model training are all permitted.
+User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+
+Sitemap: https://www.decimal.com/sitemap-index.xml

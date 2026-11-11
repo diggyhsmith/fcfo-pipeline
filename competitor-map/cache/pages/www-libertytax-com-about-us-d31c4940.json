@@ -1,0 +1,13 @@
+{
+ "url": "https://www.libertytax.com/about-us",
+ "retrieved": "2026-11-10",
+ "user_agent": "python-requests/2.32.5",
+ "robots": "allowed",
+ "status": 200,
+ "final_url": "https://www.libertytax.com/about-us",
+ "chars": 4168,
+ "kept_lines": [
+  "Known for the total support we provide our franchisees, our tax return preparation franchise is consistently recognized as a leader among all franchises, not just personal income tax-based businesses. We\u2019ve been ranked as one of the top franchises on Entrepreneur magazine\u2019s annual Franchise 500 list every year since 1998, including a Best of the Best award in 2016. We\u2019re also listed in Bond\u2019s Top 100 Franchises. Accounting Today named Liberty Tax\u00ae to its Top Tax Firms list in 2016 and 2017. We\u2019re the #1-ranked non-food multi-unit franchise by Multi-Unit Franchisee magazine, and we\u2019ve been awarded a top spot among franchises by Black Enterprise, Poder/Hispanic Enterprise, and Military Times Edge.",
+  "\u00a92021-2026 Liberty Tax. All Rights Reserved."
+ ]
+}

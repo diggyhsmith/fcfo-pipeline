@@ -1,0 +1,5 @@
+User-agent: *
+Sitemap: https://fiducial.com/sitemap.xml
+Disallow: /.sw_/_host_/_replacer_
+# reserved
+

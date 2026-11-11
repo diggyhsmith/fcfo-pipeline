@@ -1,0 +1,15 @@
+{
+ "url": "https://www.remotebooksonline.com/about",
+ "retrieved": "2026-11-10",
+ "user_agent": "python-requests/2.32.5",
+ "robots": "allowed",
+ "status": 200,
+ "final_url": "https://www.remotebooksonline.com/about",
+ "chars": 9692,
+ "kept_lines": [
+  "Monthly Bookkeeping Starter Guide (2025 Edition)",
+  "QuickBooks Cleanup Checklist (2025 Edition)",
+  "*Disclaimer: RemoteBooksOnline provides bookkeeping, tax preparation, tax filing, and accounting services for small businesses using third-party accounting software. We are a THIRD PARTY accounting & bookkeeping solution and we are NOT AFFILIATED with any brands, trademarks, logos, or any other company names used. The brand names, trademarks, and logos belong to their respective owners and are for representation purposes only.",
+  "\u00a9 2026 RemoteBooksOnline LLC. All rights reserved."
+ ]
+}

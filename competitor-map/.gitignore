@@ -1,0 +1,9 @@
+# The root .gitignore excludes every cache/ dir. This one holds only public pages, reduced to the lines the analysis uses, so publish it;
+# the whole-page text in cache/full/ stays local.
+!cache/
+cache/full/
+
+# built locally by build_pdf.py; rebuild after editing reflection_competitor_map.md
+competitor_map_submission.pdf
+grep.py
+ctx.py

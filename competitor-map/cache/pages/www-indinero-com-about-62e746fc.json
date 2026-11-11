@@ -1,0 +1,14 @@
+{
+ "url": "https://www.indinero.com/about/",
+ "retrieved": "2026-11-10",
+ "user_agent": "python-requests/2.32.5",
+ "robots": "allowed",
+ "status": 200,
+ "final_url": "https://www.indinero.com/about/",
+ "chars": 7441,
+ "kept_lines": [
+  "Indinero is a remote-first company, with \u2018Dinerians\u2019 working across 23+ states. We believe people do their best work where they are most productive, supporting a flexible work-from-home model that balances autonomy with the high security our clients\u2019 financials demand. What brings us all together is a shared mission: helping businesses flourish.",
+  "Indinero provides outsourced accounting, bookkeeping, tax, and CFO services for growing businesses. A single integrated team of CPAs, Controllers, and financial advisors, backed by real-time accounting technology, handles everything from day-to-day bookkeeping to strategic financial planning.",
+  "Copyright \u00a9 2026 Indinero. All Rights Reserved."
+ ]
+}

@@ -1,0 +1,12 @@
+{
+ "url": "https://jasminethomasassociates.com/",
+ "retrieved": "2026-11-10",
+ "user_agent": "python-requests/2.32.5",
+ "robots": "allowed",
+ "status": 200,
+ "final_url": "https://jasminethomasassociates.com/",
+ "note": "parked / for-sale / empty page: firm treated as not operating at this domain",
+ "parked": true,
+ "chars": 0,
+ "kept_lines": []
+}
