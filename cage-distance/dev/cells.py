@@ -399,7 +399,7 @@ def score_cultural(a, b):
         big = max(gaps, key=lambda k: abs(gaps[k]))
         comps.append(comp("ksi", "Hofstede Kogut-Singh index (6 dims)", f"{ksi:.3f}", f"rank {rank} of {len(others)} closest", pct, True, [hs],
                           f"largest gap: {big} {gaps[big]:+d} points"))
-        notes.append(f"The Kogut-Singh index across Hofstede's six dimensions is {ksi:.2f}. Only {rank - 1} of the {len(others)} other countries with all six scores are closer to "
+        notes.append(f"The Kogut-Singh index across Hofstede's six dimensions is {ksi:.2f}. Only {rank - 1} of the {len(others)} other countries with all six scores {'is' if rank - 1 == 1 else 'are'} closer to "
                      f"{capital(a)['name']} than {capital(b)['name']} is (rank {rank}), so this indicator scores {pct:.0f}. The largest single gap is {big.lower()} ({gaps[big]:+d} points).")
         ctx = {"hofstede": {HOF_NAMES[d]: (int(hof.loc[a, d]), int(hof.loc[b, d])) for d in HOF_DIMS}, "ksi": ksi, "rank": rank, "n": len(others)}
     else:
@@ -808,7 +808,8 @@ def bar_chart(res, path, title):
     for s in ("top", "right", "left"):
         ax.spines[s].set_visible(False)
     ax.tick_params(axis="y", length=0)
-    ax.set_title(title, loc="left", color=INK, fontsize=11, fontweight="bold")
+    ax.set_ylabel("Dimension")
+    fig.suptitle(title, x=0.02, ha="left", color=INK, fontsize=11, fontweight="bold")   # figure-level, so tight_layout keeps it inside
     fig.tight_layout()
     fig.savefig(path, facecolor=SURF)
     plt.close(fig)
@@ -839,10 +840,11 @@ def sensitivity_chart(res, sens_df, path, title):
     for s in ("top", "right", "left"):
         ax.spines[s].set_visible(False)
     ax.tick_params(axis="y", length=0)
-    ax.legend(loc="lower right", frameon=False, fontsize=9, title="Contribution of", title_fontsize=9)
+    ax.set_ylabel("Weight scenario")
+    ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.2), ncol=4, frameon=False, fontsize=9, title="Contribution of", title_fontsize=9)   # below the plot, clear of every label
     ax.set_title(title, loc="left", color=INK, fontsize=11, fontweight="bold")
     fig.tight_layout()
-    fig.savefig(path, facecolor=SURF)
+    fig.savefig(path, facecolor=SURF, bbox_inches="tight", pad_inches=0.08)
     plt.close(fig)
 
 bar_chart(R, HERE / "cage_scores.png", f"CAGE distance scores: {R['home_name']} → {R['target_name']}")

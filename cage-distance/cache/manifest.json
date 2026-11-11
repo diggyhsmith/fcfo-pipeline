@@ -309,7 +309,7 @@
   "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.legisquebec.gouv.qc.ca/en/document/cs/P-39.1"
  },
  "https://www.legisquebec.gouv.qc.ca/en/document/cs/c-11": {
-  "attempted": "2026-11-05",
+  "attempted": "2026-11-10",
   "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.legisquebec.gouv.qc.ca/en/document/cs/c-11"
  },
  "https://www.nta.go.jp/english/Report_pdf/2026e_04.pdf": {

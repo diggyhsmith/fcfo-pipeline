@@ -118,7 +118,7 @@ def build(d, reflection, urls, path=OUT):
       f"{t(d['contrast_industry'])} (Geographic {d['contrast_weights']['Geographic']:.2f}, Economic {d['contrast_weights']['Economic']:.2f}, "
       f"Administrative {d['contrast_weights']['Administrative']:.2f}, Cultural {d['contrast_weights']['Cultural']:.2f}: heavy, cheap-per-tonne product, so transport dominates), "
       f"the same scores give {d['contrast_total']:.1f}. Next door, with a shared border, the cement firm sees little distance; the bookkeeping firm sees more, and it sits in the tax code. "
-      "I agree with the planned order, with two refinements: Geographic is lowest but not zero (time-zone overlap matters for live calls in tax season), and the Quebec "
+      "Two judgment calls: Geographic is lowest but not zero (time-zone overlap matters for live calls in tax season), and the Quebec "
       "French issue is scored as a legal (Administrative) fact rather than as Cultural distance.", "small")
 
     for k in DIMS:
@@ -185,7 +185,7 @@ def build(d, reflection, urls, path=OUT):
     tab.append([C(f"{t(pr['home_name'])} to {t(pr['target_name'])}")] + [C(f"{sc[k]:.0f}") for k in DIMS] + [C(f"{d['total']:.1f}"), C(d["rating"]), C(t(rec["risk"]))])
     for k, v in d["contrast_pairs"].items():
         tab.append([C(f"{t(v['names'][0])} to {t(v['names'][1])}")] + [C(f"{v['scores'][x]:.0f}") for x in DIMS] + [C(f"{v['total']:.1f}"), C(v["rating"]), C(t(v["risk"]))])
-    story.append(grid(tab, [W * x for x in (0.24, 0.08, 0.11, 0.09, 0.08, 0.07, 0.08, 0.25)]))
+    story.append(grid(tab, [W * x for x in (0.23, 0.08, 0.11, 0.11, 0.08, 0.07, 0.08, 0.24)]))
     P("The UK and Japan fact tables are shorter (5 and 3 facts), so their Administrative scores rest on less evidence. Japan's licensed tax-accountant monopoly and its "
       "foreign-transfer privacy rule are the kind of facts that would push Administrative higher as more are added.", "small")
 
